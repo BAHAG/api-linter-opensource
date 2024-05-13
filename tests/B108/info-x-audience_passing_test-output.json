@@ -1,0 +1,89 @@
+{
+    "total": 10,
+    "example-errors": 0,
+    "warnings": 8,
+    "errors": 2,
+    "logs": [
+        {
+            "id": "B101",
+            "key": "openapi",
+            "severity": "ERROR",
+            "message": "Open API version not specified"
+        },
+        {
+            "id": "B105",
+            "key": "info.title",
+            "severity": "WARN",
+            "message": "API name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.description",
+            "severity": "WARN",
+            "message": "API description not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact",
+            "severity": "WARN",
+            "message": "Contact of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.name",
+            "severity": "WARN",
+            "message": "Name of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.url",
+            "severity": "WARN",
+            "message": "URL of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-channel",
+            "severity": "WARN",
+            "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-alerting",
+            "severity": "WARN",
+            "message": "Alerting field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-monitoring",
+            "severity": "WARN",
+            "message": "Monitoring field for the api not present"
+        },
+        {
+            "id": "B106",
+            "key": "info.version",
+            "severity": "ERROR",
+            "message": "API specification version not present"
+        }
+    ],
+    "metadata": {
+        "x-audience": "business-unit-internal",
+        "x-channel": null,
+        "x-sunset-date": null,
+        "x-shutdown-date": null,
+        "openapi": null,
+        "x-monitoring": null,
+        "x-alerting": null,
+        "x-announcement": null,
+        "supported-countries": [
+            "all"
+        ],
+        "supported-countries-length": 1,
+        "supported-languages": [
+            "N/A"
+        ],
+        "supported-languages-length": 1,
+        "domain_name": "-",
+        "domain_model": "-",
+        "domain_version": "-"
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "total": 22,
+    "example-errors": 0,
+    "warnings": 15,
+    "errors": 7,
+    "logs": [
+        {
+            "id": "B101",
+            "key": "openapi",
+            "severity": "ERROR",
+            "message": "Open API version not specified"
+        },
+        {
+            "id": "B105",
+            "key": "info.title",
+            "severity": "WARN",
+            "message": "API name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.description",
+            "severity": "WARN",
+            "message": "API description not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact",
+            "severity": "WARN",
+            "message": "Contact of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.name",
+            "severity": "WARN",
+            "message": "Name of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.url",
+            "severity": "WARN",
+            "message": "URL of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-channel",
+            "severity": "WARN",
+            "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-alerting",
+            "severity": "WARN",
+            "message": "Alerting field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-monitoring",
+            "severity": "WARN",
+            "message": "Monitoring field for the api not present"
+        },
+        {
+            "id": "B106",
+            "key": "info.version",
+            "severity": "ERROR",
+            "message": "API specification version not present"
+        },
+        {
+            "id": "B108",
+            "key": "info.x-audience",
+            "severity": "ERROR",
+            "message": "info.x-audience is not present"
+        },
+        {
+            "id": "B146",
+            "num_line": 8,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./axgelwxlbajk/raxjrvvxraz/nk/lsjl/psxq-/nzr/bilqswykokazprol-m/hyzenalzslwj"
+        },
+        {
+            "id": "B146",
+            "num_line": 11,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vcmrxftnhwq-wjhdloh/bepldtl/bn-iwxxfydgrfq/edln/fwjqvihourvtbg/ae/ef-mo-dobl-jatsg/jproszsskdztaf"
+        },
+        {
+            "id": "B146",
+            "num_line": 13,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./wuzeusgfqab/xpfdvoiyxjwja-c/xzsaglobqklodyhgqyhm/kywmis-/cymihmkslxsscsnr/-uguhrfkonsm/ymsoybnpgqbqrorvljj/k-xoxbgsur"
+        },
+        {
+            "id": "B146",
+            "num_line": 14,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./xcmoiihncmdwnsqkzvc/qzvsjuedf/o/ftkhqxzpnxhvoqvbrz/yhsvj-yjefbe/boh-hjbh/czhcvdsrmrhgffsgbwc/r"
+        },
+        {
+            "id": "B169",
+            "num_line": 8,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./axgelwxlbajk/raxjrvvxraz/nk/lsjl/psxq-/nzr/bilqswykokazprol-m/hyzenalzslwj"
+        },
+        {
+            "id": "B169",
+            "num_line": 9,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./iylxbtyeqetl/rrrmxdej-kgtocwsxv/poivs/vhojsuejfcslexocndu/ucttxkbmyycbde/oqzdr/qnlztqcliy/w-ymcf-m-iiweidhji"
+        },
+        {
+            "id": "B169",
+            "num_line": 10,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./iyxwaa/yovufmngmimofoysaf/mfarqlei-cgb/vxitwsm/ck-ngbzc/zasdcpz-c/hykqimgrfsqydpwdm-qs/aibt"
+        },
+        {
+            "id": "B169",
+            "num_line": 11,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vcmrxftnhwq-wjhdloh/bepldtl/bn-iwxxfydgrfq/edln/fwjqvihourvtbg/ae/ef-mo-dobl-jatsg/jproszsskdztaf"
+        },
+        {
+            "id": "B169",
+            "num_line": 12,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vybmshpyylngk/conrmagcrf-cosksiwtp/n/cpvzxpuprhjl-ybrge/nlvadirbjdkrlpsx/yojjvucpwmuopqdw/zqyiqeuisou/xvtjffefcoqcxs"
+        },
+        {
+            "id": "B169",
+            "num_line": 13,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./wuzeusgfqab/xpfdvoiyxjwja-c/xzsaglobqklodyhgqyhm/kywmis-/cymihmkslxsscsnr/-uguhrfkonsm/ymsoybnpgqbqrorvljj/k-xoxbgsur"
+        },
+        {
+            "id": "B169",
+            "num_line": 14,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./xcmoiihncmdwnsqkzvc/qzvsjuedf/o/ftkhqxzpnxhvoqvbrz/yhsvj-yjefbe/boh-hjbh/czhcvdsrmrhgffsgbwc/r"
+        }
+    ],
+    "metadata": {
+        "x-audience": null,
+        "x-channel": null,
+        "x-sunset-date": null,
+        "x-shutdown-date": null,
+        "openapi": null,
+        "x-monitoring": null,
+        "x-alerting": null,
+        "x-announcement": null,
+        "supported-countries": [
+            "all"
+        ],
+        "supported-countries-length": 1,
+        "supported-languages": [
+            "N/A"
+        ],
+        "supported-languages-length": 1,
+        "domain_name": "-",
+        "domain_model": "-",
+        "domain_version": "-"
+    }
+}

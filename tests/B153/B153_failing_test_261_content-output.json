@@ -1,0 +1,151 @@
+{
+    "total": 19,
+    "example-errors": 0,
+    "warnings": 16,
+    "errors": 3,
+    "logs": [
+        {
+            "id": "B101",
+            "key": "openapi",
+            "severity": "ERROR",
+            "message": "Open API version not specified"
+        },
+        {
+            "id": "B105",
+            "key": "info.title",
+            "severity": "WARN",
+            "message": "API name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.description",
+            "severity": "WARN",
+            "message": "API description not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact",
+            "severity": "WARN",
+            "message": "Contact of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.name",
+            "severity": "WARN",
+            "message": "Name of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.url",
+            "severity": "WARN",
+            "message": "URL of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-channel",
+            "severity": "WARN",
+            "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-alerting",
+            "severity": "WARN",
+            "message": "Alerting field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-monitoring",
+            "severity": "WARN",
+            "message": "Monitoring field for the api not present"
+        },
+        {
+            "id": "B106",
+            "key": "info.version",
+            "severity": "ERROR",
+            "message": "API specification version not present"
+        },
+        {
+            "id": "B108",
+            "key": "info.x-audience",
+            "severity": "ERROR",
+            "message": "info.x-audience is not present"
+        },
+        {
+            "id": "B153",
+            "num_line": 5,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.OPDuFF"
+        },
+        {
+            "id": "B153",
+            "num_line": 6,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.QjWXhJyatn"
+        },
+        {
+            "id": "B153",
+            "num_line": 7,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.UriSTPEp"
+        },
+        {
+            "id": "B153",
+            "num_line": 8,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.WDlcfXtBeKLtRsDRP"
+        },
+        {
+            "id": "B153",
+            "num_line": 9,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.hHrOgZ"
+        },
+        {
+            "id": "B153",
+            "num_line": 10,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.mypXkCUarsjPXbxv"
+        },
+        {
+            "id": "B153",
+            "num_line": 11,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.nFYBaxydphLOAHoMx"
+        },
+        {
+            "id": "B153",
+            "num_line": 12,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".vkyzluhyjkkwhub.aymqskrxysqbeoewufpqsbvrrx.295.content.snEVoDjeoxxBIgteciyTpFHm"
+        }
+    ],
+    "metadata": {
+        "x-audience": null,
+        "x-channel": null,
+        "x-sunset-date": null,
+        "x-shutdown-date": null,
+        "openapi": null,
+        "x-monitoring": null,
+        "x-alerting": null,
+        "x-announcement": null,
+        "supported-countries": [
+            "all"
+        ],
+        "supported-countries-length": 1,
+        "supported-languages": [
+            "N/A"
+        ],
+        "supported-languages-length": 1,
+        "domain_name": "-",
+        "domain_model": "-",
+        "domain_version": "-"
+    }
+}

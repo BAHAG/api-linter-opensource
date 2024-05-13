@@ -1,0 +1,1439 @@
+openapi: 3.1.0
+
+###### WARNING!!! ##########
+#### if _this_ repo is not    https://github.com/BAHAG/sxp-office-directory then you are looking at a copy of the YAML ######
+#### deployed code comes from https://github.com/BAHAG/sxp-office-directory _ONLY_ ######
+###### WARNING!!! ##########
+
+# servers
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/BAHAG/api-store-masterdata/2.0.25
+  - description: QS stage
+    url: https://qs.api.bauhaus/v1/store-masterdata
+  - description: prod stage
+    url: https://api.bauhaus/v1/store-masterdata
+
+# tags
+tags:
+  - name: stores
+    description: basic store information
+  - name: opening hours
+    description: opening hours in one store
+
+# info object
+info:
+  version: "2.0.25"
+  title: Store Masterdata API
+  description: Providing all information related to stores
+  x-api-id: 45c256cb-6641-422d-8bdc-9e048b60c7ea
+  x-audience: company-internal
+  contact:
+    name: Store Experience Team
+    url: https://wiki.bahag.com/x/G4JvOQ
+    email: store-experience-team@bahag.com
+  x-alerting: https://teams.microsoft.com/l/channel/19%3a5a7f71120b3a41debef322c8cc1893f1%40thread.tacv2/API%2520Status%2520StoreExperience?groupId=a5a9b025-0708-4a70-a62b-b17b044eff82&tenantId=e11e0ba0-85ac-4e5e-bfc4-4f119901dbed
+  x-monitoring: https://console.cloud.google.com/monitoring/dashboards/builder/d5b64e04-98f6-42cc-a9e1-0c7f08d9ab9b;duration=PT6H?project=hub-observability-prod-0993
+  x-channel: https://teams.microsoft.com/l/channel/19%3a56d5fbf7c13f43b693efd68893cb3538%40thread.tacv2/api-store-masterdata?groupId=a5a9b025-0708-4a70-a62b-b17b044eff82&tenantId=e11e0ba0-85ac-4e5e-bfc4-4f119901dbed
+
+# path definitions
+paths:
+  /stores:
+    parameters:
+      - $ref: '#/components/parameters/countryCodeQuery'
+      - $ref: '#/components/parameters/filterOperationalQuery'
+    get:
+      summary: |
+        read all stores basic information
+      operationId: getAllStoresForCountry
+      tags:
+        - stores
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Stores'
+  /stores/{store-id}:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+    get:
+      summary: |
+        read store basic information
+      operationId: getStoreById
+      tags:
+        - stores
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Store'
+  /stores/{store-id}/opening-hours:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+    get:
+      summary: |
+        read all store's opening hours
+      operationId: GetOpeningHoursByStoreId
+      tags:
+        - opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpeningHoursList'
+  /stores/{store-id}/opening-hours/{department-id}:
+    parameters:
+      - $ref: '#/components/parameters/departmentPath'
+      - $ref: '#/components/parameters/storeIdPath'
+    get:
+      summary: get the opening hours of a specific department in a store
+      operationId: GetOpeningHoursByStoreAndDepartment
+      tags:
+        - opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpeningHoursList'
+  /stores/{store-id}/opening-hours/default:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+    get:
+      summary: get the opening hours of the leading department of a store
+      operationId: GetDefaultOpeningHoursOfStore
+      tags:
+        - opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpeningHoursList'
+  /stores/{store-id}/events:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+    get:
+      summary: |
+        read all store's events
+      operationId: events
+      tags:
+        - events
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsList'
+  /stores/{store-id}/opening-hours-forecast:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+      - $ref: '#/components/parameters/departmentQuery'
+      - $ref: '#/components/parameters/forecastDaysQuery'
+      - $ref: '#/components/parameters/referenceDateQuery'
+    get:
+      summary: |
+        calculate the current and upcoming opening hours based on a given date.
+        As a default one additional day is being calculated
+      operationId: GetOpeningHoursForecastByStoreId
+      tags:
+        - opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpeningHoursByDepartmentForecast'
+  /stores/{store-id}/special-opening-hours:
+    parameters:
+      - $ref: '#/components/parameters/storeIdPath'
+      - $ref: '#/components/parameters/startDateQuery'
+      - $ref: '#/components/parameters/endDateQuery'
+      - $ref: '#/components/parameters/affectedGroupsQuery'
+    get:
+      summary: |
+        gets the special opening hours for an FC
+      operationId: GetSpecialOpeningHoursByStoreId
+      tags:
+        - special opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SpecialOpeningHoursByStore'
+        400:
+          description: "store not found, does not exist"
+        404:
+          description: "department not given or unknown"
+        428:
+          description: "no basic opening hours set for FC or no forecast possible for other reasons"
+  /special-opening-hours/types:
+    get:
+      summary: "get the list of known special opening hour types"
+      operationId: GetSpecialOpeningHourTypes
+      tags:
+        - special opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SpecialOpeningHourTypeList'
+  /special-opening-hours/affected-groups:
+    get:
+      summary: "get the list of known groups that can be affected by an opening or closing time"
+      operationId: GetSpecialOpeningHourAffectedGroups
+      tags:
+        - special opening hours
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SpecialOpeningHourGroupList'
+
+  /departments:
+    get:
+      summary: get all departments
+      operationId: GetDepartments
+      tags:
+        - departments
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DepartmentsList'
+  /departments/{department-id}:
+    parameters:
+      - $ref: '#/components/parameters/departmentPath'
+    get:
+      summary: get the details of a specific department
+      operationId: GetDepartmentById
+      tags:
+        - departments
+      responses:
+        404:
+          description: "not found - department is unknown"
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DepartmentDetails'
+
+  /features:
+    get:
+      summary: get all features
+      operationId: getFeatures
+      tags:
+        - features
+      responses:
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeaturesList'
+        404:
+          description: "not found - in case not a single feature can be found"
+  /features/{feature-id}:
+    get:
+      parameters:
+        - $ref: '#/components/parameters/featureIdPath'
+      summary: get details of a feature
+      operationId: getFeature
+      tags:
+        - features
+      responses:
+        404:
+          description: "not found in case the feature is not known"
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeatureDetails'
+  /features/types:
+    get:
+      summary: get a list of feature types (groups of features)
+      operationId: getFeatureTypeList
+      tags:
+        - features
+      responses:
+        404:
+          description: no types available
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeatureTypeList'
+  /features/types/{feature-type-id}:
+    get:
+      summary: get details about a feature type
+      parameters:
+        - $ref: '#/components/parameters/featureTypePath'
+      operationId: getFeatureType
+      tags:
+        - features
+      responses:
+        404:
+          description: "feature type unknown"
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeatureTypeInfo'
+
+  /events:
+    get:
+      summary: get all events
+      operationId: getEvents
+      tags:
+        - events
+      responses:
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsList'
+        404:
+          description: "not found - in case not a single event can be found"
+  /events/{event-id}:
+    get:
+      parameters:
+        - $ref: '#/components/parameters/eventIdPath'
+      summary: get details of a event
+      operationId: getEvent
+      tags:
+        - events
+      responses:
+        404:
+          description: "not found in case the event is not known"
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Event'
+  /events/types:
+    get:
+      summary: get a list of event types (groups of events)
+      operationId: getEventTypeList
+      tags:
+        - events
+      responses:
+        404:
+          description: no types available
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventTypeList'
+  /events/types/{event-type-id}:
+    get:
+      summary: get details about a event type
+      parameters:
+        - $ref: '#/components/parameters/eventTypePath'
+      operationId: getEventType
+      tags:
+        - events
+      responses:
+        404:
+          description: "event type unknown"
+        200:
+          description: "ok"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsList'
+
+  /health:
+    get:
+      tags:
+        - health
+      summary: |
+        Health endpoint can be called to check the availability of the Service. It returns some basic information about the API.
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: 'https://api.swaggerhub.com/domains/BAHAG/Problem/1.1.0#/definitions/Health'
+
+# components
+components:
+  schemas:
+    Stores:
+      type: array
+      items:
+        $ref: '#/components/schemas/Store'
+    Store:
+      type: object
+      description: |
+        This object represents a store
+      properties:
+        id:
+          type: integer
+          format: int32
+          examples:
+            - 311
+          description: |
+            a unique identifier for the store
+        name:
+          type: string
+          description: |
+            the name of the store
+          examples:
+            - BAUHAUS GmbH & Co. KG Süd
+        address:
+          $ref: '#/components/schemas/Address'
+        gln:
+          description: The ILN / GLN of the store
+          type: string
+          examples:
+            - 8432898000008
+        email:
+          type: string
+          format: email
+          description: |
+            the email of the store
+          examples:
+            - Service.NL300@bauhaus-ag.de
+            - Service.NL330@bauhaus.info
+        phone:
+          type: string
+          description: |
+            the phone number of the store
+          examples:
+            - "+49 511 458067 0"
+            - "+49 512 458067 23"
+        fax:
+          type: string
+          description: |
+            the fax number of the store
+          examples:
+            - "+49 511 458067 30"
+            - "+49 511 458067 323"
+        url:
+          type: string
+          format: uri
+          description: |
+            the url address of the store
+          examples:
+            - "www.bauhaus.info"
+            - "www.bauhaus.es"
+            - "www.bauhaus.at"
+        cash_desk_type:
+          type: string
+          nullable: true
+          description: |
+            the cash desk type used in the store
+          examples:
+            - ZK
+            - GK
+        sales_mode:
+          type: string
+          description: |
+            sales mode available in store (local, telesales)
+          examples:
+            - local
+            - telesales
+        cdc:
+          type: integer
+          format: int32
+          nullable: true
+          description: |
+            the cross docking center, the upstream warehouse to used
+          examples:
+            - 35
+            - 71
+        display_name:
+          type: string
+          description: |
+            the display name of the store
+          examples:
+            - Mannheim-Mallau
+            - Mannheim-Vogelstang
+            - Mannheim-Waldhof
+        operative_from:
+          format: date-time
+          type: string
+          description: |
+            the date the store started operating
+          examples:
+            - "1975-02-28T00:00:00+0100"
+        operative_until:
+          format: date-time
+          type: string
+          description: |
+            the date the store stopped operating
+          examples:
+            - "2018-02-28T00:00:00+0100"
+          nullable: true
+        vif_from:
+          format: date-time
+          type: string
+          nullable: true
+          description: |
+            the date the store started offering ship to store
+          examples:
+            - "2020-02-28T00:00:00+0100"
+        vif_until:
+          format: date-time
+          type: string
+          nullable: true
+          description: |
+            the date the store stopped offering ship to store
+          examples:
+            - "2021-02-28T00:00:00+0100"
+        paylink_from:
+          format: date-time
+          type: string
+          nullable: true
+          description: |
+            the date the store started using paylink
+          examples:
+            - "2020-02-28T00:00:00+0100"
+        paylink_until:
+          format: date-time
+          type: string
+          nullable: true
+          description: |
+            the date the store stopped using paylink
+          examples:
+            - "2021-02-28T00:00:00+0100"
+        features:
+          $ref: '#/components/schemas/FeatureList'
+        departments:
+          type: array
+          items:
+            $ref: '#/components/schemas/Department'
+        delivery_information:
+            $ref: '#/components/schemas/DeliveryInfo'
+    OpeningHoursByStore:
+      type: object
+      properties:
+        leading_department:
+          type: string
+          description: department id that represents the general opening hours of the store
+        intake_department:
+          type: string
+          description: department id to use for deliveries
+        opening_hours:
+          $ref: '#/components/schemas/OpeningHoursList'
+    OpeningHoursList:
+      type: object
+      description: |
+        This is an object that represents all opening hours of one store
+      patternProperties:
+        '-?\d+':
+          $ref: '#/components/schemas/OpeningHours'
+    OpeningHours:
+      type: object
+      description: |
+        represents an opening hour entry
+      properties:
+        department:
+          type: string
+          description: |
+            the department reference (numeric)
+          examples:
+            - 1
+            - 2
+            - 358
+        timeslots_per_weekday:
+          type: object
+          properties:
+            "1":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "2":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "3":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "4":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "5":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "6":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+            "7":
+              type: object
+              optional: true
+              $ref: '#/components/schemas/OpeningHoursByWeekday'
+    OpeningHoursByWeekday:
+      type: object
+      properties:
+        weekday:
+          type: integer
+          format: int32
+          description: |
+            defines the weekday of the opening hour entry as numerical (0 = SUN, 1 = MON, 7 = SUN max allowed is 7)
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+        opening_hours:
+          type: array
+          items:
+            $ref: '#/components/schemas/OpeningHour'
+
+    OpeningHour:
+      type: object
+      description: |
+        represents a opening hour entry
+      properties:
+
+        from:
+          type: string
+          pattern: '/^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/'
+          description: |
+            store opens at this time of day (24h format), local time
+          examples:
+            - '08:00:00'
+            - '13:15:00'
+        to:
+          type: string
+          pattern: '/^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/'
+          description: |
+            store closes at this time of day (24h format), local time
+          examples:
+            - '20:00:00'
+            - '17:53:11'
+    OpeningHoursByDepartmentForecast:
+      type: object
+      description: forecast structure for opening hours by department
+      properties:
+        leading_department:
+          type: string
+          description: |
+            the department by which the overall opening of the doors is governed
+          examples:
+            - 'main'
+        forecast:
+          $ref: '#/components/schemas/OpeningHourForecast'
+    SpecialOpeningHoursByStore:
+      type: object
+      description: |
+        holds the positive (additional) and negative (holidays etc.) for a store. Both effects are are packed
+        into separate attributes and will only contain the corresponding type of exceptions to the opening hours,
+        however the example generated by swagger cannot be instructed to reflect this properly at the moment.
+      properties:
+        positive:
+          $ref: '#/components/schemas/SpecialOpeningHoursList'
+        negative:
+          $ref: '#/components/schemas/SpecialOpeningHoursList'
+
+    SpecialOpeningHourTypeList:
+      type: array
+      items:
+        $ref: '#/components/schemas/SpecialOpeningHourType'
+
+    SpecialOpeningHourType:
+      type: object
+      description: "Describes an opening hour type"
+      properties:
+        type:
+          type: string
+          description: "identifier for type"
+          examples:
+            - "holiday"
+            - "renovation"
+            - "stocktakuing"
+        description:
+          type: string
+          description: "human readable description for the identifier"
+          examples:
+            - "public holiday"
+            - "Stocktaking in store"
+        effect:
+          type: string
+          enum:
+            - negative
+            - positive
+        affected_groups:
+          type: array
+          nullable: true
+          items:
+            type: string
+            examples:
+              - suppliers
+              - customers
+
+    SpecialOpeningHourGroupList:
+      type: array
+      items:
+        $ref: '#/components/schemas/SpecialOpeningHourAffectedGroup'
+    SpecialOpeningHourAffectedGroup:
+      type: object
+      properties:
+        groupname:
+          type: string
+          description: "identifier of group"
+          examples:
+            - "customers"
+            - "suppliers"
+        description:
+          type: string
+          description: "human readable description of the group"
+          examples:
+            - "end customers"
+            - "suppliers"
+    OpeningHourForecast:
+      type: object
+      description: Opening hours grouped by department(s)
+      additionalProperties:
+        $ref: '#/components/schemas/OpeningHoursForecastList'
+
+    OpeningHoursForecastList:
+      type: array
+      description: |
+        This is an array of objects representing the upcoming open and closing hours of
+        a store including the current opening hours for the "reference date"
+      items:
+        $ref: '#/components/schemas/OpeningForecastHour'
+
+    SpecialOpeningHoursList:
+      type: array
+      description: Collection / list of special opening hours
+      items:
+        $ref: '#/components/schemas/SpecialOpeningHour'
+    SpecialOpeningHour:
+      type: object
+      description: describes an opening or closing timespan
+      properties:
+        LocationCountry:
+          type: string
+          description: CountryCode
+          examples:
+            - "DE"
+        LocationStateCode:
+          type: string
+          examples:
+            - "BW"
+            - "BY"
+          description: "State/Region Code"
+        LocationZip:
+          type: string
+          description: affected zip code
+          examples:
+            - "76137"
+        StoreId:
+          type: integer
+          format: int32
+          description: FC number
+          examples:
+            - 330
+        from:
+          type: string
+          format: date-time
+          examples:
+            - "2023-04-13 00:00:00"
+          description: "start of opening or closing time"
+        to:
+          type: string
+          format: date-time
+          examples:
+            - "2023-04-13 00:00:00"
+          description: "start of opening or closing time"
+        level:
+          type: string
+          examples:
+            - "country"
+            - "region"
+            - "zipcode"
+            - "fc"
+          description: "source level of opening or closing time"
+        local_name:
+          description: |
+            Name of the holiday in diffrent local languages, the local name in
+            the language of the store will always be included
+          $ref: '#/components/schemas/LocalizedName'
+        type:
+          type: string
+          examples:
+            - "stocktaking"
+            - "exceptional"
+            - "holiday"
+            - "renovation"
+          description: "kind of opening or closing time"
+        description:
+          type: string
+          description: "description of the type of opening or closing time"
+          examples:
+            - "Renovation / remodelling"
+            - "Public holiday"
+            - "Regional holiday"
+        effect:
+          description: "effect on regular opening hours: positive adds, negative restricts"
+          type: string
+          enum:
+            - positive
+            - negative
+        affected_group:
+          type: array
+          description: "groups that are affected by this closing time, like customers, suppliers, null if no restriction on groups"
+          nullable: true
+          items:
+            type: string
+            examples:
+              - "suppliers"
+              - "customers"
+
+    OpeningForecastHour:
+      type: object
+      description: |
+        represents an opening hour per day consisting of start and end time
+      properties:
+        opens_at:
+          type: string
+          format: date-time
+          description: |
+            opening time as ISO
+          examples:
+            - "2022-10-28T08:00:00+02:00"
+        closes_at:
+          type: string
+          format: date-time
+          description: |
+            closing time as ISO
+          examples:
+            - "2022-10-28T12:00:00+02:00"
+    Geolocation:
+      type: object
+      description: |
+        represents a geolocation position
+      properties:
+        latitude:
+          type: number
+          format: double
+          description: |
+            define the latitude coordinates
+          examples:
+            - "53.862"
+        longitude:
+          type: number
+          format: double
+          description: |
+            define the longitude coordinates
+          examples:
+            - "10.6288"
+
+    Address:
+      description:
+        the physical address of the FC
+      type: object
+      properties:
+        street:
+          description: |
+            the full street address including house number and street name
+          type: string
+          examples:
+            - "Schönhauser Allee 103"
+        additional:
+          description: |
+            further details like building name, suite, apartment number, etc.
+          type: string
+          nullable: true
+          examples:
+            - "2. Hinterhof rechts"
+        district:
+          description: |
+            name of the district / locality
+          type: string
+          examples:
+            - "Berlin-Spandau"
+            - "Mannheim-Waldhof"
+        city:
+          description: |
+            name of the city
+          type: string
+          examples:
+            - Berlin
+            - Mannheim
+            - Karlsruhe
+            - Bruchsal
+        zip:
+          description: |
+            zip code or postal code
+          type: string
+          examples:
+            - 14265
+            - 68165
+        state:
+          description: |
+            name of the state / county / perfecture
+          type: string
+          examples:
+            - "BY"
+            - "BW"
+            - "TH"
+        country_code:
+          description: |
+            the country code according to
+            [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+          type: string
+          examples:
+            - "DE"
+            - "AT"
+            - "ES"
+        geolocation:
+          $ref: '#/components/schemas/Geolocation'
+      required:
+        - street
+        - city
+        - zip
+        - country_code
+    FeatureList:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/FeatureGroup'
+    FeatureGroup:
+      type: array
+      description: a group of features
+      items:
+        $ref: '#/components/schemas/Feature'
+    Feature:
+      type: object
+      description: a feature of a store
+      properties:
+        id:
+          type: integer
+          format: int32
+          examples:
+            - 3
+          description: id of a feature
+        name:
+          $ref: '#/components/schemas/LocalizedName'
+    Department:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          examples:
+            - 4711
+          description: department id
+        name:
+          $ref: '#/components/schemas/LocalizedName'
+        contacts:
+          $ref: '#/components/schemas/ContactList'
+    ContactList:
+      type: array
+      items:
+        $ref: '#/components/schemas/ContactItem'
+
+    ContactItem:
+      type: object
+      properties:
+        contact_type:
+          type: string
+          enum:
+            - phone
+            - email
+            - fax
+            - mobile
+          description: type of the contact
+        contact_value:
+          type: string
+          examples:
+            - "+49 176 212 53395 (M)"
+          description: the contact value (raw)
+
+    DepartmentsList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Department'
+
+    DepartmentDetails:
+      type: object
+      properties:
+        department_details:
+          $ref: '#/components/schemas/Department'
+        available_in_stores:
+          $ref: '#/components/schemas/StoreAvailability'
+
+    FeaturesList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Feature'
+
+    FeatureDetails:
+      type: object
+      properties:
+        feature:
+          $ref: '#/components/schemas/Feature'
+        available_in_stores:
+          $ref: '#/components/schemas/StoreAvailability'
+
+    FeatureTypeList:
+      type: array
+      items:
+        $ref: '#/components/schemas/FeatureType'
+
+    FeatureTypeInfo:
+      type: object
+      properties:
+        feature_type:
+          $ref: '#/components/schemas/FeatureType'
+        contained_features:
+          $ref: '#/components/schemas/FeatureTypeContainedFeatures'
+
+    FeatureTypeContainedFeatures:
+      type: object
+      patternProperties:
+        '\d+':
+          $ref: '#/components/schemas/Feature'
+
+    FeatureType:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          description: id of the type
+          examples:
+            - 7276
+        name:
+          $ref: '#/components/schemas/LocalizedName'
+          description: unique name of the group (technical)
+
+    Event:
+      type: object
+      description: a event of a store
+      properties:
+        id:
+          type: integer
+          format: int32
+          examples:
+            - 3
+          description: id of an event
+        from:
+          format: date-time
+          type: string
+          description: |
+            the date and time of the start of the event
+          examples:
+            - "1975-02-28T00:00:00+0100"
+        to:
+          format: date-time
+          type: string
+          description: |
+            the date and time of the end of the event
+          examples:
+            - "2018-02-28T00:00:00+0100"
+        topic:
+          $ref: '#/components/schemas/LocalizedName'
+        description:
+          $ref: '#/components/schemas/LocalizedName'
+        type:
+          $ref: '#/components/schemas/EventType'
+        organizer:
+          type: string
+          examples:
+            - "Sebastian Köhler"
+        storeId:
+          type: integer
+          format: int32
+          description: Id of the providing store
+          examples:
+            - 583
+
+    EventsList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Event'
+
+    EventDetails:
+      type: object
+      properties:
+        event:
+          $ref: '#/components/schemas/Event'
+        available_in_stores:
+          $ref: '#/components/schemas/StoreAvailability'
+
+    EventTypeList:
+      type: array
+      items:
+        $ref: '#/components/schemas/EventType'
+
+    EventType:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          description: id of the type
+          examples:
+            - 7276
+        name:
+          $ref: '#/components/schemas/LocalizedName'
+          description: unique name of the event type (technical)
+
+    StoreAvailability:
+      type: object
+      description: list of stores that have the feature available
+      patternProperties:
+        '\d+':
+          $ref: '#/components/schemas/StoreBasicDetails'
+
+    StoreBasicDetails:
+      type: object
+      description: very basic store info for availibility lists
+      properties:
+        fc:
+          type: integer
+          format: int32
+          description: FC number
+        name:
+          type: string
+          description: name of the company or office
+        city:
+          type: string
+          description: City name of the office
+        Location:
+          type: string
+          description: Location name (local office name, such as Karlsruhe Südstadt or Mannheim-Waldhof)
+          examples:
+            - "Karlsruhe Südstadt"
+            - "Mannheim-Waldhof"
+        country:
+          type: string
+          format: iso-3166
+          enum:
+            - DE
+            - AT
+            - NL
+            - HR
+            - DK
+            - CZ
+            - ES
+        contacts:
+          $ref: '#/components/schemas/ContactList'
+    LocalizedName:
+      type: object
+      description: A hashmap with language code as a key and the text as the value.
+      patternProperties:
+        '^[A-Z]{2}(_[A-Z]{2,4})?':
+          type: string
+          description: translated value by key
+
+    DeliveryInfo:
+      nullable: true
+      type: object
+      description: delivery info for a store
+      properties:
+        vertical_clearance:
+          $ref: '#/components/schemas/ValueUnit'
+        max_truck_weight:
+          $ref: '#/components/schemas/ValueUnit'
+        max_skid_weight:
+          $ref: '#/components/schemas/ValueUnit'
+        trailer_allowed:
+          type: boolean
+        semi_trailer_allowed:
+          type: boolean
+        without_platform_unload_to_sides_possible:
+          $ref: '#/components/schemas/UnloadingSide'
+        delivery_only_through_street:
+          description: use only this path
+          $ref: '#/components/schemas/LocalizedName'
+        delivery_remarks:
+          description: additional remarks that help the driver
+          $ref: '#/components/schemas/LocalizedName'
+        delivery_department_id:
+          description: the department of the store used for accepting deliveries
+          type: integer
+          format: int32
+          examples:
+            - 3
+        delivery_hours :
+          $ref: '#/components/schemas/OpeningHours'
+    UnloadingSide:
+      type: object
+      properties:
+        left:
+          type: boolean
+        right:
+          type: boolean
+        back:
+          type: boolean
+    ValueUnit:
+      type: object
+      properties:
+        value:
+          type: number
+          format: float
+          description: the value
+          examples:
+            - 3.5
+        unit:
+          type: string
+          description: unit sign of measurement
+          examples:
+            - "m"
+
+  # parameters
+  parameters:
+    countryCodeQuery:
+      in: query
+      name: country_code
+      description: the country code
+      required: false
+      schema:
+        type: string
+        format: iso-3166
+        enum:
+          - DE
+          - AT
+          - NL
+          - HR
+          - DK
+          - CZ
+          - ES
+
+    filterOperationalQuery:
+      in: query
+      name: filter_operational
+      description: filter on store opening conditions
+      required: false
+      schema:
+        type: string
+        default: open
+        enum:
+          - all
+          - open
+          - closed
+
+
+    languageCodeQuery:
+      in: query
+      name: language_code
+      description: the country code
+      required: false
+      schema:
+        type: string
+        format: bcp47
+        examples:
+          - de_AT
+          - de_DE
+          - es_ES
+          - de_CH
+
+    countryCodePath:
+      in: path
+      name: country-code
+      description: the country code
+      required: true
+      schema:
+        type: string
+        format: iso-3166
+        enum:
+          - DE
+          - AT
+          - NL
+          - HR
+          - DK
+          - CZ
+          - ES
+
+    storeIdPath:
+      in: path
+      name: store-id
+      description: the FC number (unique)
+      required: true
+      schema:
+        type: number
+        examples:
+          - 583
+
+    departmentPath:
+      in: path
+      name: department-id
+      description: the department to check for
+      required: true
+      schema:
+        type: number
+        examples:
+          - 2
+
+    featureIdPath:
+      in: path
+      name: feature-id
+      description: the feature id
+      required: true
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 1
+
+    featureTypePath:
+      in: path
+      name: feature-type-id
+      description: the id of the type
+      required: true
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 2
+
+    eventIdPath:
+      in: path
+      name: event-id
+      description: the event id
+      required: true
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 314
+
+    eventTypePath:
+      in: path
+      name: event-type-id
+      description: the id of the type
+      required: true
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 2
+    #Query parameters below
+
+    storeIdQuery:
+      in: query
+      name: store_id
+      description: the FC number (unique)
+      required: true
+      schema:
+        type: number
+        examples:
+          - 583
+
+    referenceDateQuery:
+      in: query
+      name: reference_date
+      description: base date to run calculations from
+      required: false
+      schema:
+        type: string
+        format: date-time
+        examples:
+          - "2022-10-20T13:55"
+
+    startDateQuery:
+      in: query
+      name: start
+      description: start of time period if not given, today is used
+      required: false
+      schema:
+        type: string
+        format: date-time
+        examples:
+          - '2022-10-20T13:55'
+
+    endDateQuery:
+      in: query
+      name: end
+      description: end of time period, if not given +7 days of start
+      required: false
+      schema:
+        type: string
+        format: date-time
+        examples:
+          - '2022-10-20T13:55'
+
+    affectedGroupsQuery:
+      in: query
+      name: affectedGroups
+      description: limit the scope of affected groups
+      required: false
+      schema:
+        type: array
+        items:
+          type: string
+          examples:
+            - suppliers
+            - customers
+
+    departmentQuery:
+      in: query
+      name: department
+      description: the department to check for
+      required: true
+      schema:
+        type: string
+        examples:
+          - 1
+          - 2
+
+    featureIdQuery:
+      in: query
+      name: feature-id
+      description: the feature id
+      required: true
+      schema:
+        type: integer
+        format: int32
+
+    featureTypeQuery:
+      in: query
+      name: feature-type-id
+      description: the id of the type
+      required: true
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 2
+
+    forecastDaysQuery:
+      in: query
+      name: forecast_up_to_number_of_days
+      description: number of days to look into the future
+      required: false
+      schema:
+        type: integer
+        format: int32
+        examples:
+          - 3

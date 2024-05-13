@@ -1,0 +1,848 @@
+{
+    "metadata": [
+        "info.x-audience",
+        "info.x-channel",
+        "info.contact.x-sunset-date",
+        "info.contact.x-shutdown-date",
+        "openapi",
+        "info.x-monitoring",
+        "info.x-alerting",
+        "info.x-announcement"
+    ],
+    "rules": [
+        {
+            "id": "B101",
+            "description": "Provide api specification using open api",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "required_path": "openapi",
+                    "message": "Open API version not specified",
+                    "checks": [
+                        {
+                            "gte": "3.0.0",
+                            "message": "The api version must be greater than or equal to 3.0.0",
+                            "name": "gte",
+                            "value": "3.0.0"
+                        },
+                        {
+                            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+                            "message": "openapi does not follow semantic versioning",
+                            "name": "pattern",
+                            "value": "^\\d+\\.\\d+\\.\\d+$"
+                        }
+                    ],
+                    "path_value": "openapi",
+                    "path_name": "required_path"
+                }
+            ]
+        },
+        {
+            "id": "B105",
+            "description": "Contain api meta information",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "required_path": "info.title",
+                    "message": "API name not present",
+                    "checks": [],
+                    "path_value": "info.title",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.description",
+                    "message": "API description not present",
+                    "checks": [],
+                    "path_value": "info.description",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.contact",
+                    "message": "Contact of the responsible team not present",
+                    "checks": [],
+                    "path_value": "info.contact",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.contact.name",
+                    "message": "Name of the responsible team not present",
+                    "checks": [],
+                    "path_value": "info.contact.name",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.contact.url",
+                    "message": "URL of the responsible team not present",
+                    "checks": [],
+                    "path_value": "info.contact.url",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-channel",
+                    "message": "Teams channel for the api not present",
+                    "checks": [],
+                    "path_value": "info.x-channel",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-alerting",
+                    "message": "Alerting field for the api not present",
+                    "checks": [],
+                    "path_value": "info.x-alerting",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-monitoring",
+                    "message": "Monitoring field for the api not present",
+                    "checks": [],
+                    "path_value": "info.x-monitoring",
+                    "path_name": "required_path"
+                }
+            ]
+        },
+        {
+            "id": "B106",
+            "description": "Use semantic versioning",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "required_path": "info.version",
+                    "message": "API specification version not present",
+                    "checks": [
+                        {
+                            "pattern": "^\\d+\\.\\d+\\.\\d+$|^v\\d+\\.\\d+\\.\\d+$",
+                            "message": "info.version does not follow semantic versioning",
+                            "name": "pattern",
+                            "value": "^\\d+\\.\\d+\\.\\d+$|^v\\d+\\.\\d+\\.\\d+$"
+                        }
+                    ],
+                    "path_value": "info.version",
+                    "path_name": "required_path"
+                }
+            ]
+        },
+        {
+            "id": "B108",
+            "description": "Provide api audience",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "required_path": "info.x-audience",
+                    "message": "info.x-audience is not present",
+                    "checks": [
+                        {
+                            "allowed_values": [
+                                "component-internal",
+                                "business-unit-internal",
+                                "company-internal",
+                                "external-partner",
+                                "external-public"
+                            ],
+                            "message": "Value of info.x-audience is not correct",
+                            "name": "allowed_values",
+                            "value": [
+                                "component-internal",
+                                "business-unit-internal",
+                                "company-internal",
+                                "external-partner",
+                                "external-public"
+                            ]
+                        }
+                    ],
+                    "path_value": "info.x-audience",
+                    "path_name": "required_path"
+                }
+            ]
+        },
+        {
+            "id": "B109",
+            "description": "Property names must be ascii snake_case (and never camelcase): ^[a-z_][a-z_0-9]*$",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "properties",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "^[a-z_][a-z_0-9]*$",
+                            "message": "Property names don't follow snake_case",
+                            "name": "check_keys_pattern",
+                            "value": "^[a-z_][a-z_0-9]*$",
+                            "exceptions": [
+                                {
+                                    "title": "Store Masterdata API",
+                                    "version": "2"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "properties",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B111",
+            "description": "Declare enum values using UPPER_SNAKE_CASE format",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "array_name": "schemas.enum",
+                    "checks": [
+                        {
+                            "check_array_pattern": "^[A-Z][A-Z_]*[A-Z]$",
+                            "message": "enum property does not follow UPPER_SNAKE_CASE",
+                            "name": "check_array_pattern",
+                            "value": "^[A-Z][A-Z_]*[A-Z]$",
+                            "exceptions": [
+                                {
+                                    "title": "Cart Masterdata API",
+                                    "version": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "schemas.enum",
+                    "path_name": "array_name"
+                },
+                {
+                    "array_name": "schemas.x-extensible-enum",
+                    "checks": [
+                        {
+                            "check_array_pattern": "^[A-Z][A-Z_]*[A-Z]$",
+                            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
+                            "name": "check_array_pattern",
+                            "value": "^[A-Z][A-Z_]*[A-Z]$",
+                            "exceptions": [
+                                {
+                                    "title": "Cart Masterdata API",
+                                    "version": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "schemas.x-extensible-enum",
+                    "path_name": "array_name"
+                }
+            ]
+        },
+        {
+            "id": "B113",
+            "description": "Pluralize array names",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "properties": "*",
+                    "checks": [
+                        {
+                            "is_array": true,
+                            "message": "Array name is not plural",
+                            "name": "is_array",
+                            "value": true
+                        }
+                    ],
+                    "path_value": "*",
+                    "path_name": "properties"
+                }
+            ]
+        },
+        {
+            "id": "B117",
+            "description": "Name date/time properties with _at suffix",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "properties": "*",
+                    "checks": [
+                        {
+                            "is_date_time": [
+                                "[a-z_]*_at$",
+                                "valid_from",
+                                "valid_until",
+                                "[a-z]*_start$",
+                                "[a-z]*_end$"
+                            ],
+                            "message": "Date/Time property does not end with _at, _start, _end",
+                            "name": "is_date_time",
+                            "value": [
+                                "[a-z_]*_at$",
+                                "valid_from",
+                                "valid_until",
+                                "[a-z]*_start$",
+                                "[a-z]*_end$"
+                            ],
+                            "exceptions": [
+                                {
+                                    "title": "GUID Generator API",
+                                    "version": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "*",
+                    "path_name": "properties"
+                }
+            ]
+        },
+        {
+            "id": "B118",
+            "description": "Name user properties with _by suffix swagger support",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": []
+        },
+        {
+            "id": "B121",
+            "description": "Specify success and error responses",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "path.responses",
+                    "checks": [
+                        {
+                            "check_keys_pattern_list": [
+                                "2[0-9]{2}"
+                            ],
+                            "message": "Specification must define at least one success code",
+                            "name": "check_keys_pattern_list",
+                            "value": [
+                                "2[0-9]{2}"
+                            ]
+                        }
+                    ],
+                    "path_value": "path.responses",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B122",
+            "description": "Use standard http status codes",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths.responses",
+                    "checks": [
+                        {
+                            "check_keys_list": [
+                                "200",
+                                "201",
+                                "202",
+                                "204",
+                                "207",
+                                "301",
+                                "303",
+                                "304",
+                                "400",
+                                "401",
+                                "403",
+                                "404",
+                                "405",
+                                "406",
+                                "408",
+                                "409",
+                                "410",
+                                "412",
+                                "415",
+                                "423",
+                                "428",
+                                "429",
+                                "500",
+                                "501",
+                                "503",
+                                "504",
+                                "default"
+                            ],
+                            "message": "The response does not use standard http status codes",
+                            "name": "check_keys_list",
+                            "value": [
+                                "200",
+                                "201",
+                                "202",
+                                "204",
+                                "207",
+                                "301",
+                                "303",
+                                "304",
+                                "400",
+                                "401",
+                                "403",
+                                "404",
+                                "405",
+                                "406",
+                                "408",
+                                "409",
+                                "410",
+                                "412",
+                                "415",
+                                "423",
+                                "428",
+                                "429",
+                                "500",
+                                "501",
+                                "503",
+                                "504",
+                                "default"
+                            ]
+                        }
+                    ],
+                    "path_value": "paths.responses",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B125",
+            "description": "Use code 429 with headers for rate limits",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": []
+        },
+        {
+            "id": "B126",
+            "description": "Use problem json",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "4[0-9]{2}.content",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "application/json|application/problem\\+json",
+                            "message": "The content type does not match application/problem+json",
+                            "name": "check_keys_pattern",
+                            "value": "application/json|application/problem\\+json"
+                        }
+                    ],
+                    "path_value": "4[0-9]{2}.content",
+                    "path_name": "key_name"
+                },
+                {
+                    "key_name": "5[0-9]{2}.content",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "application/json|application/problem\\+json",
+                            "message": "The content type does not match application/problem+json",
+                            "name": "check_keys_pattern",
+                            "value": "application/json|application/problem\\+json"
+                        }
+                    ],
+                    "path_value": "5[0-9]{2}.content",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B129",
+            "description": "Use common field names and semantics",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": [
+                {
+                    "key_name": "properties",
+                    "checks": [
+                        {
+                            "check_keys_B129": [
+                                "^created",
+                                "^modified",
+                                "^id",
+                                "^[a-z]*[a-z_]*[a-z]*_id$",
+                                "^[a-z]+[a-z_]*[a-z]*_uid$",
+                                "type"
+                            ],
+                            "message": "Common field names don't follow api guidelines",
+                            "name": "check_keys_B129",
+                            "value": [
+                                "^created",
+                                "^modified",
+                                "^id",
+                                "^[a-z]*[a-z_]*[a-z]*_id$",
+                                "^[a-z]+[a-z_]*[a-z]*_uid$",
+                                "type"
+                            ]
+                        }
+                    ],
+                    "path_value": "properties",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B136",
+            "description": "Define collection format of header and query parameters",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B141",
+            "description": "Follow naming convention for hostnames",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B142",
+            "description": "Use lowercase separate words with hyphens for path segments",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "^[a-z/-]+$",
+                            "message": "Path values must use lowercase separate words with hyphens for path segments",
+                            "name": "check_keys_pattern",
+                            "value": "^[a-z/-]+$"
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B143",
+            "description": "Use lowercase separate words with hyphens for path parameters swagger support",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "^[a-z/-]+$",
+                            "message": "Path parameters must use lowercase separate words with hyphens",
+                            "name": "check_keys_pattern",
+                            "value": "^[a-z/-]+$"
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B144",
+            "description": "Use snake_case (never camelcase) for query parameters",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_value": "components.parameters.in",
+                    "checks": [
+                        {
+                            "check_keys_value": {
+                                "value": "query",
+                                "required_node": "name",
+                                "node_requirement": "^[a-z_][a-z_0-9]*$"
+                            },
+                            "message": "Query parameters don't follow snake case",
+                            "name": "check_keys_value",
+                            "value": {
+                                "value": "query",
+                                "required_node": "name",
+                                "node_requirement": "^[a-z_][a-z_0-9]*$"
+                            },
+                            "exceptions": [
+                                {
+                                    "title": "Store Masterdata API",
+                                    "version": "2"
+                                },
+                                {
+                                    "title": "Cart Masterdata API",
+                                    "version": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "components.parameters.in",
+                    "path_name": "key_value"
+                }
+            ]
+        },
+        {
+            "id": "B145",
+            "description": "Prefer hyphenated-pascal-case for http header fields",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B146",
+            "description": "Pluralize resource names",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "^([a-z/-])*(s/|s$|purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|activation|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)",
+                            "message": "Pluralize resource names",
+                            "name": "check_keys_pattern",
+                            "value": "^([a-z/-])*(s/|s$|purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|activation|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)",
+                            "exceptions": [
+                                {
+                                    "title": "GUID Generator API",
+                                    "version": "1"
+                                },
+                                {
+                                    "title": "Content Delivery API",
+                                    "version": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B147",
+            "description": "Not use /api as base path",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern_inverse": "^/api",
+                            "message": "/api used as the base path",
+                            "name": "check_keys_pattern_inverse",
+                            "value": "^/api"
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B148",
+            "description": "Use normalized paths without empty path segments and trailing slashes",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern_inverse": "/[a-z/-]*(/{2}|/$)",
+                            "message": "Path is not normalized",
+                            "name": "check_keys_pattern_inverse",
+                            "value": "/[a-z/-]*(/{2}|/$)"
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B150",
+            "description": "Use json to encode structured data",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B153",
+            "description": "Prefer standard media type name application/json",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "2[0-9]{2}.content",
+                    "checks": [
+                        {
+                            "check_keys_pattern": "application/json|application/problem\\+json|application/json-patch\\+json|application/merge-patch\\+json",
+                            "message": "The content type does not match application/problem+json",
+                            "name": "check_keys_pattern",
+                            "value": "application/json|application/problem\\+json|application/json-patch\\+json|application/merge-patch\\+json"
+                        }
+                    ],
+                    "path_value": "2[0-9]{2}.content",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B157",
+            "description": "Define format for number and integer types",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_value": "properties.type",
+                    "checks": [
+                        {
+                            "check_keys_value": {
+                                "value": "integer",
+                                "required_node": "format",
+                                "node_requirement": [
+                                    "int32",
+                                    "int64",
+                                    "bigint"
+                                ]
+                            },
+                            "message": "Format for type integer",
+                            "name": "check_keys_value",
+                            "value": {
+                                "value": "integer",
+                                "required_node": "format",
+                                "node_requirement": [
+                                    "int32",
+                                    "int64",
+                                    "bigint"
+                                ]
+                            }
+                        },
+                        {
+                            "check_keys_value": {
+                                "value": "number",
+                                "required_node": "format",
+                                "node_requirement": [
+                                    "decimal",
+                                    "float",
+                                    "double"
+                                ]
+                            },
+                            "message": "Format for type number",
+                            "name": "check_keys_value",
+                            "value": {
+                                "value": "number",
+                                "required_node": "format",
+                                "node_requirement": [
+                                    "decimal",
+                                    "float",
+                                    "double"
+                                ]
+                            }
+                        }
+                    ],
+                    "path_value": "properties.type",
+                    "path_name": "key_value"
+                }
+            ]
+        },
+        {
+            "id": "B164",
+            "description": "Identify resources and sub-resources via path segments",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B166",
+            "description": "Consider using (non-)nested urls",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B168",
+            "description": "Limit number of resource types",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": []
+        },
+        {
+            "id": "B169",
+            "description": "Limit number of sub-resource levels",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "key_name": "paths",
+                    "checks": [
+                        {
+                            "check_keys_pattern_inverse": "/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+",
+                            "message": "Limit the number of sub-resource levels",
+                            "name": "check_keys_pattern_inverse",
+                            "value": "/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+/[a-z-]+"
+                        }
+                    ],
+                    "path_value": "paths",
+                    "path_name": "key_name"
+                }
+            ]
+        },
+        {
+            "id": "B180",
+            "description": "Secure endpoints with oauth 2.0",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B181",
+            "description": "Define and assign permissions (scopes)",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        },
+        {
+            "id": "B184",
+            "description": "Prefer compatible extensions",
+            "severity": "WARN",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "implementation": "NULL",
+            "paths": []
+        }
+    ]
+}

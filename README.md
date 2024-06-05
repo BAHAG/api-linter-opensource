@@ -10,6 +10,10 @@ This api-linter is a quality assurance tool for OpenAPI specifications, which:
 Its standard configuration will check your APIs against the rules defined in
 [Bauhaus' RESTful Guidelines](https://guideline.api.bauhaus/).
 
+## Dependencies
+The linter relies on several open source tools, install them from the links provided below
+- [yq](https://github.com/mikefarah/yq/#install)
+
 ## Quick start guide
 
 Trying out the api-linter locally is easy. \

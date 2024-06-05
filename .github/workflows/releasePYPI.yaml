@@ -1,0 +1,37 @@
+# create a github workflow to release package from /package to PYPI
+name: Release PYPI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Install dependencies
+      run: |
+        pip install setuptools wheel twine
+
+    - name: Build and publish
+      working-directory: ./package
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        python setup.py sdist bdist_wheel
+        twine upload --repository ${{ secrets.PYPI_PROJECT }} dist/*

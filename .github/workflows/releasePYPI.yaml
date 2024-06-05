@@ -4,7 +4,7 @@ name: Release PYPI
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build:
@@ -32,6 +32,7 @@ jobs:
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        TWINE_REPOSITORY_URL: https://upload.pypi.org/legacy/
       run: |
         python setup.py sdist bdist_wheel
         twine upload --repository ${{ secrets.PYPI_PROJECT }} dist/*

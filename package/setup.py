@@ -6,7 +6,7 @@ LONG_DESCRIPTION = 'A yaml linter for opeanpi documents. '
 
 # Setting up
 setup(
-    name="linter",
+    name="BAHAG-API-Linter",
     version=VERSION,
     author="BAUHAUS",
     author_email="shubhushan.kattel@bahag.com",

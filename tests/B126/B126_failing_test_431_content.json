@@ -1,8 +1,8 @@
 {
     "total": 15,
     "example-errors": 0,
-    "warnings": 12,
-    "errors": 3,
+    "warnings": 8,
+    "errors": 7,
     "logs": [
         {
             "id": "B101",
@@ -71,32 +71,32 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B111",
+            "id": "B126",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".qsqcoxfhsxdbjhfabpboqbrukh.xuieykivzvni.ixzzgms.abeijxrzrf.cyujbiblmckuwrlhpuw.oecpta.zgkrgduzhglwkbrptvrxlz.406.content.AYltyTjNLsbSaioGQbhisEuIJ"
+        },
+        {
+            "id": "B126",
             "num_line": 11,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[0]"
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".qsqcoxfhsxdbjhfabpboqbrukh.xuieykivzvni.ixzzgms.abeijxrzrf.cyujbiblmckuwrlhpuw.oecpta.zgkrgduzhglwkbrptvrxlz.406.content.BpDkKvzUsnUAtRFc"
         },
         {
-            "id": "B111",
+            "id": "B126",
             "num_line": 12,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[1]"
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".qsqcoxfhsxdbjhfabpboqbrukh.xuieykivzvni.ixzzgms.abeijxrzrf.cyujbiblmckuwrlhpuw.oecpta.zgkrgduzhglwkbrptvrxlz.406.content.aYLNsaNWISKOw"
         },
         {
-            "id": "B111",
+            "id": "B126",
             "num_line": 13,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[2]"
-        },
-        {
-            "id": "B111",
-            "num_line": 14,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[3]"
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".qsqcoxfhsxdbjhfabpboqbrukh.xuieykivzvni.ixzzgms.abeijxrzrf.cyujbiblmckuwrlhpuw.oecpta.zgkrgduzhglwkbrptvrxlz.406.content.zkEZyvBYPdhOVMIJpgNkksAcJAUO"
         }
     ],
     "metadata": {

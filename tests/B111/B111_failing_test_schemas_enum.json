@@ -72,38 +72,38 @@
         },
         {
             "id": "B111",
-            "num_line": 11,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".saecmvwraupkbhfsfglekmcyz.hwwhncxrxmvoperoggmtnxvbcil.tkfloa.okahoqm.ivagtvfnhhlky.olbswkosjwqrzwifoasagdbrkze.pimfwrbndptkxkemjxye.sknvdluatrbhxanrvb.schemas.enum.[0]"
-        },
-        {
-            "id": "B111",
             "num_line": 12,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".saecmvwraupkbhfsfglekmcyz.hwwhncxrxmvoperoggmtnxvbcil.tkfloa.okahoqm.ivagtvfnhhlky.olbswkosjwqrzwifoasagdbrkze.pimfwrbndptkxkemjxye.sknvdluatrbhxanrvb.schemas.enum.[1]"
+            "key": ".idwmnezafbgrpdcvjnjnzjbvr.mujjrsebhfqfanxjdgir.cxlmfmpmmjhpxnyjxlxvorgf.zhcipssvc.meoaxgvqpiuowfm.gncgabjvnggkadnhzp.mrjqppjoipvxdkzizfrqcwgita.sdifohbpctwevyzrxrrivkkesclby.dynqqcfhnmspn.schemas.enum.[0]"
         },
         {
             "id": "B111",
             "num_line": 13,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".saecmvwraupkbhfsfglekmcyz.hwwhncxrxmvoperoggmtnxvbcil.tkfloa.okahoqm.ivagtvfnhhlky.olbswkosjwqrzwifoasagdbrkze.pimfwrbndptkxkemjxye.sknvdluatrbhxanrvb.schemas.enum.[2]"
+            "key": ".idwmnezafbgrpdcvjnjnzjbvr.mujjrsebhfqfanxjdgir.cxlmfmpmmjhpxnyjxlxvorgf.zhcipssvc.meoaxgvqpiuowfm.gncgabjvnggkadnhzp.mrjqppjoipvxdkzizfrqcwgita.sdifohbpctwevyzrxrrivkkesclby.dynqqcfhnmspn.schemas.enum.[1]"
         },
         {
             "id": "B111",
             "num_line": 14,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".saecmvwraupkbhfsfglekmcyz.hwwhncxrxmvoperoggmtnxvbcil.tkfloa.okahoqm.ivagtvfnhhlky.olbswkosjwqrzwifoasagdbrkze.pimfwrbndptkxkemjxye.sknvdluatrbhxanrvb.schemas.enum.[3]"
+            "key": ".idwmnezafbgrpdcvjnjnzjbvr.mujjrsebhfqfanxjdgir.cxlmfmpmmjhpxnyjxlxvorgf.zhcipssvc.meoaxgvqpiuowfm.gncgabjvnggkadnhzp.mrjqppjoipvxdkzizfrqcwgita.sdifohbpctwevyzrxrrivkkesclby.dynqqcfhnmspn.schemas.enum.[2]"
         },
         {
             "id": "B111",
             "num_line": 15,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".saecmvwraupkbhfsfglekmcyz.hwwhncxrxmvoperoggmtnxvbcil.tkfloa.okahoqm.ivagtvfnhhlky.olbswkosjwqrzwifoasagdbrkze.pimfwrbndptkxkemjxye.sknvdluatrbhxanrvb.schemas.enum.[4]"
+            "key": ".idwmnezafbgrpdcvjnjnzjbvr.mujjrsebhfqfanxjdgir.cxlmfmpmmjhpxnyjxlxvorgf.zhcipssvc.meoaxgvqpiuowfm.gncgabjvnggkadnhzp.mrjqppjoipvxdkzizfrqcwgita.sdifohbpctwevyzrxrrivkkesclby.dynqqcfhnmspn.schemas.enum.[3]"
+        },
+        {
+            "id": "B111",
+            "num_line": 16,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".idwmnezafbgrpdcvjnjnzjbvr.mujjrsebhfqfanxjdgir.cxlmfmpmmjhpxnyjxlxvorgf.zhcipssvc.meoaxgvqpiuowfm.gncgabjvnggkadnhzp.mrjqppjoipvxdkzizfrqcwgita.sdifohbpctwevyzrxrrivkkesclby.dynqqcfhnmspn.schemas.enum.[4]"
         }
     ],
     "metadata": {

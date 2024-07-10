@@ -1,7 +1,7 @@
 {
-    "total": 16,
+    "total": 15,
     "example-errors": 0,
-    "warnings": 13,
+    "warnings": 12,
     "errors": 3,
     "logs": [
         {
@@ -72,38 +72,31 @@
         },
         {
             "id": "B111",
-            "num_line": 10,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".sydachihpquqapicdjrkow.ltpimnmhtmj.ohwkq.ftuyfypqmkmdul.guiuxetba.rhykhpx.vvpipvgmaizsi.schemas.x-extensible-enum.[0]"
-        },
-        {
-            "id": "B111",
             "num_line": 11,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".sydachihpquqapicdjrkow.ltpimnmhtmj.ohwkq.ftuyfypqmkmdul.guiuxetba.rhykhpx.vvpipvgmaizsi.schemas.x-extensible-enum.[1]"
+            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[0]"
         },
         {
             "id": "B111",
             "num_line": 12,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".sydachihpquqapicdjrkow.ltpimnmhtmj.ohwkq.ftuyfypqmkmdul.guiuxetba.rhykhpx.vvpipvgmaizsi.schemas.x-extensible-enum.[2]"
+            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[1]"
         },
         {
             "id": "B111",
             "num_line": 13,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".sydachihpquqapicdjrkow.ltpimnmhtmj.ohwkq.ftuyfypqmkmdul.guiuxetba.rhykhpx.vvpipvgmaizsi.schemas.x-extensible-enum.[3]"
+            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[2]"
         },
         {
             "id": "B111",
             "num_line": 14,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".sydachihpquqapicdjrkow.ltpimnmhtmj.ohwkq.ftuyfypqmkmdul.guiuxetba.rhykhpx.vvpipvgmaizsi.schemas.x-extensible-enum.[4]"
+            "key": ".mukpjdonmqkwarg.ectezfwq.asvnhyrc.kykoaezu.eiernylhdfoutbqgruxe.wibjovbgmmifvdgnri.vfvuchenjmewgkjhmcdgpnzhdx.uzhpvabluot.schemas.x-extensible-enum.[3]"
         }
     ],
     "metadata": {

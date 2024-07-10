@@ -1,8 +1,8 @@
 {
-    "total": 22,
+    "total": 19,
     "example-errors": 0,
-    "warnings": 15,
-    "errors": 7,
+    "warnings": 13,
+    "errors": 6,
     "logs": [
         {
             "id": "B101",
@@ -72,80 +72,59 @@
         },
         {
             "id": "B146",
-            "num_line": 8,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./axgelwxlbajk/raxjrvvxraz/nk/lsjl/psxq-/nzr/bilqswykokazprol-m/hyzenalzslwj"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./g/dl/vjrfvaoh-fvcng/exmovofarwpekogar/tu/bsqbm/mft/w-twppruyqvuj"
         },
         {
             "id": "B146",
-            "num_line": 11,
+            "num_line": 12,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vcmrxftnhwq-wjhdloh/bepldtl/bn-iwxxfydgrfq/edln/fwjqvihourvtbg/ae/ef-mo-dobl-jatsg/jproszsskdztaf"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./v/eqv-bc/agdjtszrcvyjlpyx/xo-tlbv-/f-qvp/-qv-rtgumqk/ozhjtoox/fod-bdrxqwsmv"
         },
         {
             "id": "B146",
             "num_line": 13,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./wuzeusgfqab/xpfdvoiyxjwja-c/xzsaglobqklodyhgqyhm/kywmis-/cymihmkslxsscsnr/-uguhrfkonsm/ymsoybnpgqbqrorvljj/k-xoxbgsur"
-        },
-        {
-            "id": "B146",
-            "num_line": 14,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./xcmoiihncmdwnsqkzvc/qzvsjuedf/o/ftkhqxzpnxhvoqvbrz/yhsvj-yjefbe/boh-hjbh/czhcvdsrmrhgffsgbwc/r"
-        },
-        {
-            "id": "B169",
-            "num_line": 8,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./axgelwxlbajk/raxjrvvxraz/nk/lsjl/psxq-/nzr/bilqswykokazprol-m/hyzenalzslwj"
-        },
-        {
-            "id": "B169",
-            "num_line": 9,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./iylxbtyeqetl/rrrmxdej-kgtocwsxv/poivs/vhojsuejfcslexocndu/ucttxkbmyycbde/oqzdr/qnlztqcliy/w-ymcf-m-iiweidhji"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./x-amgzhwloyjag/qsupikofvjsof-bppi/aramknzvfmtaowxb/dbkien-eqpyftgw/t-adsrx-gaczrwtwlq/isdbvbmq/c/iwelimjdk"
         },
         {
             "id": "B169",
             "num_line": 10,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./iyxwaa/yovufmngmimofoysaf/mfarqlei-cgb/vxitwsm/ck-ngbzc/zasdcpz-c/hykqimgrfsqydpwdm-qs/aibt"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./g/dl/vjrfvaoh-fvcng/exmovofarwpekogar/tu/bsqbm/mft/w-twppruyqvuj"
         },
         {
             "id": "B169",
             "num_line": 11,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vcmrxftnhwq-wjhdloh/bepldtl/bn-iwxxfydgrfq/edln/fwjqvihourvtbg/ae/ef-mo-dobl-jatsg/jproszsskdztaf"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./rpdnkbsufvkoajudgw/wvhb/cfaquwqwfus/ordd-ky/cipgkdc/hljcrcgwmhexdojsvplh/pneyv/hzdggwwmyc"
         },
         {
             "id": "B169",
             "num_line": 12,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./vybmshpyylngk/conrmagcrf-cosksiwtp/n/cpvzxpuprhjl-ybrge/nlvadirbjdkrlpsx/yojjvucpwmuopqdw/zqyiqeuisou/xvtjffefcoqcxs"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./v/eqv-bc/agdjtszrcvyjlpyx/xo-tlbv-/f-qvp/-qv-rtgumqk/ozhjtoox/fod-bdrxqwsmv"
         },
         {
             "id": "B169",
             "num_line": 13,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./wuzeusgfqab/xpfdvoiyxjwja-c/xzsaglobqklodyhgqyhm/kywmis-/cymihmkslxsscsnr/-uguhrfkonsm/ymsoybnpgqbqrorvljj/k-xoxbgsur"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./x-amgzhwloyjag/qsupikofvjsof-bppi/aramknzvfmtaowxb/dbkien-eqpyftgw/t-adsrx-gaczrwtwlq/isdbvbmq/c/iwelimjdk"
         },
         {
             "id": "B169",
             "num_line": 14,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".ifhwoeoivircqdtjssjizzq.yhpzmqvpbfjynztyqrrges.wqwxdvxnrwylzliwyhmmsvu.ntjqcixshnxgogocgcnsodhbfuf.ldetulmslkfm.ebhvsptayu.paths./xcmoiihncmdwnsqkzvc/qzvsjuedf/o/ftkhqxzpnxhvoqvbrz/yhsvj-yjefbe/boh-hjbh/czhcvdsrmrhgffsgbwc/r"
+            "key": ".fuazdffdtylmzuumbyb.tnhzdadrpjfancej.uzzfycamzle.twjqwafqflge.ghlszvxdncl.cnhkzpqrdkccbmklxzhoysumj.zsmuvice.gchtlhlvkcrthsvagkiamaej.paths./xg-crar--xbgpppqo/xwjarjndgudanucrrhhf/usjdufu-/t/bwyrpraqbd/coimbrslrubx/gveruuczckffglkmgt/qars"
         }
     ],
     "metadata": {

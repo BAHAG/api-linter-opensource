@@ -1,5 +1,5 @@
 # BAHAG API linter
-
+ 
 This api-linter is a quality assurance tool for OpenAPI specifications, which:
 
 - Increases the quality of APIs

@@ -110,11 +110,15 @@ def check_version_deep(spec, yq_path, pattern, logger, **kwargs):
     for key, value in spec.items():
         tmp = f'."{key}"'
         if key == "version" and value.get("default") and not re.match(pattern, value.get("default")):
-            print(yq_path+tmp+".default")
-            line_num = get_line_number_key(yq_path+tmp+".default", logger)
+            line_num = get_line_number_key(yq_path+tmp+'."default"', logger)
             # log the result to logger
             logger.log_with_line_number(line_num, "ERROR", "Version mismatch in /health and info.version", None)
-        
+        if key == "$ref" and type(value) == str and value.lower().find("health") != -1:
+            ref = parse_internal_refs(value)
+            ref = "." + ".".join([f'"{x}"' for x in ref])
+            health_spec = get_internal_ref(kwargs.get("spec_yaml"), value)
+            check_version_deep(health_spec, ref, pattern, logger, **kwargs)
+
         if type(value) is dict:
             check_version_deep(value, yq_path + tmp, pattern, logger, **kwargs)
 
@@ -127,8 +131,8 @@ def check_version(spec, logger):
         health = spec.get("paths").get("/health")
         if not health:
             return
-        
-        check_version_deep(health, ".paths./health", info_version, logger)
+        # print(health)
+        check_version_deep(health, ".paths./health", info_version, logger, spec_yaml=spec)
     except:
         return
 """ END Version Mismatch"""

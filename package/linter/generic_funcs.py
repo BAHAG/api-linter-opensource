@@ -5,6 +5,15 @@ import sys
 def parse_internal_refs(ref):
     ref = ref.split("/")[1:]
     return ref
+
+def get_internal_ref(spec, ref):
+    ref = parse_internal_refs(ref)
+    tmp = spec
+    for item in ref:
+        if not tmp.get(item):
+            return None
+        tmp = tmp.get(item)
+    return tmp
 # helper function to recursively call the function that invoked it, if it contains any value of type dict
 # useful for recursion
 def deep_check_generic_array(spec, yq_path, message, severity, logger, id, key_list, pattern_or_lst, func, idx_of_key_list, log_flag, **kwargs):

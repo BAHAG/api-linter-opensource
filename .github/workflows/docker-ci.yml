@@ -6,9 +6,6 @@ on:
       - opened
     branches:
       - master
-  push:
-    branches:
-      - dev
 
 env:
   REGISTRY: ghcr.io
@@ -34,4 +31,5 @@ jobs:
         run: ./test_linter.sh
 
       - name: Test linter with real specification files to catch bugs
+        if: ${{ success() }}
         run: python3 test-yaml-loading.py

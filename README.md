@@ -268,3 +268,19 @@ Rules should be an array of objects. The attributes of objects should match:
                 }
             ]
 ```
+
+### DEPLOYMENT
+
+#### VERSIONING
+- Any update that does not change the functionality of the rule should be a patch
+
+- Any update to the current functionality, i.e. change in the package and local_dev should be a minor change
+
+- New rules / new functionality should be a major version change
+
+#### DEPLOYMENT PROTOCOL
+- After making changes to the code, the developer has to change the version number in the package/setup.py file. After the pull request has been merged the package will be deployed to pypi
+
+- After the PR has been merged create a git tag to create a docker image and push it to ghcr.io
+
+##### Note that the pypi version and docker image version are not synced. List the git tags and make changes accordingly

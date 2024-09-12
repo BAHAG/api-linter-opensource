@@ -281,6 +281,6 @@ Rules should be an array of objects. The attributes of objects should match:
 #### DEPLOYMENT PROTOCOL
 - After making changes to the code, the developer has to change the version number in the package/setup.py file. After the pull request has been merged the package will be deployed to pypi
 
-- After the PR has been merged create a git tag to create a docker image and push it to ghcr.io
+- After the PR has been merged create a git tag, it will trigger a workflow to create a docker image and push it to ghcr.io. The tag should use semantic versioning: [major.minor.patch](https://docs.npmjs.com/about-semantic-versioning)
 
 ##### Note that the pypi version and docker image version are not synced. List the git tags and make changes accordingly

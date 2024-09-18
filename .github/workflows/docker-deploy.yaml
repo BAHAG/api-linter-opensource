@@ -45,3 +45,11 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  kpi-deployment-count:
+    needs: [build-and-push-image]
+    runs-on: [self-hosted, linux, x64, gke-hosted, size-xs]
+    environment: kpi-deployment-count
+    steps:
+      - name: Deployment
+        run: echo "Successful deployed to prod - $(date)"

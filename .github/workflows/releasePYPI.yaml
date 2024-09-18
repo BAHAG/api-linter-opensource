@@ -36,3 +36,10 @@ jobs:
       run: |
         python setup.py sdist bdist_wheel
         twine upload dist/*
+  kpi-deployment-count:
+    needs: [build]
+    runs-on: [self-hosted, linux, x64, gke-hosted, size-xs]
+    environment: kpi-deployment-count
+    steps:
+      - name: Deployment
+        run: echo "Successful deployed to prod - $(date)"

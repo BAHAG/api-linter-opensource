@@ -589,6 +589,10 @@
                                 },
                                 {
                                     "title": "Product Recommendation API",
+                                    "version": "3"
+                                },
+                                {
+                                    "title": "Product Recommendation API",
                                     "version": "4"
                                 }
                             ]
@@ -631,6 +635,10 @@
                                 {
                                     "title": "Content Delivery API",
                                     "version": "1"
+                                },
+                                {
+                                    "title": "Product Recommendation API",
+                                    "version": "3"
                                 },
                                 {
                                     "title": "Product Recommendation API",

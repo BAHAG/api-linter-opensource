@@ -38,7 +38,7 @@ jobs:
         twine upload dist/*
   kpi-deployment-count:
     needs: [build]
-    runs-on: [self-hosted, linux, x64, gke-hosted, size-xs]
+    runs-on: ubuntu-latest
     environment: kpi-deployment-count
     steps:
       - name: Deployment

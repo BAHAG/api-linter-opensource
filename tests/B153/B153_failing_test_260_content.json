@@ -1,7 +1,7 @@
 {
-    "total": 16,
+    "total": 20,
     "example-errors": 0,
-    "warnings": 13,
+    "warnings": 17,
     "errors": 3,
     "logs": [
         {
@@ -71,39 +71,67 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B111",
+            "id": "B153",
+            "num_line": 10,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.JWBbPfLUZNcTLCCeKPDYxARQBmL"
+        },
+        {
+            "id": "B153",
+            "num_line": 11,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.SnWpzenbqfBqZdlaJSxFeZEEdTJh"
+        },
+        {
+            "id": "B153",
             "num_line": 12,
             "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[0]"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.StHTvBRia"
         },
         {
-            "id": "B111",
+            "id": "B153",
             "num_line": 13,
             "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[1]"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.TqXaJmUgxFqPYBowJPwxHUmgOq"
         },
         {
-            "id": "B111",
+            "id": "B153",
             "num_line": 14,
             "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[2]"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.bGqBhzzTYPiKRTfCwNNzF"
         },
         {
-            "id": "B111",
+            "id": "B153",
             "num_line": 15,
             "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[3]"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.kovvXyTbknERuErWh"
         },
         {
-            "id": "B111",
+            "id": "B153",
             "num_line": 16,
             "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[4]"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.qOQaATNkBiPEIA"
+        },
+        {
+            "id": "B153",
+            "num_line": 17,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.rSeMPHZngdKyiHJbkTUZCFfZxM"
+        },
+        {
+            "id": "B153",
+            "num_line": 18,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mhapcylgauzlypdbahpzgcannhamr.ocxzdlgzhj.ubjpskdtrzyehldpttdlmno.bhdhgrufwpmukifueskmxbayir.npikw.ogbejsed.uncbzofyxkikmdh.203.content.sylSgVRQTUyLsmmXEQTbhDkMaNV"
         }
     ],
     "metadata": {

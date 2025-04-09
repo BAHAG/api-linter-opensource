@@ -72,17 +72,17 @@
         },
         {
             "id": "B146",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./api"
+            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./api"
         },
         {
             "id": "B147",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "/api used as the base path",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./api"
+            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./api"
         }
     ],
     "metadata": {

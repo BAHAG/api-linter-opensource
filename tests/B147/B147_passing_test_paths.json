@@ -1,8 +1,8 @@
 {
-    "total": 16,
+    "total": 13,
     "example-errors": 0,
     "warnings": 8,
-    "errors": 8,
+    "errors": 5,
     "logs": [
         {
             "id": "B101",
@@ -72,38 +72,17 @@
         },
         {
             "id": "B146",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./juzlgfiajj"
+            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./gsfwtpnnwesqknabvohy"
         },
         {
             "id": "B146",
-            "num_line": 6,
+            "num_line": 12,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./kwyizcjaubqdejsgdjfatttlpcnrn"
-        },
-        {
-            "id": "B146",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./pfqfgdz"
-        },
-        {
-            "id": "B146",
-            "num_line": 8,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./rxusihsnratdxldhgkrhnwzhwr"
-        },
-        {
-            "id": "B146",
-            "num_line": 9,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".tsbsqeubjkehjqjaioxxmldkmitxf.abmwwhqatrtgcglncjzxtcwuqci.irakzfifnuoxerynqufjy.paths./zxqlqw"
+            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./ockwdvvdkjqwuuxqjtyuosnvz"
         }
     ],
     "metadata": {

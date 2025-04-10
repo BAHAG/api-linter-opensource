@@ -29,7 +29,6 @@ jobs:
       - name: Enable the universe repository and yq repository
         run: |
             sudo add-apt-repository universe
-            sudo add-apt-repository ppa:rmescandon/yq
 
       - name: Install required dependencies
         run: | 

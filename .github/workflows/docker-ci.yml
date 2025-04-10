@@ -13,7 +13,7 @@ env:
 
 jobs:
   local-dev-test-linter:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, gke-hosted, size-m]
     permissions:
       contents: read
       packages: write

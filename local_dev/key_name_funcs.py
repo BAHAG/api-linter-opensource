@@ -61,7 +61,7 @@ def check_keys_pattern_log(spec, yq_path, message, severity, logger, id, key, pa
         return
     for s_key, s_value in spec.items():
         tmp = f'."{s_key}"'
-        if not re.match(pattern, f"{s_key.replace('{', '').replace('}', '')}"):
+        if not re.search(pattern, f"{s_key.replace('{', '').replace('}', '')}"):
             line_num = get_line_number_key(yq_path + tmp, logger)
             logger.log_with_line_number_key(line_num, severity, message, id, yq_path + tmp)
 

@@ -25,6 +25,27 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enable the universe repository and yq repository
+        run: |
+            sudo add-apt-repository universe
+
+      - name: Install required dependencies
+        run: | 
+              sudo apt-get update -y
+              sudo apt-get install -y build-essential python3-dev wget
+
+      - name: Install yq
+        run: |
+          VERSION=v4.34.1
+          BINARY=yq_linux_amd64
+          wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}.tar.gz -O - | tar xz && sudo mv ${BINARY} /usr/bin/yq
+
+      - name: Install pip3
+        run: sudo apt-get install python3-pip -y --fix-missing
+
+      - name: install setuptools
+        run: pip3 install wheel setuptools cython
       
       - name: install packages
         run: pip3 install -r requirements.txt

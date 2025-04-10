@@ -1,8 +1,8 @@
 {
-    "total": 11,
+    "total": 12,
     "example-errors": 0,
     "warnings": 8,
-    "errors": 3,
+    "errors": 4,
     "logs": [
         {
             "id": "B101",
@@ -69,6 +69,13 @@
             "key": "info.x-audience",
             "severity": "ERROR",
             "message": "info.x-audience is not present"
+        },
+        {
+            "id": "B148",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "Path is not normalized",
+            "key": ".wtzlaerbwlh.mwfhoadyefijxhvqqtxsrffpmcox.motyvdak.ldbdbuewgmubzimsv.ifsoxbwambcudbujaj.paths.//all/"
         }
     ],
     "metadata": {

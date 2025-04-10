@@ -71,60 +71,60 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B146",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./cvksojiltuplvxyjnaleajuf"
-        },
-        {
-            "id": "B146",
-            "num_line": 8,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./eqcbmwnmscivcbexj"
-        },
-        {
-            "id": "B146",
+            "id": "B126",
             "num_line": 9,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./kajfbjnwqojf"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.ArTUibpbSoeRCSAZuOWSTKaybJjkO"
         },
         {
-            "id": "B146",
+            "id": "B126",
             "num_line": 10,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./ldnrgvzerdkzuzyoxpli"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.EEoxoBhjSAqjiaagQihnXaRuIp"
         },
         {
-            "id": "B146",
+            "id": "B126",
             "num_line": 11,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./nbfrmeemez"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.IrFrRAFjVqGwxGjhEND"
         },
         {
-            "id": "B146",
+            "id": "B126",
             "num_line": 12,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./pbksseujzafunpxgxgjgje"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.TbtePraq"
         },
         {
-            "id": "B146",
+            "id": "B126",
             "num_line": 13,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./tzkczycyzlzubdfvyvp"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.cBxWfNVLmTsYcytBrU"
         },
         {
-            "id": "B146",
+            "id": "B126",
             "num_line": 14,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./ummtmqcanjclwwc"
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.cPTRSLChXqDxybSLogkrjEjfyGLq"
+        },
+        {
+            "id": "B126",
+            "num_line": 15,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.eQGJSFlMBaYPoyBSCnwjwtO"
+        },
+        {
+            "id": "B126",
+            "num_line": 16,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".mwnyspnwxov.xehwsvdg.jjjzxnkdecczzdg.akiysvfl.jfmxqxpbthpwpqacy.pjycloctkek.437.content.pRDYZez"
         }
     ],
     "metadata": {

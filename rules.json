@@ -623,10 +623,10 @@
                     "key_name": "paths",
                     "checks": [
                         {
-                            "check_keys_pattern": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)(?:/|$))",
+                            "check_keys_pattern": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register|consent)(?:/|$))",
                             "message": "Pluralize resource names",
                             "name": "check_keys_pattern",
-                            "value": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)(?:/|$))",
+                            "value": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register|consent)(?:/|$))",
                             "exceptions": [
                                 {
                                     "title": "GUID Generator API",

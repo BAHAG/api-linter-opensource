@@ -1,0 +1,138 @@
+{
+    "total": 17,
+    "example-errors": 0,
+    "warnings": 14,
+    "errors": 3,
+    "logs": [
+        {
+            "id": "B101",
+            "key": "openapi",
+            "severity": "ERROR",
+            "message": "Open API version not specified"
+        },
+        {
+            "id": "B105",
+            "key": "info.title",
+            "severity": "WARN",
+            "message": "API name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.description",
+            "severity": "WARN",
+            "message": "API description not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact",
+            "severity": "WARN",
+            "message": "Contact of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.name",
+            "severity": "WARN",
+            "message": "Name of the responsible team not present or does not contain official team abbreviation"
+        },
+        {
+            "id": "B105",
+            "key": "info.contact.url",
+            "severity": "WARN",
+            "message": "URL of the responsible team not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-channel",
+            "severity": "WARN",
+            "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-alerting",
+            "severity": "WARN",
+            "message": "Alerting field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-monitoring",
+            "severity": "WARN",
+            "message": "Monitoring field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-apigee-proxy",
+            "severity": "WARN",
+            "message": "Apigee proxy name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-business-critical",
+            "severity": "WARN",
+            "message": "Business critical field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-authentication-method",
+            "severity": "WARN",
+            "message": "Authentication method not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-data-types",
+            "severity": "WARN",
+            "message": "Data types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-gdpr",
+            "severity": "WARN",
+            "message": "GDPR field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-restrictions",
+            "severity": "WARN",
+            "message": "Restrictions field not present"
+        },
+        {
+            "id": "B106",
+            "key": "info.version",
+            "severity": "ERROR",
+            "message": "API specification version not present"
+        },
+        {
+            "id": "B108",
+            "key": "info.x-audience",
+            "severity": "ERROR",
+            "message": "info.x-audience is not present"
+        }
+    ],
+    "metadata": {
+        "x-audience": null,
+        "x-channel": null,
+        "x-sunset-date": null,
+        "x-shutdown-date": null,
+        "openapi": null,
+        "x-monitoring": null,
+        "x-alerting": null,
+        "x-announcement": null,
+        "x-apigee-proxy": null,
+        "x-business-critical": null,
+        "x-authentication-method": null,
+        "x-data-types": null,
+        "x-gdpr": null,
+        "x-touchpoints-types": "consumerapp,onlineshop,onlineshop,salesapp,salesapp,salesapp,consumerapp,onlineshop,consumerapp,salesapp,consumerapp,salesapp",
+        "x-restrictions": null,
+        "supported-countries": [
+            "all"
+        ],
+        "supported-countries-length": 1,
+        "supported-languages": [
+            "N/A"
+        ],
+        "supported-languages-length": 1,
+        "domain_name": "-",
+        "domain_model": "-",
+        "domain_version": "-"
+    }
+}

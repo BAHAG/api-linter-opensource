@@ -1,7 +1,7 @@
 {
-    "total": 16,
+    "total": 21,
     "example-errors": 0,
-    "warnings": 13,
+    "warnings": 18,
     "errors": 3,
     "logs": [
         {
@@ -32,7 +32,7 @@
             "id": "B105",
             "key": "info.contact.name",
             "severity": "WARN",
-            "message": "Name of the responsible team not present"
+            "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
@@ -59,6 +59,48 @@
             "message": "Monitoring field for the api not present"
         },
         {
+            "id": "B105",
+            "key": "info.x-apigee-proxy",
+            "severity": "WARN",
+            "message": "Apigee proxy name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-business-critical",
+            "severity": "WARN",
+            "message": "Business critical field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-authentication-method",
+            "severity": "WARN",
+            "message": "Authentication method not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-data-types",
+            "severity": "WARN",
+            "message": "Data types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-gdpr",
+            "severity": "WARN",
+            "message": "GDPR field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-touchpoints-types",
+            "severity": "WARN",
+            "message": "Touchpoints types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-restrictions",
+            "severity": "WARN",
+            "message": "Restrictions field not present"
+        },
+        {
             "id": "B106",
             "key": "info.version",
             "severity": "ERROR",
@@ -72,38 +114,24 @@
         },
         {
             "id": "B111",
-            "num_line": 12,
+            "num_line": 8,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[0]"
+            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[0]"
         },
         {
             "id": "B111",
-            "num_line": 13,
+            "num_line": 9,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[1]"
+            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[1]"
         },
         {
             "id": "B111",
-            "num_line": 14,
+            "num_line": 10,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[2]"
-        },
-        {
-            "id": "B111",
-            "num_line": 15,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[3]"
-        },
-        {
-            "id": "B111",
-            "num_line": 16,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ayeaxsasvzysqdpcuhlckqbvz.jfdhoptmqkpsyer.acbzgdekqhfhdqk.letvqq.uwwoqcoov.rnozdnjhucdxrp.rrjmhhoyprenksdgwylwtmdhzdh.wjontukphzmdrairwjsgglmyuhrym.lirfikofhvohas.schemas.enum.[4]"
+            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[2]"
         }
     ],
     "metadata": {
@@ -115,6 +143,13 @@
         "x-monitoring": null,
         "x-alerting": null,
         "x-announcement": null,
+        "x-apigee-proxy": null,
+        "x-business-critical": null,
+        "x-authentication-method": null,
+        "x-data-types": null,
+        "x-gdpr": null,
+        "x-touchpoints-types": null,
+        "x-restrictions": null,
         "supported-countries": [
             "all"
         ],

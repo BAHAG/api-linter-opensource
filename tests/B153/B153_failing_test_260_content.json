@@ -1,7 +1,7 @@
 {
-    "total": 20,
+    "total": 27,
     "example-errors": 0,
-    "warnings": 17,
+    "warnings": 24,
     "errors": 3,
     "logs": [
         {
@@ -32,7 +32,7 @@
             "id": "B105",
             "key": "info.contact.name",
             "severity": "WARN",
-            "message": "Name of the responsible team not present"
+            "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
@@ -57,6 +57,48 @@
             "key": "info.x-monitoring",
             "severity": "WARN",
             "message": "Monitoring field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-apigee-proxy",
+            "severity": "WARN",
+            "message": "Apigee proxy name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-business-critical",
+            "severity": "WARN",
+            "message": "Business critical field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-authentication-method",
+            "severity": "WARN",
+            "message": "Authentication method not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-data-types",
+            "severity": "WARN",
+            "message": "Data types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-gdpr",
+            "severity": "WARN",
+            "message": "GDPR field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-touchpoints-types",
+            "severity": "WARN",
+            "message": "Touchpoints types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-restrictions",
+            "severity": "WARN",
+            "message": "Restrictions field not present"
         },
         {
             "id": "B106",
@@ -143,6 +185,13 @@
         "x-monitoring": null,
         "x-alerting": null,
         "x-announcement": null,
+        "x-apigee-proxy": null,
+        "x-business-critical": null,
+        "x-authentication-method": null,
+        "x-data-types": null,
+        "x-gdpr": null,
+        "x-touchpoints-types": null,
+        "x-restrictions": null,
         "supported-countries": [
             "all"
         ],

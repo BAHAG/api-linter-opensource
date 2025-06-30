@@ -41,7 +41,9 @@ def allowed_values(path, allowed):
     # choose one of the allowed values
     passing_str = create_path(path, random.choices(allowed)[0])
     # mash up all the values
-    failing_str = create_path(path, "".join(allowed))
+    allowed_sanitized = [str(x) for x in allowed]
+    
+    failing_str = create_path(path, "".join(allowed_sanitized))
     return passing_str, failing_str
 
 def gte(path, str_val):

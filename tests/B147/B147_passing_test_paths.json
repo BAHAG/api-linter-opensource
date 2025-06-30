@@ -1,8 +1,8 @@
 {
-    "total": 13,
+    "total": 21,
     "example-errors": 0,
-    "warnings": 8,
-    "errors": 5,
+    "warnings": 15,
+    "errors": 6,
     "logs": [
         {
             "id": "B101",
@@ -32,7 +32,7 @@
             "id": "B105",
             "key": "info.contact.name",
             "severity": "WARN",
-            "message": "Name of the responsible team not present"
+            "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
@@ -59,6 +59,48 @@
             "message": "Monitoring field for the api not present"
         },
         {
+            "id": "B105",
+            "key": "info.x-apigee-proxy",
+            "severity": "WARN",
+            "message": "Apigee proxy name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-business-critical",
+            "severity": "WARN",
+            "message": "Business critical field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-authentication-method",
+            "severity": "WARN",
+            "message": "Authentication method not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-data-types",
+            "severity": "WARN",
+            "message": "Data types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-gdpr",
+            "severity": "WARN",
+            "message": "GDPR field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-touchpoints-types",
+            "severity": "WARN",
+            "message": "Touchpoints types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-restrictions",
+            "severity": "WARN",
+            "message": "Restrictions field not present"
+        },
+        {
             "id": "B106",
             "key": "info.version",
             "severity": "ERROR",
@@ -72,17 +114,24 @@
         },
         {
             "id": "B146",
-            "num_line": 11,
+            "num_line": 4,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./gsfwtpnnwesqknabvohy"
+            "key": ".kksuqpkiutiwearak.udwbgmmkr.paths./auuvnchuwrrkapif"
         },
         {
             "id": "B146",
-            "num_line": 12,
+            "num_line": 5,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".fjhin.hjxcxldgemxjiljyizfqle.weijtfrhytbyucfxvch.ygotvwgwegvxgqcfdhycqbitg.zbejcrfwyegvveptb.jynutsamchwmeiuesxjdpp.hnmxhrjoauuxzxqdstwkxlb.jibjyeznhrcm.phdcddzikivjrueuqy.paths./ockwdvvdkjqwuuxqjtyuosnvz"
+            "key": ".kksuqpkiutiwearak.udwbgmmkr.paths./fuelxxcexj"
+        },
+        {
+            "id": "B146",
+            "num_line": 6,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".kksuqpkiutiwearak.udwbgmmkr.paths./rvgeljszhstpdpxuitcj"
         }
     ],
     "metadata": {
@@ -94,6 +143,13 @@
         "x-monitoring": null,
         "x-alerting": null,
         "x-announcement": null,
+        "x-apigee-proxy": null,
+        "x-business-critical": null,
+        "x-authentication-method": null,
+        "x-data-types": null,
+        "x-gdpr": null,
+        "x-touchpoints-types": null,
+        "x-restrictions": null,
         "supported-countries": [
             "all"
         ],

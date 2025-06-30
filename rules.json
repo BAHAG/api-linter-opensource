@@ -7,7 +7,14 @@
         "openapi",
         "info.x-monitoring",
         "info.x-alerting",
-        "info.x-announcement"
+        "info.x-announcement",
+        "info.x-apigee-proxy",
+        "info.x-business-critical",
+        "info.x-authentication-method",
+        "info.x-data-types",
+        "info.x-gdpr",
+        "info.x-touchpoints-types",
+        "info.x-restrictions"
     ],
     "rules": [
         {
@@ -69,7 +76,7 @@
                 },
                 {
                     "required_path": "info.contact.name",
-                    "message": "Name of the responsible team not present",
+                    "message": "Name of the responsible team not present or does not contain official team abbreviation",
                     "checks": [],
                     "path_value": "info.contact.name",
                     "path_name": "required_path"
@@ -100,6 +107,115 @@
                     "message": "Monitoring field for the api not present",
                     "checks": [],
                     "path_value": "info.x-monitoring",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-apigee-proxy",
+                    "message": "Apigee proxy name not present",
+                    "checks": [],
+                    "path_value": "info.x-apigee-proxy",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-business-critical",
+                    "message": "Business critical field not present",
+                    "checks": [
+                        {
+                            "allowed_values": [
+                                false,
+                                true
+                            ],
+                            "message": "Value of info.x-business-critical must be 'false' or 'true'",
+                            "name": "allowed_values",
+                            "value": [
+                                false,
+                                true
+                            ]
+                        }
+                    ],
+                    "path_value": "info.x-business-critical",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-authentication-method",
+                    "message": "Authentication method not present",
+                    "checks": [
+                        {
+                            "pattern": "^(apikey|oauth2|apikey,oauth2|oauth2,apikey)$",
+                            "message": "Value of info.x-authentication-method must be 'apikey', 'oauth2', or 'apikey,oauth2'",
+                            "name": "pattern",
+                            "value": "^(apikey|oauth2|apikey,oauth2|oauth2,apikey)$"
+                        }
+                    ],
+                    "path_value": "info.x-authentication-method",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-data-types",
+                    "message": "Data types field not present",
+                    "checks": [
+                        {
+                            "pattern": "^(customer|article|order|price|employee|invoice|store|other)(,(customer|article|order|price|employee|invoice|store|other))*$",
+                            "message": "Value of info.x-data-types must contain valid data types: 'customer', 'article', 'order', 'price', 'employee', 'invoice', 'store', 'other'",
+                            "name": "pattern",
+                            "value": "^(customer|article|order|price|employee|invoice|store|other)(,(customer|article|order|price|employee|invoice|store|other))*$"
+                        }
+                    ],
+                    "path_value": "info.x-data-types",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-gdpr",
+                    "message": "GDPR field not present",
+                    "checks": [
+                        {
+                            "allowed_values": [
+                                false,
+                                true
+                            ],
+                            "message": "Value of info.x-gdpr must be 'false' or 'true'",
+                            "name": "allowed_values",
+                            "value": [
+                                false,
+                                true
+                            ]
+                        }
+                    ],
+                    "path_value": "info.x-gdpr",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-touchpoints-types",
+                    "message": "Touchpoints types field not present",
+                    "checks": [
+                        {
+                            "pattern": "^(consumerapp|salesapp|onlineshop)(,(consumerapp|salesapp|onlineshop))*$",
+                            "message": "Value of info.x-touchpoints-types must contain valid touchpoint types: 'consumerapp', 'salesapp', 'onlineshop'",
+                            "name": "pattern",
+                            "value": "^(consumerapp|salesapp|onlineshop)(,(consumerapp|salesapp|onlineshop))*$"
+                        }
+                    ],
+                    "path_value": "info.x-touchpoints-types",
+                    "path_name": "required_path"
+                },
+                {
+                    "required_path": "info.x-restrictions",
+                    "message": "Restrictions field not present",
+                    "checks": [
+                        {
+                            "allowed_values": [
+                                false,
+                                true
+                            ],
+                            "message": "Value of info.x-restrictions must be 'false' or 'true'",
+                            "name": "allowed_values",
+                            "value": [
+                                false,
+                                true
+                            ]
+                        }
+                    ],
+                    "path_value": "info.x-restrictions",
                     "path_name": "required_path"
                 }
             ]
@@ -586,14 +702,6 @@
                                 {
                                     "title": "Cart Masterdata API",
                                     "version": "1"
-                                },
-                                {
-                                    "title": "Product Recommendation API",
-                                    "version": "3"
-                                },
-                                {
-                                    "title": "Product Recommendation API",
-                                    "version": "4"
                                 }
                             ]
                         }
@@ -623,10 +731,10 @@
                     "key_name": "paths",
                     "checks": [
                         {
-                            "check_keys_pattern": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register|consent)(?:/|$))",
+                            "check_keys_pattern": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)(?:/|$))",
                             "message": "Pluralize resource names",
                             "name": "check_keys_pattern",
-                            "value": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register|consent)(?:/|$))",
+                            "value": "(?:/[^/]*s(?:/|$)|/(?:purge-api|purge-cdn|health|invrpt|purge-chache|change-personal-data|blacklist|verify|delete-account|change-password|change-email|paymentmode|locker|availability|cancel|delivery|validatecreditcard|payment|announce|min|all|cart|login|stock|shipment-state|logout|refresh-token|activation|reset-password|provisioning-time|newsletter-subscription|forgot-password|tracking|opening-hour-forecast|register)(?:/|$))",
                             "exceptions": [
                                 {
                                     "title": "GUID Generator API",
@@ -637,12 +745,8 @@
                                     "version": "1"
                                 },
                                 {
-                                    "title": "Product Recommendation API",
-                                    "version": "3"
-                                },
-                                {
-                                    "title": "Product Recommendation API",
-                                    "version": "4"
+                                    "title": "Content Delivery API",
+                                    "version": "2"
                                 }
                             ]
                         }

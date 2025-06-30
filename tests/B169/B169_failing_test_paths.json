@@ -1,8 +1,8 @@
 {
     "total": 27,
     "example-errors": 0,
-    "warnings": 17,
-    "errors": 10,
+    "warnings": 20,
+    "errors": 7,
     "logs": [
         {
             "id": "B101",
@@ -32,7 +32,7 @@
             "id": "B105",
             "key": "info.contact.name",
             "severity": "WARN",
-            "message": "Name of the responsible team not present"
+            "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
@@ -59,6 +59,48 @@
             "message": "Monitoring field for the api not present"
         },
         {
+            "id": "B105",
+            "key": "info.x-apigee-proxy",
+            "severity": "WARN",
+            "message": "Apigee proxy name not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-business-critical",
+            "severity": "WARN",
+            "message": "Business critical field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-authentication-method",
+            "severity": "WARN",
+            "message": "Authentication method not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-data-types",
+            "severity": "WARN",
+            "message": "Data types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-gdpr",
+            "severity": "WARN",
+            "message": "GDPR field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-touchpoints-types",
+            "severity": "WARN",
+            "message": "Touchpoints types field not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-restrictions",
+            "severity": "WARN",
+            "message": "Restrictions field not present"
+        },
+        {
             "id": "B106",
             "key": "info.version",
             "severity": "ERROR",
@@ -72,115 +114,66 @@
         },
         {
             "id": "B146",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./din/nmobvtaqeyqrp-npu/bckrdmxvbkjxacelofff/eyxttl/ayywo/hkfzgrg/smhfgvjcygsh/iqqnogsjkwauovhxpmm"
-        },
-        {
-            "id": "B146",
-            "num_line": 8,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./eqcfsjnfsqqgmuqd/eho/rggj/srrdsfikjwa/tjlaqkdvtaxgdcabohl/n/yfohyhuwhjcmdug/ypu"
-        },
-        {
-            "id": "B146",
-            "num_line": 9,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./gjfdo-bndnaaoj/-qflghh/uwnk--hpdcezyehcfdzo/wxnc-ytttmotku/iwzgez/hhpxrpdulmvw/vvdlrcycxtghu-rk/prhkbjblbpczuv"
-        },
-        {
-            "id": "B146",
             "num_line": 11,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./krnxeblgogavtqex/gquufmvp/eyfqkgmh-dnv/seifprahswmuqeleelkm/foog/zj/htwltokaqgeyivgx/mdvcjutv-ecyghnsml"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./cgarvppcuhedqep-ogz/knckhejbfrx/pn/pipvckgqd/xguuwt/xhklunohekex/uh-hdjtudajtsqbotvcp/pixedfek-xcouy"
         },
         {
             "id": "B146",
             "num_line": 12,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./mhc-wszunpec/vwuaeu/mvpltpay-mq-neloisku/zw/-difzd/njgmgbfhqpragvyy/spthhbbim/jdnfsekrzpasfvq"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./kd-tpvzodkaeayv/tawatmxdjztslfhpyq/fz/ktrft/uczztkggguokmp-texr/-ug/-towghnthdmjx/wtxcrtifkysljmdugjib"
         },
         {
             "id": "B146",
             "num_line": 13,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./nhic/vzqkctlnc-tiftlq/ba/pxlqsxnkjdqsjnolzf/d/xoq-vl/wtqgbdpcibt/sagriddxuu"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./oqxfb/jeg--mu/r-kddxwgximhpctgcve/sbrtylfitnkmxch/y/ugyiurliatfh/tvokdq/fshiqjazbbxden"
         },
         {
             "id": "B146",
             "num_line": 14,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./nsqc/ydj-dyzqpyultqsrjftm/udrripdvsksiy/-pdynnp-xtpkezbopnc/xx/d-ucisypqleb-fgxvq/zxojzeznkya-ayp/sbckyrsel"
-        },
-        {
-            "id": "B169",
-            "num_line": 7,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./din/nmobvtaqeyqrp-npu/bckrdmxvbkjxacelofff/eyxttl/ayywo/hkfzgrg/smhfgvjcygsh/iqqnogsjkwauovhxpmm"
-        },
-        {
-            "id": "B169",
-            "num_line": 8,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./eqcfsjnfsqqgmuqd/eho/rggj/srrdsfikjwa/tjlaqkdvtaxgdcabohl/n/yfohyhuwhjcmdug/ypu"
-        },
-        {
-            "id": "B169",
-            "num_line": 9,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./gjfdo-bndnaaoj/-qflghh/uwnk--hpdcezyehcfdzo/wxnc-ytttmotku/iwzgez/hhpxrpdulmvw/vvdlrcycxtghu-rk/prhkbjblbpczuv"
-        },
-        {
-            "id": "B169",
-            "num_line": 10,
-            "severity": "WARN",
-            "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./infkjhu/dkvngteawebkdsywefk/gbkj/evhwhpd/otipuim-hnvu/tjhaitwe-gktw/jrsgxtwbdh/iffehvez-zjja-vs"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./tahyamybxt/sjdcj-m/cwpocvy/ybirgdtbmckofyqznoq/ab-glaenonpe/rnwxynbq-fypu/hro/qeikdsybdhwsm"
         },
         {
             "id": "B169",
             "num_line": 11,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./krnxeblgogavtqex/gquufmvp/eyfqkgmh-dnv/seifprahswmuqeleelkm/foog/zj/htwltokaqgeyivgx/mdvcjutv-ecyghnsml"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./cgarvppcuhedqep-ogz/knckhejbfrx/pn/pipvckgqd/xguuwt/xhklunohekex/uh-hdjtudajtsqbotvcp/pixedfek-xcouy"
         },
         {
             "id": "B169",
             "num_line": 12,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./mhc-wszunpec/vwuaeu/mvpltpay-mq-neloisku/zw/-difzd/njgmgbfhqpragvyy/spthhbbim/jdnfsekrzpasfvq"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./kd-tpvzodkaeayv/tawatmxdjztslfhpyq/fz/ktrft/uczztkggguokmp-texr/-ug/-towghnthdmjx/wtxcrtifkysljmdugjib"
         },
         {
             "id": "B169",
             "num_line": 13,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./nhic/vzqkctlnc-tiftlq/ba/pxlqsxnkjdqsjnolzf/d/xoq-vl/wtqgbdpcibt/sagriddxuu"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./oqxfb/jeg--mu/r-kddxwgximhpctgcve/sbrtylfitnkmxch/y/ugyiurliatfh/tvokdq/fshiqjazbbxden"
         },
         {
             "id": "B169",
             "num_line": 14,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./nsqc/ydj-dyzqpyultqsrjftm/udrripdvsksiy/-pdynnp-xtpkezbopnc/xx/d-ucisypqleb-fgxvq/zxojzeznkya-ayp/sbckyrsel"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./tahyamybxt/sjdcj-m/cwpocvy/ybirgdtbmckofyqznoq/ab-glaenonpe/rnwxynbq-fypu/hro/qeikdsybdhwsm"
         },
         {
             "id": "B169",
             "num_line": 15,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".xebbfvsqwqn.zbkxvyzdfht.yucjrrcdsqs.crxlfmknpm.bqtyjv.paths./pcpp-ibdggxxfzqztl/s/jgllji/wueapdlhe/lpnvgaltwbtmxawgoy/d-euh-zmcndhbweyo/-lynkvktfpvu/vtmwdov-eeg"
+            "key": ".wuyahmostc.zqnhilbyluwgpibjpshbn.wbeigrbqldtt.nyvefvaamgbaobcvea.lfnuqkncxyjjtftrmjd.unetnahyjyebgoloszbui.mvyowdcxhqmuggxsrkvsbmq.aubbpbxugyjqe.vmbvpdunfsxxclp.paths./xwmhipejotrynyjsay/iwxxl-dhssn-oakqwd/kqq--/my/onryv/sggpvgceudiageuz/eoliod/vls-hdgnyms"
         }
     ],
     "metadata": {
@@ -192,6 +185,13 @@
         "x-monitoring": null,
         "x-alerting": null,
         "x-announcement": null,
+        "x-apigee-proxy": null,
+        "x-business-critical": null,
+        "x-authentication-method": null,
+        "x-data-types": null,
+        "x-gdpr": null,
+        "x-touchpoints-types": null,
+        "x-restrictions": null,
         "supported-countries": [
             "all"
         ],

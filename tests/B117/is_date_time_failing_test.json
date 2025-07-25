@@ -1,8 +1,8 @@
 {
     "total": 19,
     "example-errors": 0,
-    "warnings": 16,
-    "errors": 3,
+    "warnings": 1,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -13,91 +13,91 @@
         {
             "id": "B105",
             "key": "info.title",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API name not present"
         },
         {
             "id": "B105",
             "key": "info.description",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API description not present"
         },
         {
             "id": "B105",
             "key": "info.contact",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Contact of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.contact.name",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
             "key": "info.contact.url",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "URL of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.x-channel",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Teams channel for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-alerting",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Alerting field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-monitoring",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Monitoring field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-apigee-proxy",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Apigee proxy name not present"
         },
         {
             "id": "B105",
             "key": "info.x-business-critical",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Business critical field not present"
         },
         {
             "id": "B105",
             "key": "info.x-authentication-method",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Authentication method not present"
         },
         {
             "id": "B105",
             "key": "info.x-data-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Data types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-gdpr",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "GDPR field not present"
         },
         {
             "id": "B105",
             "key": "info.x-touchpoints-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Touchpoints types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-restrictions",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Restrictions field not present"
         },
         {
@@ -114,10 +114,10 @@
         },
         {
             "id": "B117",
-            "num_line": 7,
+            "num_line": 6,
             "severity": "WARN",
             "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".m5p6kjph.ge1fvxpl0zxx8bv3g3r.o6h.ncaaqmw89gxton.k9rh7lr7z.tkpowy3e.check"
+            "key": ".zfx7ahwbbt9ymnpkvn.vzmqxoq3dddg.ob0g3_2cut.rofg._lly1ppxd.check"
         }
     ],
     "metadata": {

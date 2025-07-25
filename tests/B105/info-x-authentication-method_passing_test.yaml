@@ -1,2 +1,2 @@
 info:
-  x-authentication-method: oauth2
+  x-authentication-method: apikey,oauth2

@@ -1,8 +1,8 @@
 {
-    "total": 26,
+    "total": 32,
     "example-errors": 0,
-    "warnings": 15,
-    "errors": 11,
+    "warnings": 0,
+    "errors": 32,
     "logs": [
         {
             "id": "B101",
@@ -13,91 +13,91 @@
         {
             "id": "B105",
             "key": "info.title",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API name not present"
         },
         {
             "id": "B105",
             "key": "info.description",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API description not present"
         },
         {
             "id": "B105",
             "key": "info.contact",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Contact of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.contact.name",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
             "key": "info.contact.url",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "URL of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.x-channel",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Teams channel for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-alerting",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Alerting field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-monitoring",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Monitoring field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-apigee-proxy",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Apigee proxy name not present"
         },
         {
             "id": "B105",
             "key": "info.x-business-critical",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Business critical field not present"
         },
         {
             "id": "B105",
             "key": "info.x-authentication-method",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Authentication method not present"
         },
         {
             "id": "B105",
             "key": "info.x-data-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Data types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-gdpr",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "GDPR field not present"
         },
         {
             "id": "B105",
             "key": "info.x-touchpoints-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Touchpoints types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-restrictions",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Restrictions field not present"
         },
         {
@@ -114,59 +114,101 @@
         },
         {
             "id": "B146",
+            "num_line": 6,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths.//-ak-vbj/"
+        },
+        {
+            "id": "B146",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths.//oyqkky//"
+        },
+        {
+            "id": "B146",
+            "num_line": 8,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./bfhankincunvpl/"
+        },
+        {
+            "id": "B146",
+            "num_line": 9,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./mafrwajyit/"
+        },
+        {
+            "id": "B146",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./obplajwr-snggmmk//"
+        },
+        {
+            "id": "B146",
             "num_line": 11,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths.//dmebowup//"
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./pnnwfxely/"
         },
         {
             "id": "B146",
             "num_line": 12,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./dnq//"
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./yabi-//"
         },
         {
-            "id": "B146",
-            "num_line": 13,
+            "id": "B148",
+            "num_line": 6,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./nfuikm//"
+            "message": "Path is not normalized",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths.//-ak-vbj/"
         },
         {
-            "id": "B146",
-            "num_line": 14,
+            "id": "B148",
+            "num_line": 7,
             "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./zue/l//"
+            "message": "Path is not normalized",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths.//oyqkky//"
+        },
+        {
+            "id": "B148",
+            "num_line": 8,
+            "severity": "ERROR",
+            "message": "Path is not normalized",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./bfhankincunvpl/"
+        },
+        {
+            "id": "B148",
+            "num_line": 9,
+            "severity": "ERROR",
+            "message": "Path is not normalized",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./mafrwajyit/"
+        },
+        {
+            "id": "B148",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "Path is not normalized",
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./obplajwr-snggmmk//"
         },
         {
             "id": "B148",
             "num_line": 11,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths.//dmebowup//"
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./pnnwfxely/"
         },
         {
             "id": "B148",
             "num_line": 12,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./dnq//"
-        },
-        {
-            "id": "B148",
-            "num_line": 13,
-            "severity": "ERROR",
-            "message": "Path is not normalized",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./nfuikm//"
-        },
-        {
-            "id": "B148",
-            "num_line": 14,
-            "severity": "ERROR",
-            "message": "Path is not normalized",
-            "key": ".yotzvqafjwgjegc.pgjtoiwhgylovbwkluam.ewgkvhvqzosxbi.ribbolcblols.upzafzwsyenpfnxfvxoupmkdbsi.oegxdhmtlqsfkaydxcu.enrxznkkzlhxczwibnmwaqh.efmzcizsjyuyajtoftzfkueen.uiymcrnxttwekqyst.paths./zue/l//"
+            "key": ".uwnuzhmvuwlasgz.hqggbphbjdhrnwfslpoklpzveygx.ckcjnadbwfkbgaouz.eqzpkulwthulisjwbg.paths./yabi-//"
         }
     ],
     "metadata": {

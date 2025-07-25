@@ -1,8 +1,8 @@
 {
     "total": 21,
     "example-errors": 0,
-    "warnings": 18,
-    "errors": 3,
+    "warnings": 3,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -13,91 +13,91 @@
         {
             "id": "B105",
             "key": "info.title",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API name not present"
         },
         {
             "id": "B105",
             "key": "info.description",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "API description not present"
         },
         {
             "id": "B105",
             "key": "info.contact",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Contact of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.contact.name",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Name of the responsible team not present or does not contain official team abbreviation"
         },
         {
             "id": "B105",
             "key": "info.contact.url",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "URL of the responsible team not present"
         },
         {
             "id": "B105",
             "key": "info.x-channel",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Teams channel for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-alerting",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Alerting field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-monitoring",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Monitoring field for the api not present"
         },
         {
             "id": "B105",
             "key": "info.x-apigee-proxy",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Apigee proxy name not present"
         },
         {
             "id": "B105",
             "key": "info.x-business-critical",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Business critical field not present"
         },
         {
             "id": "B105",
             "key": "info.x-authentication-method",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Authentication method not present"
         },
         {
             "id": "B105",
             "key": "info.x-data-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Data types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-gdpr",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "GDPR field not present"
         },
         {
             "id": "B105",
             "key": "info.x-touchpoints-types",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Touchpoints types field not present"
         },
         {
             "id": "B105",
             "key": "info.x-restrictions",
-            "severity": "WARN",
+            "severity": "ERROR",
             "message": "Restrictions field not present"
         },
         {
@@ -114,24 +114,24 @@
         },
         {
             "id": "B111",
-            "num_line": 8,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[0]"
-        },
-        {
-            "id": "B111",
             "num_line": 9,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[1]"
+            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[0]"
         },
         {
             "id": "B111",
             "num_line": 10,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".suwzub.ojbufiioc.hrrpleqvatqletbw.kdivjhfsnlkvngqcqlqxawgop.ynnjflkw.schemas.enum.[2]"
+            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[1]"
+        },
+        {
+            "id": "B111",
+            "num_line": 11,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[2]"
         }
     ],
     "metadata": {

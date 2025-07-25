@@ -49,7 +49,7 @@
         {
             "id": "B105",
             "description": "Contain api meta information",
-            "severity": "WARN",
+            "severity": "ERROR",
             "specification-type": "OPENAPI",
             "specification-version": "ALL",
             "paths": [

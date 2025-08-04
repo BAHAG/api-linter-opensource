@@ -64,7 +64,7 @@ def main(spec_file="sample.yaml", rule_file="rules.json", output_fmt="json"):
             # if the path is required, and it does not exist log and skip checks
             if path_name == "required_path":
                 parsed_path, line_number, _ = parse_required_path(required_path, yaml_spec)
-                if not parsed_path:
+                if not line_number:
                     error_logger.log_with_property(required_path, severity, path_obj.get("message"), id)
                     continue
             # path object can have multiple checks
@@ -117,10 +117,10 @@ def main(spec_file="sample.yaml", rule_file="rules.json", output_fmt="json"):
 def run_linter(spec_file, rule_file, output_fmt):
     # create a .env file to save global objects
     with open(Path.home()/".env", "w") as ev:
-        ev.write(f"SPEC_FILE={args.spec}")
+        ev.write(f"SPEC_FILE={spec_file}")
     # strip .yaml from filename
-    output_file_name = args.spec.split(".")[0]
-    error_logger.set_file_name_and_format(output_file_name, args.output)
+    output_file_name = spec_file.split(".")[0]
+    error_logger.set_file_name_and_format(output_file_name, output_fmt)
     main(spec_file, rule_file, output_fmt)
 
 if __name__ == "__main__":

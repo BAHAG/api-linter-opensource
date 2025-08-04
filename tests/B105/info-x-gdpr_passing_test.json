@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -84,12 +84,6 @@
         },
         {
             "id": "B105",
-            "key": "info.x-gdpr",
-            "severity": "ERROR",
-            "message": "GDPR field not present"
-        },
-        {
-            "id": "B105",
             "key": "info.x-touchpoints-types",
             "severity": "ERROR",
             "message": "Touchpoints types field not present"
@@ -126,7 +120,7 @@
         "x-business-critical": null,
         "x-authentication-method": null,
         "x-data-types": null,
-        "x-gdpr": null,
+        "x-gdpr": true,
         "x-touchpoints-types": null,
         "x-restrictions": null,
         "supported-countries": [

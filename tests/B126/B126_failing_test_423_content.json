@@ -1,8 +1,8 @@
 {
-    "total": 22,
+    "total": 21,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 22,
+    "errors": 21,
     "logs": [
         {
             "id": "B101",
@@ -114,31 +114,24 @@
         },
         {
             "id": "B126",
+            "num_line": 6,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.AAzgFyenDlKgcvDZmjOKwV"
+        },
+        {
+            "id": "B126",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.mxHKNKNwymMZW"
+        },
+        {
+            "id": "B126",
             "num_line": 8,
             "severity": "ERROR",
             "message": "The content type does not match application/problem+json",
-            "key": ".pyqfefydwlckzxrmatze.cpfdasdd.abqljsxcsfarm.cpxdym.xqbdtkwsqaulklbqhgghvgna.505.content.XKxsi"
-        },
-        {
-            "id": "B126",
-            "num_line": 9,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".pyqfefydwlckzxrmatze.cpfdasdd.abqljsxcsfarm.cpxdym.xqbdtkwsqaulklbqhgghvgna.505.content.fMWbBxlJbrfdkHNcSpT"
-        },
-        {
-            "id": "B126",
-            "num_line": 10,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".pyqfefydwlckzxrmatze.cpfdasdd.abqljsxcsfarm.cpxdym.xqbdtkwsqaulklbqhgghvgna.505.content.fPwpEBmhTJ"
-        },
-        {
-            "id": "B126",
-            "num_line": 11,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".pyqfefydwlckzxrmatze.cpfdasdd.abqljsxcsfarm.cpxdym.xqbdtkwsqaulklbqhgghvgna.505.content.gkDzUXfhYrnvWFCdLurimJXQTKmXv"
+            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.zHtYYfcNQYNz"
         }
     ],
     "metadata": {

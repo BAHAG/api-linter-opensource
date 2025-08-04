@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -15,12 +15,6 @@
             "key": "info.title",
             "severity": "ERROR",
             "message": "API name not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.description",
-            "severity": "ERROR",
-            "message": "API description not present"
         },
         {
             "id": "B105",

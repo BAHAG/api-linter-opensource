@@ -1,8 +1,8 @@
 {
-    "total": 27,
+    "total": 30,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 27,
+    "errors": 30,
     "logs": [
         {
             "id": "B101",
@@ -114,66 +114,87 @@
         },
         {
             "id": "B142",
+            "num_line": 6,
+            "severity": "ERROR",
+            "message": "Path values must use lowercase separate words with hyphens for path segments",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./AujlemZljGcsIgjDFnkDyJKowZ"
+        },
+        {
+            "id": "B142",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "Path values must use lowercase separate words with hyphens for path segments",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./DjNCI"
+        },
+        {
+            "id": "B142",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./hcPdiZfDIDSBigWeVeaNpFGKvix"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./ddlxeYViZU"
         },
         {
             "id": "B142",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./ngZqMWQKenqWF"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./iWRRVVDMwqmYGLT"
         },
         {
-            "id": "B142",
-            "num_line": 10,
+            "id": "B143",
+            "num_line": 6,
             "severity": "ERROR",
-            "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./zekgwwooWsOqnIyC"
+            "message": "Path parameters must use lowercase separate words with hyphens",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./AujlemZljGcsIgjDFnkDyJKowZ"
+        },
+        {
+            "id": "B143",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "Path parameters must use lowercase separate words with hyphens",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./DjNCI"
         },
         {
             "id": "B143",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Path parameters must use lowercase separate words with hyphens",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./hcPdiZfDIDSBigWeVeaNpFGKvix"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./ddlxeYViZU"
         },
         {
             "id": "B143",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Path parameters must use lowercase separate words with hyphens",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./ngZqMWQKenqWF"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./iWRRVVDMwqmYGLT"
         },
         {
-            "id": "B143",
-            "num_line": 10,
+            "id": "B146",
+            "num_line": 6,
             "severity": "ERROR",
-            "message": "Path parameters must use lowercase separate words with hyphens",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./zekgwwooWsOqnIyC"
+            "message": "Pluralize resource names",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./AujlemZljGcsIgjDFnkDyJKowZ"
+        },
+        {
+            "id": "B146",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./DjNCI"
         },
         {
             "id": "B146",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./hcPdiZfDIDSBigWeVeaNpFGKvix"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./ddlxeYViZU"
         },
         {
             "id": "B146",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./ngZqMWQKenqWF"
-        },
-        {
-            "id": "B146",
-            "num_line": 10,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".shsbkw.vguzjwer.pzqiwqccdsmxzfeztsyzxtpltxs.zyosgjwsvmozbjjizyh.udwojaqbreixtopkjgp.udllhfxhnqtue.paths./zekgwwooWsOqnIyC"
+            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./iWRRVVDMwqmYGLT"
         }
     ],
     "metadata": {

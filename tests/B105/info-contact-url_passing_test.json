@@ -1,8 +1,8 @@
 {
-    "total": 17,
+    "total": 16,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 17,
+    "errors": 16,
     "logs": [
         {
             "id": "B101",
@@ -27,12 +27,6 @@
             "key": "info.contact.name",
             "severity": "ERROR",
             "message": "Name of the responsible team not present or does not contain official team abbreviation"
-        },
-        {
-            "id": "B105",
-            "key": "info.contact.url",
-            "severity": "ERROR",
-            "message": "URL of the responsible team not present"
         },
         {
             "id": "B105",

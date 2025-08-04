@@ -1,2 +1,7 @@
 info:
-  x-touchpoints-types: consumerapp,salesapp,consumerapp,consumerapp,onlineshop,consumerapp,salesapp,salesapp,onlineshop,onlineshop,consumerapp,onlineshop,consumerapp,onlineshop,onlineshop
+  x-touchpoints-types: "onlineshop,\fsalesapp,\f \n  \t\f\f\r\r  \r\r\v\f\v\rconsumerapp,\
+    \ \f\t\v\f\n \r\t\v\f\n\n\f \r\v\f\tconsumerapp,\fconsumerapp,\v\t\n\r\n \v\t\
+    \ salesapp,\f\r\v\n\f\n\t \n\v\r  \f\n\r\r\nonlineshop, \f\n\f\t\v\v\r\f\f\tconsumerapp,\v\
+    \ \t\n\t\f\t\t\v\v\f\vonlineshop,\r\r\f\t\v\t \fonlineshop,\n\n \t\n\r\f\r\t\f\
+    \v\r \r\n\rsalesapp,\f\t\r\t\n\n\f\n\v\t\f\n\f\n\t\vconsumerapp,\f\f\t\t\r\t \n\
+    \ \r\f\tconsumerapp"

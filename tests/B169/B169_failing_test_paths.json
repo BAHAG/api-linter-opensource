@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 22,
     "example-errors": 0,
     "warnings": 2,
-    "errors": 19,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -114,24 +114,31 @@
         },
         {
             "id": "B146",
-            "num_line": 11,
+            "num_line": 8,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".pyurpgodtelw.qvcavhbxpzojodwsjqfhuiitxok.vuztndlyscqmoaoasnvsm.macqbnrbvpbfbkpuelm.munnlwojisrbtvbfufagiean.ecxitn.utgquigcjimtpymglmnzhfirbsj.ezedd.nekxfdoekhxymxdbvn.paths./hvrpgbuisftdlo/bha/uwclvsig-clzwvuq/vh/iplpuc-ywji/yjd/uky/t"
+            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./duzldkaxvoannpryzvz/a/lctsmwn-ibjbtjfx/fhkrwiqlxld/kjub/qmeru/ubc/oxdvjh"
+        },
+        {
+            "id": "B146",
+            "num_line": 9,
+            "severity": "ERROR",
+            "message": "Pluralize resource names",
+            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./uzlopsahnecbcu/jkjzyngpvkqr/zwivluorrarinfgvgoo/eefjnyyfseuht/j/f/bpnrgjial/noxhzmvqlkpnn"
         },
         {
             "id": "B169",
-            "num_line": 11,
+            "num_line": 8,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".pyurpgodtelw.qvcavhbxpzojodwsjqfhuiitxok.vuztndlyscqmoaoasnvsm.macqbnrbvpbfbkpuelm.munnlwojisrbtvbfufagiean.ecxitn.utgquigcjimtpymglmnzhfirbsj.ezedd.nekxfdoekhxymxdbvn.paths./hvrpgbuisftdlo/bha/uwclvsig-clzwvuq/vh/iplpuc-ywji/yjd/uky/t"
+            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./duzldkaxvoannpryzvz/a/lctsmwn-ibjbtjfx/fhkrwiqlxld/kjub/qmeru/ubc/oxdvjh"
         },
         {
             "id": "B169",
-            "num_line": 12,
+            "num_line": 9,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".pyurpgodtelw.qvcavhbxpzojodwsjqfhuiitxok.vuztndlyscqmoaoasnvsm.macqbnrbvpbfbkpuelm.munnlwojisrbtvbfufagiean.ecxitn.utgquigcjimtpymglmnzhfirbsj.ezedd.nekxfdoekhxymxdbvn.paths./yspqhggfgvxw/ypzhkmsbevcuqvy/nihppwpouzmmpqcw/cxnuferaozhlph/ss/gkxcxptyj/aaixoxlivyic/-ys-do"
+            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./uzlopsahnecbcu/jkjzyngpvkqr/zwivluorrarinfgvgoo/eefjnyyfseuht/j/f/bpnrgjial/noxhzmvqlkpnn"
         }
     ],
     "metadata": {

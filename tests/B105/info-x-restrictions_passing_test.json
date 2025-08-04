@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -95,12 +95,6 @@
             "message": "Touchpoints types field not present"
         },
         {
-            "id": "B105",
-            "key": "info.x-restrictions",
-            "severity": "ERROR",
-            "message": "Restrictions field not present"
-        },
-        {
             "id": "B106",
             "key": "info.version",
             "severity": "ERROR",
@@ -128,7 +122,7 @@
         "x-data-types": null,
         "x-gdpr": null,
         "x-touchpoints-types": null,
-        "x-restrictions": null,
+        "x-restrictions": true,
         "supported-countries": [
             "all"
         ],

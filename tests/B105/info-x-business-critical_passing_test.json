@@ -117,7 +117,7 @@
         "x-alerting": null,
         "x-announcement": null,
         "x-apigee-proxy": null,
-        "x-business-critical": true,
+        "x-business-critical": false,
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,

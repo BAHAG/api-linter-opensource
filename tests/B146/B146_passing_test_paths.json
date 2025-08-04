@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 20,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -113,11 +113,18 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B148",
-            "num_line": 7,
+            "id": "B142",
+            "num_line": 10,
             "severity": "ERROR",
-            "message": "Path is not normalized",
-            "key": ".equbikznsbkf.sprgmzquenpjsgavjtuouhgps.oufuidwyvoq.pplzkbnlgknktljtu.uodxvkjkbuhijfzwdcreiek.paths.//s/"
+            "message": "Path values must use lowercase separate words with hyphens for path segments",
+            "key": ".tqsnbtgfqjljmxyzztvyrl.gsuqkbnpgga.cogqqoantugusjvd.ybimswuhvlzwinp.docbmmypxpvgcspgmmnerefwtssbk.pernraotvsjhehde.bnmqbg.kpnktuzlbjbenkirmquobgm.paths.//UNm8s/"
+        },
+        {
+            "id": "B143",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "Path parameters must use lowercase separate words with hyphens",
+            "key": ".tqsnbtgfqjljmxyzztvyrl.gsuqkbnpgga.cogqqoantugusjvd.ybimswuhvlzwinp.docbmmypxpvgcspgmmnerefwtssbk.pernraotvsjhehde.bnmqbg.kpnktuzlbjbenkirmquobgm.paths.//UNm8s/"
         }
     ],
     "metadata": {

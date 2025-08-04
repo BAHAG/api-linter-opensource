@@ -108,7 +108,7 @@
         }
     ],
     "metadata": {
-        "x-audience": "company-internal",
+        "x-audience": "external-partner",
         "x-channel": null,
         "x-sunset-date": null,
         "x-shutdown-date": null,

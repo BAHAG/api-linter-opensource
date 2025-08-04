@@ -1,7 +1,7 @@
 {
-    "total": 21,
+    "total": 23,
     "example-errors": 0,
-    "warnings": 3,
+    "warnings": 5,
     "errors": 18,
     "logs": [
         {
@@ -114,24 +114,38 @@
         },
         {
             "id": "B111",
+            "num_line": 5,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".pdfshciufxzs.aqgbhelfcdmwzwmqmjc.schemas.enum.[0]"
+        },
+        {
+            "id": "B111",
+            "num_line": 6,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".pdfshciufxzs.aqgbhelfcdmwzwmqmjc.schemas.enum.[1]"
+        },
+        {
+            "id": "B111",
+            "num_line": 7,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".pdfshciufxzs.aqgbhelfcdmwzwmqmjc.schemas.enum.[2]"
+        },
+        {
+            "id": "B111",
+            "num_line": 8,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".pdfshciufxzs.aqgbhelfcdmwzwmqmjc.schemas.enum.[3]"
+        },
+        {
+            "id": "B111",
             "num_line": 9,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[0]"
-        },
-        {
-            "id": "B111",
-            "num_line": 10,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[1]"
-        },
-        {
-            "id": "B111",
-            "num_line": 11,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".nrajzbnngxyjwnswqujhmyhqz.xntqdxbqkupbzhtcaaehucu.kaydzakzjqauvmtws.kiojffjyqva.owdndbblwww.mubacnkzzn.schemas.enum.[2]"
+            "key": ".pdfshciufxzs.aqgbhelfcdmwzwmqmjc.schemas.enum.[4]"
         }
     ],
     "metadata": {

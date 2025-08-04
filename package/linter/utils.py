@@ -92,10 +92,10 @@ def parse_required_path(path, spec):
         if not tmp_spec:
             return None, None, last
     
-    tmp_spec = tmp_spec.get(last)
-    
-    if not tmp_spec:
+    if not last in tmp_spec:
         return None, None, last
+
+    tmp_spec = tmp_spec.get(last)
     
     # get line number by using the yq utility tool
     line_num = subprocess.run(["yq", f"{yq_path} | key | line", spec_file_name], capture_output=True)

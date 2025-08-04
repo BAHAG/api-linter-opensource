@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -51,12 +51,6 @@
             "key": "info.x-alerting",
             "severity": "ERROR",
             "message": "Alerting field for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-monitoring",
-            "severity": "ERROR",
-            "message": "Monitoring field for the api not present"
         },
         {
             "id": "B105",

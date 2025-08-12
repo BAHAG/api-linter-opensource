@@ -521,6 +521,12 @@
                                 "503",
                                 "504",
                                 "default"
+                            ],
+                            "exceptions": [
+                                {
+                                    "title": "Product Price API",
+                                    "version": "2"
+                                }
                             ]
                         }
                     ],
@@ -861,7 +867,13 @@
                                     "int64",
                                     "bigint"
                                 ]
-                            }
+                            },
+                            "exceptions": [
+                                {
+                                    "title": "Product Price API",
+                                    "version": "2"
+                                }
+                            ]
                         },
                         {
                             "check_keys_value": {
@@ -883,7 +895,13 @@
                                     "float",
                                     "double"
                                 ]
-                            }
+                            },
+                            "exceptions": [
+                                {
+                                    "title": "Product Price API",
+                                    "version": "2"
+                                }
+                            ]
                         }
                     ],
                     "path_value": "properties.type",

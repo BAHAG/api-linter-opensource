@@ -9,25 +9,44 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      setup_changed: ${{ steps.check_changes.outputs.setup_changed }}
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Fetch full history for git diff
+
+    - name: Check for changes in setup.py
+      id: check_changes
+      run: |
+        if git diff --name-only HEAD~1 HEAD | grep -q "package/setup.py"; then
+          echo "setup_changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected in package/setup.py"
+        else
+          echo "setup_changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected in package/setup.py"
+        fi
 
     - name: Set up Python 3.11
       uses: actions/setup-python@v2
+      if: steps.check_changes.outputs.setup_changed == 'true'
       with:
         python-version: 3.11
     
     - name: Install dependencies
+      if: steps.check_changes.outputs.setup_changed == 'true'
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Install dependencies
+      if: steps.check_changes.outputs.setup_changed == 'true'
       run: |
         pip install setuptools wheel twine
 
     - name: Build and publish
+      if: steps.check_changes.outputs.setup_changed == 'true'
       working-directory: ./package
       env:
         TWINE_USERNAME: __token__
@@ -36,10 +55,15 @@ jobs:
       run: |
         python setup.py sdist bdist_wheel
         twine upload dist/*
+        
+    - name: Skip deployment
+      if: steps.check_changes.outputs.setup_changed == 'false'
+      run: echo "Skipping PYPI deployment - no changes in setup.py"
   kpi-deployment-count:
     needs: [build]
     runs-on: ubuntu-latest
     environment: kpi-deployment-count
+    if: needs.build.outputs.setup_changed == 'true'
     steps:
       - name: Deployment
         run: echo "Successful deployed to prod - $(date)"

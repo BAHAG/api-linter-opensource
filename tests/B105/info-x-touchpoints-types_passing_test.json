@@ -121,7 +121,7 @@
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,
-        "x-touchpoints-types": "onlineshop,\fsalesapp,\f \n  \t\f\f\r\r  \r\r\u000b\f\u000b\rconsumerapp, \f\t\u000b\f\n \r\t\u000b\f\n\n\f \r\u000b\f\tconsumerapp,\fconsumerapp,\u000b\t\n\r\n \u000b\t salesapp,\f\r\u000b\n\f\n\t \n\u000b\r  \f\n\r\r\nonlineshop, \f\n\f\t\u000b\u000b\r\f\f\tconsumerapp,\u000b \t\n\t\f\t\t\u000b\u000b\f\u000bonlineshop,\r\r\f\t\u000b\t \fonlineshop,\n\n \t\n\r\f\r\t\f\u000b\r \r\n\rsalesapp,\f\t\r\t\n\n\f\n\u000b\t\f\n\f\n\t\u000bconsumerapp,\f\f\t\t\r\t \n \r\f\tconsumerapp",
+        "x-touchpoints-types": "none, \n\t\u000bnone,\u000b\n\f\r\f\t \t\n \t\n\r\u000b\u000b\n\u000b\r\fothers, \r\u000bothers,\u000b\n\t\n\f\t\fsalesapp,\r\t\t\n\n\r\f\r\t\r\n\t\rothers, \n\n none,\t \n\t \t\n \f others,\f\u000b\n \n\u000b\u000b\u000b\t\u000b  \r\u000b\t salesapp,\tsalesapp,\t\u000b\r \r\t\n\f\f  \r\u000b\n\f\t\u000bnone,\n\r\f \n\r \u000b\t\n   salesapp,\n\u000bsalesapp, \f\t\r\u000b\u000b\u000b  \n\u000b\f\u000b\t\t\f\t \rconsumerapp,  \t\r\rsalesapp,\f\f\n\u000b\f\r\t\r\n\t\u000b \r\r  none,\u000b\rconsumerapp,\u000b\n\f\n\t\f\rconsumerapp, \r\f\r\rconsumerapp",
         "x-restrictions": null,
         "supported-countries": [
             "all"

@@ -1,7 +1,7 @@
 {
-    "total": 22,
+    "total": 26,
     "example-errors": 0,
-    "warnings": 2,
+    "warnings": 6,
     "errors": 20,
     "logs": [
         {
@@ -117,28 +117,56 @@
             "num_line": 8,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./duzldkaxvoannpryzvz/a/lctsmwn-ibjbtjfx/fhkrwiqlxld/kjub/qmeru/ubc/oxdvjh"
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./e/kguq/hgjru-uluzd/ltzazxzpdyjbybkigfv/uilaslro-zjfgbi/cfvyowsj/oyhoadtnafgv/mnqzyhalwhugew"
         },
         {
             "id": "B146",
-            "num_line": 9,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./uzlopsahnecbcu/jkjzyngpvkqr/zwivluorrarinfgvgoo/eefjnyyfseuht/j/f/bpnrgjial/noxhzmvqlkpnn"
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./oi-dfvtaj-le/ntvmvvrkxtpajcfr/anpglknyhu/kcz/uaf/qbn/kayjtbmiljkqr/vc"
+        },
+        {
+            "id": "B169",
+            "num_line": 7,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./boima/picjdxritzd/kguyqukeyenilux-pj/wigvqskra/vi-l-/vjfhlexcuyvjlwtonb/rwtbmcs/vonqbiprfainloex"
         },
         {
             "id": "B169",
             "num_line": 8,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./duzldkaxvoannpryzvz/a/lctsmwn-ibjbtjfx/fhkrwiqlxld/kjub/qmeru/ubc/oxdvjh"
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./e/kguq/hgjru-uluzd/ltzazxzpdyjbybkigfv/uilaslro-zjfgbi/cfvyowsj/oyhoadtnafgv/mnqzyhalwhugew"
         },
         {
             "id": "B169",
             "num_line": 9,
             "severity": "WARN",
             "message": "Limit the number of sub-resource levels",
-            "key": ".wawekz.aflyuq.liavhztisarsdrwrlevnmiitiydk.ilkkzvwvkvihnbhngrg.byodegzjfxoutpfjdudmmfodevd.rgcnfpgkfgciujlxkezjeaddwvq.paths./uzlopsahnecbcu/jkjzyngpvkqr/zwivluorrarinfgvgoo/eefjnyyfseuht/j/f/bpnrgjial/noxhzmvqlkpnn"
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./ohvbydmkccrkv/zmcor-o/oslmkglhwdf-zl-vyelk/udrdddbygl/kmknn/ghtiwwubxhp/dgkkpusjks/wntidkkg"
+        },
+        {
+            "id": "B169",
+            "num_line": 10,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./oi-dfvtaj-le/ntvmvvrkxtpajcfr/anpglknyhu/kcz/uaf/qbn/kayjtbmiljkqr/vc"
+        },
+        {
+            "id": "B169",
+            "num_line": 11,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./s/anclspwvieqkseaiqa/ezgln/mymka/jriia-cn/-oxzd/svxx/zlneqo"
+        },
+        {
+            "id": "B169",
+            "num_line": 12,
+            "severity": "WARN",
+            "message": "Limit the number of sub-resource levels",
+            "key": ".bzoqwxbxwna.xojosze.fkyubitvdlwdrynqxdkbtczkkc.mvymuhmk.dswqdecrevnzrmvncw.paths./uqrcoac/hxjjtna/qzookzp/pfnseyrneqoeedjfgns/ndwiddnkxtovbcn/oldrlb/sidfu/awlmlmmpa"
         }
     ],
     "metadata": {

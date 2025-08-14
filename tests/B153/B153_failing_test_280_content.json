@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 20,
     "example-errors": 0,
-    "warnings": 0,
-    "errors": 21,
+    "warnings": 2,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -113,25 +113,18 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B126",
+            "id": "B153",
+            "num_line": 5,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".cyevdlnrw.oytdwuqwbdphqynchmcvbazbz.296.content.IlQpHv"
+        },
+        {
+            "id": "B153",
             "num_line": 6,
-            "severity": "ERROR",
+            "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.AAzgFyenDlKgcvDZmjOKwV"
-        },
-        {
-            "id": "B126",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.mxHKNKNwymMZW"
-        },
-        {
-            "id": "B126",
-            "num_line": 8,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".juvkvngqfelvmgx.kvctkqyxqlalxdluhyopxh.hnsjaqsmbaeourz.489.content.zHtYYfcNQYNz"
+            "key": ".cyevdlnrw.oytdwuqwbdphqynchmcvbazbz.296.content.LlvwtYRfmkZIOCBkciz"
         }
     ],
     "metadata": {

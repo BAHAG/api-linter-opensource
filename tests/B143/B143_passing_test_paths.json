@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 18,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -111,13 +111,6 @@
             "key": "info.x-audience",
             "severity": "ERROR",
             "message": "info.x-audience is not present"
-        },
-        {
-            "id": "B146",
-            "num_line": 6,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".cfopknvnmrkqwsjtrsbrl.ikltq.zzomlwouwwdqeppgizgiwglopyms.qawabymbtaqicmucnrydtfadriqz.paths./ljqxayjfnptbinkwdip"
         }
     ],
     "metadata": {

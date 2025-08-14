@@ -114,45 +114,45 @@
         },
         {
             "id": "B109",
+            "num_line": 4,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.AZdjPnldjTUkWe"
+        },
+        {
+            "id": "B109",
+            "num_line": 5,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.AaoujGWxNqO"
+        },
+        {
+            "id": "B109",
+            "num_line": 6,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.IvtCguZg"
+        },
+        {
+            "id": "B109",
             "num_line": 7,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.DjtUTEvb"
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.PynmRRnUMQgUTChOfOu"
         },
         {
             "id": "B109",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.ISbRGoaUmPVaMRixmyWNk"
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.dpAJGZMzAJS"
         },
         {
             "id": "B109",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.QtCOuO"
-        },
-        {
-            "id": "B109",
-            "num_line": 10,
-            "severity": "ERROR",
-            "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.bagVNwMPOH"
-        },
-        {
-            "id": "B109",
-            "num_line": 11,
-            "severity": "ERROR",
-            "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.iOVaRfbwyCNFQWvQfdO"
-        },
-        {
-            "id": "B109",
-            "num_line": 12,
-            "severity": "ERROR",
-            "message": "Property names don't follow snake_case",
-            "key": ".llbfincegind.sofdzsujqnefqvmtngj.shlii.uhmfnefmvdizsvzheio.onwtvbysdz.properties.sLslqqsAUMDprWDO"
+            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.eRPGrqGLAEfqWyRXg"
         }
     ],
     "metadata": {

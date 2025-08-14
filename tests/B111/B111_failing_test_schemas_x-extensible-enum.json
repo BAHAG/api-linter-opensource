@@ -114,24 +114,24 @@
         },
         {
             "id": "B111",
-            "num_line": 5,
+            "num_line": 10,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".hpwzwuozpmvi.fidqbpcgctvbk.schemas.x-extensible-enum.[0]"
+            "key": ".sngqqwddxx.vnxuxwlwuhuye.bueutkkbunxtpxzg.zqjhrjxfkcawivb.dmwhsvgz.clagzgpnmtmfxzehpzxshm.vpmtk.schemas.x-extensible-enum.[0]"
         },
         {
             "id": "B111",
-            "num_line": 6,
+            "num_line": 11,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".hpwzwuozpmvi.fidqbpcgctvbk.schemas.x-extensible-enum.[1]"
+            "key": ".sngqqwddxx.vnxuxwlwuhuye.bueutkkbunxtpxzg.zqjhrjxfkcawivb.dmwhsvgz.clagzgpnmtmfxzehpzxshm.vpmtk.schemas.x-extensible-enum.[1]"
         },
         {
             "id": "B111",
-            "num_line": 7,
+            "num_line": 12,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".hpwzwuozpmvi.fidqbpcgctvbk.schemas.x-extensible-enum.[2]"
+            "key": ".sngqqwddxx.vnxuxwlwuhuye.bueutkkbunxtpxzg.zqjhrjxfkcawivb.dmwhsvgz.clagzgpnmtmfxzehpzxshm.vpmtk.schemas.x-extensible-enum.[2]"
         }
     ],
     "metadata": {

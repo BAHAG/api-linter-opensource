@@ -1,7 +1,7 @@
 info:
-  x-touchpoints-types: "onlineshop,\fsalesapp,\f \n  \t\f\f\r\r  \r\r\v\f\v\rconsumerapp,\
-    \ \f\t\v\f\n \r\t\v\f\n\n\f \r\v\f\tconsumerapp,\fconsumerapp,\v\t\n\r\n \v\t\
-    \ salesapp,\f\r\v\n\f\n\t \n\v\r  \f\n\r\r\nonlineshop, \f\n\f\t\v\v\r\f\f\tconsumerapp,\v\
-    \ \t\n\t\f\t\t\v\v\f\vonlineshop,\r\r\f\t\v\t \fonlineshop,\n\n \t\n\r\f\r\t\f\
-    \v\r \r\n\rsalesapp,\f\t\r\t\n\n\f\n\v\t\f\n\f\n\t\vconsumerapp,\f\f\t\t\r\t \n\
-    \ \r\f\tconsumerapp"
+  x-touchpoints-types: "none, \n\t\vnone,\v\n\f\r\f\t \t\n \t\n\r\v\v\n\v\r\fothers,\
+    \ \r\vothers,\v\n\t\n\f\t\fsalesapp,\r\t\t\n\n\r\f\r\t\r\n\t\rothers, \n\n none,\t\
+    \ \n\t \t\n \f others,\f\v\n \n\v\v\v\t\v  \r\v\t salesapp,\tsalesapp,\t\v\r \r\
+    \t\n\f\f  \r\v\n\f\t\vnone,\n\r\f \n\r \v\t\n   salesapp,\n\vsalesapp, \f\t\r\v\
+    \v\v  \n\v\f\v\t\t\f\t \rconsumerapp,  \t\r\rsalesapp,\f\f\n\v\f\r\t\r\n\t\v \r\
+    \r  none,\v\rconsumerapp,\v\n\f\n\t\f\rconsumerapp, \r\f\r\rconsumerapp"

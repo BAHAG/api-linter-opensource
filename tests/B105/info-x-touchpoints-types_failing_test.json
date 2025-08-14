@@ -92,7 +92,7 @@
             "id": "B105",
             "num_line": "2",
             "severity": "ERROR",
-            "message": "Value of info.x-touchpoints-types must contain valid touchpoint types: 'consumerapp', 'salesapp', 'onlineshop'"
+            "message": "Value of info.x-touchpoints-types must contain valid touchpoint types: 'consumerapp', 'salesapp', 'onlineshop', 'others', 'none'"
         },
         {
             "id": "B105",
@@ -127,7 +127,7 @@
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,
-        "x-touchpoints-types": "JrVcB",
+        "x-touchpoints-types": "sTuytmDLCBgzNTOCHjTjsQc",
         "x-restrictions": null,
         "supported-countries": [
             "all"

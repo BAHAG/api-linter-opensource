@@ -114,17 +114,17 @@
         },
         {
             "id": "B142",
-            "num_line": 10,
+            "num_line": null,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".tqsnbtgfqjljmxyzztvyrl.gsuqkbnpgga.cogqqoantugusjvd.ybimswuhvlzwinp.docbmmypxpvgcspgmmnerefwtssbk.pernraotvsjhehde.bnmqbg.kpnktuzlbjbenkirmquobgm.paths.//UNm8s/"
+            "key": ".fnhmyylpmxvjgchbvagugdqn.wiblemdmqydbfm.oacqaaybdkhxmtlbmcc.paths.//#7S*# 0[k=?wT<gr:s/"
         },
         {
             "id": "B143",
-            "num_line": 10,
+            "num_line": null,
             "severity": "ERROR",
             "message": "Path parameters must use lowercase separate words with hyphens",
-            "key": ".tqsnbtgfqjljmxyzztvyrl.gsuqkbnpgga.cogqqoantugusjvd.ybimswuhvlzwinp.docbmmypxpvgcspgmmnerefwtssbk.pernraotvsjhehde.bnmqbg.kpnktuzlbjbenkirmquobgm.paths.//UNm8s/"
+            "key": ".fnhmyylpmxvjgchbvagugdqn.wiblemdmqydbfm.oacqaaybdkhxmtlbmcc.paths.//#7S*# 0[k=?wT<gr:s/"
         }
     ],
     "metadata": {

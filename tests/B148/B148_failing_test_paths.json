@@ -1,8 +1,8 @@
 {
-    "total": 34,
+    "total": 31,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 34,
+    "errors": 31,
     "logs": [
         {
             "id": "B101",
@@ -114,115 +114,94 @@
         },
         {
             "id": "B146",
-            "num_line": 5,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths.///"
-        },
-        {
-            "id": "B146",
             "num_line": 6,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths.//aitl/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./dtsrhzqcrvsbmk/"
         },
         {
             "id": "B146",
             "num_line": 7,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./d/nd////"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./f-tualmwga//"
         },
         {
             "id": "B146",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./imf/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./j/bjlyquzu/"
         },
         {
             "id": "B146",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./jj//"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./rtwjepmpkmgideyw-pv/"
         },
         {
             "id": "B146",
             "num_line": 10,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./kcvane/"
-        },
-        {
-            "id": "B146",
-            "num_line": 11,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./nbzndhm//"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./swatq//"
         },
         {
             "id": "B146",
             "num_line": 12,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./weobffurrjmau/"
-        },
-        {
-            "id": "B148",
-            "num_line": 5,
-            "severity": "ERROR",
-            "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths.///"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./xdavrhmh//"
         },
         {
             "id": "B148",
             "num_line": 6,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths.//aitl/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./dtsrhzqcrvsbmk/"
         },
         {
             "id": "B148",
             "num_line": 7,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./d/nd////"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./f-tualmwga//"
         },
         {
             "id": "B148",
             "num_line": 8,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./imf/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./j/bjlyquzu/"
         },
         {
             "id": "B148",
             "num_line": 9,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./jj//"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./rtwjepmpkmgideyw-pv/"
         },
         {
             "id": "B148",
             "num_line": 10,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./kcvane/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./swatq//"
         },
         {
             "id": "B148",
             "num_line": 11,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./nbzndhm//"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./vus/mdopzom//"
         },
         {
             "id": "B148",
             "num_line": 12,
             "severity": "ERROR",
             "message": "Path is not normalized",
-            "key": ".ceuxsazyyyxtjospcjdfcdsxntowf.kowkvblde.tufxtohe.paths./weobffurrjmau/"
+            "key": ".kzeolhxow.ohkllcy.cuschbucsruswtfnftn.yhownpiqlhfjwwmjbmluqmt.paths./xdavrhmh//"
         }
     ],
     "metadata": {

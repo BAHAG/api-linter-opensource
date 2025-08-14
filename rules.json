@@ -189,10 +189,10 @@
                     "message": "Touchpoints types field not present",
                     "checks": [
                         {
-                            "pattern": "^(consumerapp|salesapp|onlineshop)(,\\s*(consumerapp|salesapp|onlineshop))*$",
-                            "message": "Value of info.x-touchpoints-types must contain valid touchpoint types: 'consumerapp', 'salesapp', 'onlineshop'",
+                            "pattern": "^(consumerapp|salesapp|onlineshop|others|none)(,\\s*(consumerapp|salesapp|onlineshop|others|none))*$",
+                            "message": "Value of info.x-touchpoints-types must contain valid touchpoint types: 'consumerapp', 'salesapp', 'onlineshop', 'others', 'none'",
                             "name": "pattern",
-                            "value": "^(consumerapp|salesapp|onlineshop)(,\\s*(consumerapp|salesapp|onlineshop))*$"
+                            "value": "^(consumerapp|salesapp|onlineshop|others|none)(,\\s*(consumerapp|salesapp|onlineshop|others|none))*$"
                         }
                     ],
                     "path_value": "info.x-touchpoints-types",

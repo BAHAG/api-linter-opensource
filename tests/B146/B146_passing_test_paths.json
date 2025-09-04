@@ -114,17 +114,17 @@
         },
         {
             "id": "B142",
-            "num_line": null,
+            "num_line": 5,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".fnhmyylpmxvjgchbvagugdqn.wiblemdmqydbfm.oacqaaybdkhxmtlbmcc.paths.//#7S*# 0[k=?wT<gr:s/"
+            "key": ".pqlmeongvbhhybse.xeklztttnwqztoaeicea.desxyviduxkzyldclzcbgsdpeuvv.paths.//LU@<yl.q5a#0s/"
         },
         {
             "id": "B143",
-            "num_line": null,
+            "num_line": 5,
             "severity": "ERROR",
-            "message": "Path parameters must use lowercase separate words with hyphens",
-            "key": ".fnhmyylpmxvjgchbvagugdqn.wiblemdmqydbfm.oacqaaybdkhxmtlbmcc.paths.//#7S*# 0[k=?wT<gr:s/"
+            "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
+            "key": ".pqlmeongvbhhybse.xeklztttnwqztoaeicea.desxyviduxkzyldclzcbgsdpeuvv.paths.//LU@<yl.q5a#0s/"
         }
     ],
     "metadata": {

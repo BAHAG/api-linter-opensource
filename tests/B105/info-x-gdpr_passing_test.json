@@ -120,7 +120,7 @@
         "x-business-critical": null,
         "x-authentication-method": null,
         "x-data-types": null,
-        "x-gdpr": true,
+        "x-gdpr": false,
         "x-touchpoints-types": null,
         "x-restrictions": null,
         "supported-countries": [

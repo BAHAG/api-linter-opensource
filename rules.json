@@ -644,10 +644,10 @@
                     "key_name": "paths",
                     "checks": [
                         {
-                            "check_keys_pattern": "^[a-z/-]+$",
+                            "check_keys_pattern": "^(/([a-z0-9][a-z0-9-]*[a-z0-9]|[a-z0-9]|\\{[a-z0-9_-]+\\}))*/?$",
                             "message": "Path values must use lowercase separate words with hyphens for path segments",
                             "name": "check_keys_pattern",
-                            "value": "^[a-z/-]+$"
+                            "value": "^(/([a-z0-9][a-z0-9-]*[a-z0-9]|[a-z0-9]|\\{[a-z0-9_-]+\\}))*/?$"
                         }
                     ],
                     "path_value": "paths",
@@ -657,7 +657,7 @@
         },
         {
             "id": "B143",
-            "description": "Use lowercase separate words with hyphens for path parameters swagger support",
+            "description": "Use lowercase separate words with hyphens for path segments, path parameters in {} can use underscores",
             "severity": "ERROR",
             "specification-type": "OPENAPI",
             "specification-version": "ALL",
@@ -666,10 +666,10 @@
                     "key_name": "paths",
                     "checks": [
                         {
-                            "check_keys_pattern": "^[a-z/-]+$",
-                            "message": "Path parameters must use lowercase separate words with hyphens",
+                            "check_keys_pattern": "^(/([a-z0-9][a-z0-9-]*[a-z0-9]|[a-z0-9]|\\{[a-z0-9_-]+\\}))*/?$",
+                            "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
                             "name": "check_keys_pattern",
-                            "value": "^[a-z/-]+$"
+                            "value": "^(/([a-z0-9][a-z0-9-]*[a-z0-9]|[a-z0-9]|\\{[a-z0-9_-]+\\}))*/?$"
                         }
                     ],
                     "path_value": "paths",

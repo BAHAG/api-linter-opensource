@@ -1,14 +1,8 @@
-bapoki:
-  eigwyivdjqjwqbogducaf:
-    jeqfcixsrhiyftcbuonfydc:
-      ptkddzpccoflnxntquaepnkvrfvdq:
-        khitytgirobpsfphpyilmbccuhc:
-          qaszgsqx:
-            rhssxkswzfkarluemswbhyqqkm:
-              pmfebwghenqcvxcnvmwicp:
-                hatdcvgzahs:
-                  name: store_id
-                  schema:
-                    items:
-                      type: string
-                    type: array
+tuyiycfnlmsfbxsxzclwhitgwmb:
+  clictdsatxmcupfvekduvlr:
+    qrrdmzjhjjbdcigyiqqtg:
+      name: store_id
+      schema:
+        items:
+          type: string
+        type: array

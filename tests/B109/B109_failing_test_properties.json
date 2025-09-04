@@ -1,8 +1,8 @@
 {
-    "total": 24,
+    "total": 27,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 24,
+    "errors": 27,
     "logs": [
         {
             "id": "B101",
@@ -114,45 +114,66 @@
         },
         {
             "id": "B109",
-            "num_line": 4,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.AZdjPnldjTUkWe"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.BIvrGMsdYoDkCxCXZyQDwFp"
         },
         {
             "id": "B109",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.AaoujGWxNqO"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.DsgqGPtFGqIqAt"
         },
         {
             "id": "B109",
-            "num_line": 6,
+            "num_line": 12,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.IvtCguZg"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.HbRNGhchmSaDIbCzqeQIMjdPVd"
         },
         {
             "id": "B109",
-            "num_line": 7,
+            "num_line": 13,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.PynmRRnUMQgUTChOfOu"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.aNLoblmCu"
         },
         {
             "id": "B109",
-            "num_line": 8,
+            "num_line": 14,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.dpAJGZMzAJS"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.boQMRHFaOTdDuTqUTxZnwOyvCq"
         },
         {
             "id": "B109",
-            "num_line": 9,
+            "num_line": 15,
             "severity": "ERROR",
             "message": "Property names don't follow snake_case",
-            "key": ".oyatoxmxjonppvtgxmxvhugga.lfxfrzgkafv.properties.eRPGrqGLAEfqWyRXg"
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.dxaAbuPTHAQX"
+        },
+        {
+            "id": "B109",
+            "num_line": 16,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.hLDKXYMCTiXLMsrTlcnryydPz"
+        },
+        {
+            "id": "B109",
+            "num_line": 17,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.phAYJvfSNFLQZoZckOOKNjnCtzpB"
+        },
+        {
+            "id": "B109",
+            "num_line": 18,
+            "severity": "ERROR",
+            "message": "Property names don't follow snake_case",
+            "key": ".nzpnoqqnrtpiijrydpfjxmaqt.utekfmochrorexuoqmmnun.tssvcevyryvrne.gftdnzhadasimwfrxewhrsgzk.hrypbdzwvvgteltzm.hanfnuviwr.pbcky.yovazmjpogellfbuq.properties.suoexIMIaJLACTiSJVqFSWcidJ"
         }
     ],
     "metadata": {

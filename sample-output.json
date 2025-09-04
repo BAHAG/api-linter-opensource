@@ -1,222 +1,190 @@
 {
-    "total": 29,
+    "total": 24,
     "example-errors": 0,
-    "warnings": 29,
-    "errors": 0,
+    "warnings": 18,
+    "errors": 6,
     "logs": [
         {
-            "id": "B111",
-            "num_line": 606,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[0]"
+            "id": null,
+            "num_line": 916,
+            "severity": "ERROR",
+            "message": "Version mismatch in /health and info.version"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-channel",
+            "severity": "ERROR",
+            "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-alerting",
+            "severity": "ERROR",
+            "message": "Alerting field for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-monitoring",
+            "severity": "ERROR",
+            "message": "Monitoring field for the api not present"
         },
         {
             "id": "B111",
-            "num_line": 607,
+            "num_line": 841,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[1]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[3]"
         },
         {
             "id": "B111",
-            "num_line": 608,
+            "num_line": 842,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[2]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[4]"
         },
         {
             "id": "B111",
-            "num_line": 609,
+            "num_line": 843,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[3]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[5]"
         },
         {
             "id": "B111",
-            "num_line": 610,
+            "num_line": 844,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[4]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[6]"
         },
         {
             "id": "B111",
-            "num_line": 611,
+            "num_line": 845,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[5]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[7]"
         },
         {
             "id": "B111",
-            "num_line": 612,
+            "num_line": 846,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[6]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[8]"
         },
         {
             "id": "B111",
-            "num_line": 613,
+            "num_line": 847,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.OpeningHoursByWeekday.properties.weekday.enum.[7]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.class.enum.[9]"
         },
         {
             "id": "B111",
-            "num_line": 690,
+            "num_line": 852,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.SpecialOpeningHourType.properties.effect.enum.[0]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[0]"
         },
         {
             "id": "B111",
-            "num_line": 691,
+            "num_line": 853,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.SpecialOpeningHourType.properties.effect.enum.[1]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[1]"
         },
         {
             "id": "B111",
-            "num_line": 809,
+            "num_line": 854,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.SpecialOpeningHour.properties.effect.enum.[0]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[2]"
         },
         {
             "id": "B111",
-            "num_line": 810,
+            "num_line": 855,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.SpecialOpeningHour.properties.effect.enum.[1]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[3]"
         },
         {
             "id": "B111",
-            "num_line": 970,
+            "num_line": 856,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.ContactItem.properties.contact_type.enum.[0]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[4]"
         },
         {
             "id": "B111",
-            "num_line": 971,
+            "num_line": 857,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.ContactItem.properties.contact_type.enum.[1]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[5]"
         },
         {
             "id": "B111",
-            "num_line": 972,
+            "num_line": 858,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.ContactItem.properties.contact_type.enum.[2]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[6]"
         },
         {
             "id": "B111",
-            "num_line": 973,
+            "num_line": 859,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".components.schemas.ContactItem.properties.contact_type.enum.[3]"
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[7]"
+        },
+        {
+            "id": "B111",
+            "num_line": 860,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".components.schemas.Energy_Classification_Information.properties.range.enum.[8]"
         },
         {
             "id": "B117",
-            "num_line": 480,
+            "num_line": 942,
             "severity": "WARN",
             "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.operative_from"
+            "key": ".components.schemas.ErrorBaseModel.properties.timestamp"
         },
         {
             "id": "B117",
-            "num_line": 487,
+            "num_line": 999,
             "severity": "WARN",
             "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.operative_until"
+            "key": ".components.schemas.PubSubMetadata.properties.publish_time"
         },
         {
-            "id": "B117",
-            "num_line": 495,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.vif_from"
+            "id": "B157",
+            "num_line": 808,
+            "severity": "ERROR",
+            "message": "Format for type integer not found",
+            "key": ".components.schemas.Color_Information.properties.dominant_color.items.type"
         },
         {
-            "id": "B117",
-            "num_line": 503,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.vif_until"
-        },
-        {
-            "id": "B117",
-            "num_line": 511,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.paylink_from"
-        },
-        {
-            "id": "B117",
-            "num_line": 519,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Store.properties.paylink_until"
-        },
-        {
-            "id": "B117",
-            "num_line": 765,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.SpecialOpeningHour.properties.from"
-        },
-        {
-            "id": "B117",
-            "num_line": 771,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.SpecialOpeningHour.properties.to"
-        },
-        {
-            "id": "B117",
-            "num_line": 1049,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Event.properties.from"
-        },
-        {
-            "id": "B117",
-            "num_line": 1056,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.schemas.Event.properties.to"
-        },
-        {
-            "id": "B117",
-            "num_line": 1358,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.parameters.referenceDateQuery.schema"
-        },
-        {
-            "id": "B117",
-            "num_line": 1369,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.parameters.startDateQuery.schema"
-        },
-        {
-            "id": "B117",
-            "num_line": 1380,
-            "severity": "WARN",
-            "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".components.parameters.endDateQuery.schema"
+            "id": "B157",
+            "num_line": 826,
+            "severity": "ERROR",
+            "message": "Format for type integer not found",
+            "key": ".components.schemas.Main_Color_Info.properties.rgb_colors.items.type"
         }
     ],
     "metadata": {
         "x-audience": "company-internal",
-        "x-channel": "https://teams.microsoft.com/l/channel/19%3a56d5fbf7c13f43b693efd68893cb3538%40thread.tacv2/api-store-masterdata?groupId=a5a9b025-0708-4a70-a62b-b17b044eff82&tenantId=e11e0ba0-85ac-4e5e-bfc4-4f119901dbed",
+        "x-channel": null,
         "x-sunset-date": null,
         "x-shutdown-date": null,
-        "openapi": "3.1.0",
-        "x-monitoring": "https://console.cloud.google.com/monitoring/dashboards/builder/d5b64e04-98f6-42cc-a9e1-0c7f08d9ab9b;duration=PT6H?project=hub-observability-prod-0993",
-        "x-alerting": "https://teams.microsoft.com/l/channel/19%3a5a7f71120b3a41debef322c8cc1893f1%40thread.tacv2/API%2520Status%2520StoreExperience?groupId=a5a9b025-0708-4a70-a62b-b17b044eff82&tenantId=e11e0ba0-85ac-4e5e-bfc4-4f119901dbed",
+        "openapi": "3.0.0",
+        "x-monitoring": null,
+        "x-alerting": null,
         "x-announcement": null,
+        "x-apigee-proxy": "assets-masterdata-v1",
+        "x-business-critical": true,
+        "x-authentication-method": "apikey,oauth2",
+        "x-data-types": "other",
+        "x-gdpr": false,
+        "x-touchpoints-types": "consumerapp,salesapp,onlineshop",
+        "x-restrictions": false,
         "supported-countries": [
             "all"
         ],
@@ -225,8 +193,8 @@
             "N/A"
         ],
         "supported-languages-length": 1,
-        "domain_name": "Problem",
-        "domain_version": "1.1.0",
-        "domain_model": "Problem"
+        "domain_name": "-",
+        "domain_model": "-",
+        "domain_version": "-"
     }
 }

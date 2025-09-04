@@ -1,8 +1,8 @@
 {
-    "total": 20,
+    "total": 22,
     "example-errors": 0,
-    "warnings": 2,
-    "errors": 18,
+    "warnings": 0,
+    "errors": 22,
     "logs": [
         {
             "id": "B101",
@@ -113,18 +113,32 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B153",
-            "num_line": 5,
-            "severity": "WARN",
+            "id": "B126",
+            "num_line": 8,
+            "severity": "ERROR",
             "message": "The content type does not match application/problem+json",
-            "key": ".cyevdlnrw.oytdwuqwbdphqynchmcvbazbz.296.content.IlQpHv"
+            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.IOGhlQZYNBgnvB"
         },
         {
-            "id": "B153",
-            "num_line": 6,
-            "severity": "WARN",
+            "id": "B126",
+            "num_line": 9,
+            "severity": "ERROR",
             "message": "The content type does not match application/problem+json",
-            "key": ".cyevdlnrw.oytdwuqwbdphqynchmcvbazbz.296.content.LlvwtYRfmkZIOCBkciz"
+            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.lMHzUsLKNfmwauWcHCNHJvUKjOTF"
+        },
+        {
+            "id": "B126",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.ssWEqiLrAVEdAH"
+        },
+        {
+            "id": "B126",
+            "num_line": 11,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.tcTvmovLNiYwkfkUF"
         }
     ],
     "metadata": {

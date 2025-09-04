@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 20,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 21,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -117,21 +117,14 @@
             "num_line": 5,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".qnpgqytkgexcuoowjsqzmacrycjf.zlhfvcophtgfzjarkdqekr.locdqskxyssjtimpou.paths./jfzqxkkedtzyxsvmpxkbjzmq"
+            "key": ".aemthwscpyx.wgtpzomawzyokgcyhvdlie.zkpqvglobg.paths./hjmvspeskrmyiynkpuobql"
         },
         {
             "id": "B146",
             "num_line": 6,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".qnpgqytkgexcuoowjsqzmacrycjf.zlhfvcophtgfzjarkdqekr.locdqskxyssjtimpou.paths./nxhbpqyba"
-        },
-        {
-            "id": "B146",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "Pluralize resource names",
-            "key": ".qnpgqytkgexcuoowjsqzmacrycjf.zlhfvcophtgfzjarkdqekr.locdqskxyssjtimpou.paths./uejygbl"
+            "key": ".aemthwscpyx.wgtpzomawzyokgcyhvdlie.zkpqvglobg.paths./uslbdimqgzdlyfrsbyfqxonczt"
         }
     ],
     "metadata": {

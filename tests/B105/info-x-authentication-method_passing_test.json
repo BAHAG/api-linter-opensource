@@ -118,7 +118,7 @@
         "x-announcement": null,
         "x-apigee-proxy": null,
         "x-business-critical": null,
-        "x-authentication-method": "oauth2",
+        "x-authentication-method": "apikey",
         "x-data-types": null,
         "x-gdpr": null,
         "x-touchpoints-types": null,

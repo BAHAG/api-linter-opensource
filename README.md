@@ -17,20 +17,20 @@ The linter relies on several open source tools, install them from the links prov
 ## Quick start guide
 
 Trying out the api-linter locally is easy. \
-<span style="color:#006400">Json structure is supported for local testing</span>
+<span style="color:#006400">JSON structure is supported for local testing</span>
 
 ```bash
 echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
 
-docker pull ghcr.io/bahag/api-linter:latest
+docker pull ghcr.io/bahag/api-linter-opensource:latest
 
-docker run --platform linux/amd64 -it -v $(pwd):/spec ghcr.io/bahag/api-linter:latest linting -s /spec/your-filename.yml -r /rules.json -o json -l -c
+docker run --platform linux/amd64 -it -v $(pwd):/spec ghcr.io/bahag/api-linter-opensource:latest linting -s /spec/your-filename.yml -r /rules.json -o json -l -c
 ```
 
 It will create your-filename-remodeled-output.json and a corresponding your-filename-remodeled.yaml
 
 ### Creating rules.json file:
-#### The file should be a json object with two fields.
+#### The file should be a JSON object with two fields.
 1. metadata
 2. rules
 ```json

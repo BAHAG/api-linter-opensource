@@ -22,9 +22,9 @@ Trying out the api-linter locally is easy. \
 ```bash
 echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
 
-docker pull ghcr.io/bahag/api-linter:latest
+docker pull ghcr.io/bahag/api-linter-opensource:latest
 
-docker run --platform linux/amd64 -it -v $(pwd):/spec ghcr.io/bahag/api-linter:latest linting -s /spec/your-filename.yml -r /rules.json -o json -l -c
+docker run --platform linux/amd64 -it -v $(pwd):/spec ghcr.io/bahag/api-linter-opensource:latest linting -s /spec/your-filename.yml -r /rules.json -o json -l -c
 ```
 
 It will create your-filename-remodeled-output.json and a corresponding your-filename-remodeled.yaml

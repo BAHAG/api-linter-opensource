@@ -31,3 +31,4 @@ dist/
 test.py
 rules-transformed.json
 *.vsix
+__pycache__/

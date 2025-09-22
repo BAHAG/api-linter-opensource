@@ -3,3 +3,10 @@ pqlmeongvbhhybse:
     desxyviduxkzyldclzcbgsdpeuvv:
       paths:
         //LU@<yl.q5a#0s/: sample
+        /{store_id}/test:
+          get:
+            deprecated: true
+            description: sample
+            responses:
+              '200':
+                description: sample

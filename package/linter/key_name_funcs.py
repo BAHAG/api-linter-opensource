@@ -61,6 +61,12 @@ def check_keys_pattern_log(spec, yq_path, message, severity, logger, id, key, pa
         return
     for s_key, s_value in spec.items():
         tmp = f'."{s_key}"'
+        # check if any of the methods are deprecated
+        deprecated_flag = [s_value.get(x, {"deprecated":False}).get("deprecated") for x in ["get", "post", "put", "delete", "patch"] if type(s_value) is dict]
+        # if deprecated change severity to warning for rule B146
+        if any(deprecated_flag) and id == "B146":
+            continue
+        
         # if not re.search(pattern, f"{s_key.replace('{', '').replace('}', '')}"):
         if not re.search(pattern, f"{s_key}"):
             line_num = get_line_number_key(yq_path + tmp, logger)

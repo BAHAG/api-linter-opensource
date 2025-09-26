@@ -317,10 +317,10 @@
                     "array_name": "schemas.enum",
                     "checks": [
                         {
-                            "check_array_pattern": "^[A-Z][A-Z_]*[A-Z]$",
+                            "check_array_pattern": "^[A-Z0-9][A-Z0-9_]*$",
                             "message": "enum property does not follow UPPER_SNAKE_CASE",
                             "name": "check_array_pattern",
-                            "value": "^[A-Z][A-Z_]*[A-Z]$",
+                            "value": "^[A-Z0-9][A-Z0-9_]*$",
                             "exceptions": [
                                 {
                                     "title": "Cart Masterdata API",
@@ -336,10 +336,10 @@
                     "array_name": "schemas.x-extensible-enum",
                     "checks": [
                         {
-                            "check_array_pattern": "^[A-Z][A-Z_]*[A-Z]$",
+                            "check_array_pattern": "^[A-Z0-9][A-Z0-9_]*$",
                             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
                             "name": "check_array_pattern",
-                            "value": "^[A-Z][A-Z_]*[A-Z]$",
+                            "value": "^[A-Z0-9][A-Z0-9_]*$",
                             "exceptions": [
                                 {
                                     "title": "Cart Masterdata API",

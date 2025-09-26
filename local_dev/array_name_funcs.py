@@ -17,6 +17,9 @@ def check_array_pattern(spec, yq_path, message, severity, logger, id, key_lst, p
             continue
         tmp = f'."{s_key}"'
 
+        if id == "B111" and s_key == "in" and value == "path":
+            break
+
         if re.match(key_lst[idx], f"{s_key}"):#s_key == key_lst[idx]
             # set parent node to true for logging
             if idx == 0:

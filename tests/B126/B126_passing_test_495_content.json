@@ -1,8 +1,8 @@
 {
-    "total": 22,
+    "total": 19,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 22,
+    "errors": 19,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -111,34 +117,6 @@
             "key": "info.x-audience",
             "severity": "ERROR",
             "message": "info.x-audience is not present"
-        },
-        {
-            "id": "B126",
-            "num_line": 8,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.IOGhlQZYNBgnvB"
-        },
-        {
-            "id": "B126",
-            "num_line": 9,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.lMHzUsLKNfmwauWcHCNHJvUKjOTF"
-        },
-        {
-            "id": "B126",
-            "num_line": 10,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.ssWEqiLrAVEdAH"
-        },
-        {
-            "id": "B126",
-            "num_line": 11,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".fgaomawwhpfmyqteakjt.lonlhlearpdhddv.ptvebovkoemdpgvxigkogkuym.dtzkuzzkkoxvvfxccjyxwmnmxqmr.cubovenniqpyxyalknvgha.541.content.tcTvmovLNiYwkfkUF"
         }
     ],
     "metadata": {

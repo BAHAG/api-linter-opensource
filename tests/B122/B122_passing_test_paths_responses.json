@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 22,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 21,
+    "errors": 22,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -114,24 +120,24 @@
         },
         {
             "id": "B142",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".suufe.itrahployfalnlte.yfksuosfgbmmwpetnxljbmyyj.paths.responses"
+            "key": ".ahsrnlfslawodyjnqclsj.fxdpjmbheuatukqoghfqu.vxtbdrfqixmlbbzsqofgqjdmlzzn.esjvzfxzercyeevxvnlyoc.dsuavqtblsnvwjbbghhq.bvklzwqbktcpvkpkmlimo.yuwzayphmx.jkvhldcbottxbiwtbgjuijqkpgbu.thysldatbzbbexzjjyqmjio.paths.responses"
         },
         {
             "id": "B143",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
-            "key": ".suufe.itrahployfalnlte.yfksuosfgbmmwpetnxljbmyyj.paths.responses"
+            "key": ".ahsrnlfslawodyjnqclsj.fxdpjmbheuatukqoghfqu.vxtbdrfqixmlbbzsqofgqjdmlzzn.esjvzfxzercyeevxvnlyoc.dsuavqtblsnvwjbbghhq.bvklzwqbktcpvkpkmlimo.yuwzayphmx.jkvhldcbottxbiwtbgjuijqkpgbu.thysldatbzbbexzjjyqmjio.paths.responses"
         },
         {
             "id": "B146",
-            "num_line": 5,
+            "num_line": 11,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".suufe.itrahployfalnlte.yfksuosfgbmmwpetnxljbmyyj.paths.responses"
+            "key": ".ahsrnlfslawodyjnqclsj.fxdpjmbheuatukqoghfqu.vxtbdrfqixmlbbzsqofgqjdmlzzn.esjvzfxzercyeevxvnlyoc.dsuavqtblsnvwjbbghhq.bvklzwqbktcpvkpkmlimo.yuwzayphmx.jkvhldcbottxbiwtbgjuijqkpgbu.thysldatbzbbexzjjyqmjio.paths.responses"
         }
     ],
     "metadata": {

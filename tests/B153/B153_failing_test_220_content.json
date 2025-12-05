@@ -1,8 +1,8 @@
 {
-    "total": 24,
+    "total": 21,
     "example-errors": 0,
-    "warnings": 0,
-    "errors": 24,
+    "warnings": 2,
+    "errors": 19,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -113,46 +119,18 @@
             "message": "info.x-audience is not present"
         },
         {
-            "id": "B126",
-            "num_line": 6,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.FMxBNcdMkkIAsipnIWeyNgxeqib"
-        },
-        {
-            "id": "B126",
-            "num_line": 7,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.HrWtCpUqJEAVjq"
-        },
-        {
-            "id": "B126",
+            "id": "B153",
             "num_line": 8,
-            "severity": "ERROR",
+            "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.QhaSbNXzzLgnLvSmugctKoevmx"
+            "key": ".nrbcoqldhgyslcbpgmo.ifgagvtmcbw.mbnaclnhwqejptgxmpjmyzafx.ccrraldhezyontr.domsyulavwvhdrwhwvrajzhwfdy.282.content.gmniJMCGReTIeaSaPJlT"
         },
         {
-            "id": "B126",
+            "id": "B153",
             "num_line": 9,
-            "severity": "ERROR",
+            "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.RVIFoZuk"
-        },
-        {
-            "id": "B126",
-            "num_line": 10,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.pJQqBhfWRQtETjzhXUWRzKAo"
-        },
-        {
-            "id": "B126",
-            "num_line": 11,
-            "severity": "ERROR",
-            "message": "The content type does not match application/problem+json",
-            "key": ".hyryhtz.fthuhqiyqrcemppfbsfzxxepfao.wbktlrugzfwmxtoyorqa.497.content.xgLfSXSX"
+            "key": ".nrbcoqldhgyslcbpgmo.ifgagvtmcbw.mbnaclnhwqejptgxmpjmyzafx.ccrraldhezyontr.domsyulavwvhdrwhwvrajzhwfdy.282.content.kknSxaKFsDCiVGGbElhLlGCBO"
         }
     ],
     "metadata": {

@@ -1,8 +1,8 @@
 {
-    "total": 17,
+    "total": 18,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 17,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -121,7 +127,7 @@
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,
-        "x-touchpoints-types": "others, \r \t\u000b\f \f\f\r\f\r\r\u000bnone,\n\f\t \r\f\n \t\t\f\f \t \f\t\fsalesapp,\n\r\n \u000b\n\n\n\r\fsalesapp,\n\n\t\f\n\n \u000b\t\f\u000b\n  \u000bnone,\t\f\tsalesapp,\r \u000b\u000b \u000b\n\r \n\r\u000b\r\n \n\f\tnone,\r \r\n\f \u000b  \u000b\tsalesapp,\u000b\u000b \f\n\n\u000b others,\t\u000b\t\n\u000b\f\n\n \r\u000b\r\r\r\n\r\r\tonlineshop,\u000b\f\n\nnone,salesapp,\f \f\r\n\r\u000b\n\t \u000b\u000b\t\u000b onlineshop,\t\u000b\f \u000b\n\t\t\t\r\n\f\n\u000bonlineshop,\f \f\rconsumerapp,\n\f\f  \t\r \f\t\f\r\t\t\r\f  \nnone,\f\t\u000b\t\n\t\nothers,\t\n\u000b \t\f\t\u000b\n\n\n \u000b\r\t\f \tsalesapp",
+        "x-touchpoints-types": "onlineshop, \t\n\u000b\n\u000b\t\f \f \u000b\u000b\r\r  \tconsumerapp, \f\r\r\f \t\n\r\r\f\t\r\f\f\n\f none, \r\t\f\n\f\tothers,\u000b\n\u000b\u000bonlineshop,\u000b\u000bnone,consumerapp,others,\n  \t\f \r  \f\tnone,\u000b\r\r\n\r \r\r\n\n\r\f\r\r\f\t onlineshop",
         "x-restrictions": null,
         "supported-countries": [
             "all"

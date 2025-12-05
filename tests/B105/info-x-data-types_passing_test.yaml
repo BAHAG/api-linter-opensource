@@ -1,2 +1,2 @@
 info:
-  x-data-types: store,store,article,customer,employee,customer,store,store,store,article,customer
+  x-data-types: other,order,customer,invoice,other,customer,customer,article,other,employee,invoice,store,article,other,article,price,store,order,invoice

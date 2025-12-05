@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 23,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 23,
     "logs": [
         {
             "id": "B101",
@@ -108,15 +108,43 @@
         },
         {
             "id": "B106",
-            "num_line": "2",
+            "key": "info.version",
             "severity": "ERROR",
-            "message": "info.version does not follow semantic versioning"
+            "message": "API specification version not present"
         },
         {
             "id": "B108",
             "key": "info.x-audience",
             "severity": "ERROR",
             "message": "info.x-audience is not present"
+        },
+        {
+            "id": "B126",
+            "num_line": 12,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".eqrhtsgns.yebhpgvutwouzhgnzwgixeuifolnp.dtnqtjn.mutlqlmkbtqq.crpqhtojwyxsupitmlnojuxca.butgsjejgxzjpkdhrnahven.zirnhjrfbwrioam.ncejprjbmniuzntuodxzi.otcmpeewmynoxfyoyyvg.522.content.XXeSoLagDS"
+        },
+        {
+            "id": "B126",
+            "num_line": 13,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".eqrhtsgns.yebhpgvutwouzhgnzwgixeuifolnp.dtnqtjn.mutlqlmkbtqq.crpqhtojwyxsupitmlnojuxca.butgsjejgxzjpkdhrnahven.zirnhjrfbwrioam.ncejprjbmniuzntuodxzi.otcmpeewmynoxfyoyyvg.522.content.jDMwelOmtZbLDNsdJ"
+        },
+        {
+            "id": "B126",
+            "num_line": 14,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".eqrhtsgns.yebhpgvutwouzhgnzwgixeuifolnp.dtnqtjn.mutlqlmkbtqq.crpqhtojwyxsupitmlnojuxca.butgsjejgxzjpkdhrnahven.zirnhjrfbwrioam.ncejprjbmniuzntuodxzi.otcmpeewmynoxfyoyyvg.522.content.kHCwSrZzfVInoxZWosbTlHznmN"
+        },
+        {
+            "id": "B126",
+            "num_line": 15,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".eqrhtsgns.yebhpgvutwouzhgnzwgixeuifolnp.dtnqtjn.mutlqlmkbtqq.crpqhtojwyxsupitmlnojuxca.butgsjejgxzjpkdhrnahven.zirnhjrfbwrioam.ncejprjbmniuzntuodxzi.otcmpeewmynoxfyoyyvg.522.content.qteTSsWfHGarpdR"
         }
     ],
     "metadata": {

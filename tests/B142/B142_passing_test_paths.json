@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 22,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 22,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -113,11 +119,25 @@
             "message": "info.x-audience is not present"
         },
         {
+            "id": "B142",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "Path values must use lowercase separate words with hyphens for path segments",
+            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
+        },
+        {
+            "id": "B143",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
+            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
+        },
+        {
             "id": "B146",
-            "num_line": 6,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".vdqktqzlsitfbetmlworucjuywce.theyx.zwmugjdqzshi.irhdv.paths./"
+            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
         }
     ],
     "metadata": {

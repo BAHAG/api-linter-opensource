@@ -1,8 +1,4 @@
 info:
-  x-touchpoints-types: "others, \r \t\v\f \f\f\r\f\r\r\vnone,\n\f\t \r\f\n \t\t\f\f\
-    \ \t \f\t\fsalesapp,\n\r\n \v\n\n\n\r\fsalesapp,\n\n\t\f\n\n \v\t\f\v\n  \vnone,\t\
-    \f\tsalesapp,\r \v\v \v\n\r \n\r\v\r\n \n\f\tnone,\r \r\n\f \v  \v\tsalesapp,\v\
-    \v \f\n\n\v others,\t\v\t\n\v\f\n\n \r\v\r\r\r\n\r\r\tonlineshop,\v\f\n\nnone,salesapp,\f\
-    \ \f\r\n\r\v\n\t \v\v\t\v onlineshop,\t\v\f \v\n\t\t\t\r\n\f\n\vonlineshop,\f\
-    \ \f\rconsumerapp,\n\f\f  \t\r \f\t\f\r\t\t\r\f  \nnone,\f\t\v\t\n\t\nothers,\t\
-    \n\v \t\f\t\v\n\n\n \v\r\t\f \tsalesapp"
+  x-touchpoints-types: "onlineshop, \t\n\v\n\v\t\f \f \v\v\r\r  \tconsumerapp, \f\r\
+    \r\f \t\n\r\r\f\t\r\f\f\n\f none, \r\t\f\n\f\tothers,\v\n\v\vonlineshop,\v\vnone,consumerapp,others,\n\
+    \  \t\f \r  \f\tnone,\v\r\r\n\r \r\r\n\n\r\f\r\r\f\t onlineshop"

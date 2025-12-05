@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 20,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -51,6 +51,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -124,7 +130,7 @@
         "x-channel": null,
         "x-sunset-date": null,
         "x-shutdown-date": null,
-        "openapi": "MinCXpntMfHEXVyu",
+        "openapi": "liKJlMZqGXqQwbjTmhfalBdEebTSB",
         "x-monitoring": null,
         "x-alerting": null,
         "x-announcement": null,

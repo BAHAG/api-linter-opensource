@@ -1,8 +1,8 @@
 {
-    "total": 20,
+    "total": 21,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 20,
+    "errors": 21,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -114,17 +120,17 @@
         },
         {
             "id": "B142",
-            "num_line": 5,
+            "num_line": 8,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".pqlmeongvbhhybse.xeklztttnwqztoaeicea.desxyviduxkzyldclzcbgsdpeuvv.paths.//LU@<yl.q5a#0s/"
+            "key": ".aphymyvyumzryt.elcbupkiw.plrrecodijjw.ktwajgriykgegmlnb.wotrfj.dmkmjfufrcbrs.paths.//+q(>iqhuCI.s"
         },
         {
             "id": "B143",
-            "num_line": 5,
+            "num_line": 8,
             "severity": "ERROR",
             "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
-            "key": ".pqlmeongvbhhybse.xeklztttnwqztoaeicea.desxyviduxkzyldclzcbgsdpeuvv.paths.//LU@<yl.q5a#0s/"
+            "key": ".aphymyvyumzryt.elcbupkiw.plrrecodijjw.ktwajgriykgegmlnb.wotrfj.dmkmjfufrcbrs.paths.//+q(>iqhuCI.s"
         }
     ],
     "metadata": {

@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 20,
     "example-errors": 0,
     "warnings": 1,
-    "errors": 18,
+    "errors": 19,
     "logs": [
         {
             "id": "B101",
@@ -45,6 +45,12 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
+        },
+        {
+            "id": "B105",
+            "key": "info.x-announcement",
+            "severity": "ERROR",
+            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -114,10 +120,10 @@
         },
         {
             "id": "B117",
-            "num_line": 5,
+            "num_line": 3,
             "severity": "WARN",
             "message": "Date/Time property does not end with _at, _start, _end",
-            "key": ".niiuwk.zmh9kqibj8fnjvg5l7k6.o0jrdr.b39cbnizau4d_.check"
+            "key": ".ycp2.mn.check"
         }
     ],
     "metadata": {

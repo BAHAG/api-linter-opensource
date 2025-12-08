@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 20,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 21,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -120,17 +114,17 @@
         },
         {
             "id": "B142",
-            "num_line": 8,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".aphymyvyumzryt.elcbupkiw.plrrecodijjw.ktwajgriykgegmlnb.wotrfj.dmkmjfufrcbrs.paths.//+q(>iqhuCI.s"
+            "key": ".pbfezjskdlcy.rbdpwrfjfovmvksdwogahboykkkwm.jtjfyppferfwlpx.rujvgineiicmrqmqqqogcevyupr.icqkqfsejpoprodfppgxpnvmkh.wghnqbdoxofbhrusybwntxhugsb.ijsfwaz.eqqjucvh.paths.//;',sims/"
         },
         {
             "id": "B143",
-            "num_line": 8,
+            "num_line": 10,
             "severity": "ERROR",
             "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
-            "key": ".aphymyvyumzryt.elcbupkiw.plrrecodijjw.ktwajgriykgegmlnb.wotrfj.dmkmjfufrcbrs.paths.//+q(>iqhuCI.s"
+            "key": ".pbfezjskdlcy.rbdpwrfjfovmvksdwogahboykkkwm.jtjfyppferfwlpx.rujvgineiicmrqmqqqogcevyupr.icqkqfsejpoprodfppgxpnvmkh.wghnqbdoxofbhrusybwntxhugsb.ijsfwaz.eqqjucvh.paths.//;',sims/"
         }
     ],
     "metadata": {

@@ -1,8 +1,8 @@
 {
-    "total": 19,
+    "total": 21,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 19,
+    "errors": 21,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -117,6 +111,27 @@
             "key": "info.x-audience",
             "severity": "ERROR",
             "message": "info.x-audience is not present"
+        },
+        {
+            "id": "B126",
+            "num_line": 7,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".cfdmupdyticfujwrjcrhcc.cjbuoqzhxbzixl.ytnbawauufgwctln.blcgyagrdvycgia.517.content.EoMrvGS"
+        },
+        {
+            "id": "B126",
+            "num_line": 8,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".cfdmupdyticfujwrjcrhcc.cjbuoqzhxbzixl.ytnbawauufgwctln.blcgyagrdvycgia.517.content.sYroHWLpZgQHnpYcGZUyMpEoCzOCi"
+        },
+        {
+            "id": "B126",
+            "num_line": 9,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".cfdmupdyticfujwrjcrhcc.cjbuoqzhxbzixl.ytnbawauufgwctln.blcgyagrdvycgia.517.content.tDJkxtHMhzgYfCfIlOPxEZC"
         }
     ],
     "metadata": {

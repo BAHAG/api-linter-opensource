@@ -1,8 +1,8 @@
 {
-    "total": 21,
+    "total": 20,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 21,
+    "errors": 20,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -120,17 +114,17 @@
         },
         {
             "id": "B146",
-            "num_line": 5,
+            "num_line": 6,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".hibmowxoycogechnffxgawyotizl.uqkljtlva.yjllvlcnwtvzzqanwz.paths./api"
+            "key": ".krpmbzlrozmtqbjfbiflrno.armifukwfazpjyemojopazarmn.sbuxfamayfhf.jliqjggckhwyzsznz.paths./api"
         },
         {
             "id": "B147",
-            "num_line": 5,
+            "num_line": 6,
             "severity": "ERROR",
             "message": "/api used as the base path",
-            "key": ".hibmowxoycogechnffxgawyotizl.uqkljtlva.yjllvlcnwtvzzqanwz.paths./api"
+            "key": ".krpmbzlrozmtqbjfbiflrno.armifukwfazpjyemojopazarmn.sbuxfamayfhf.jliqjggckhwyzsznz.paths./api"
         }
     ],
     "metadata": {

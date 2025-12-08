@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.1.2'
+VERSION = '1.2'
 DESCRIPTION = 'Linter for Open API specification documents'
 LONG_DESCRIPTION = 'A yaml linter for openapi documents. '
 

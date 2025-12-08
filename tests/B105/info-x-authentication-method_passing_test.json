@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -124,7 +118,7 @@
         "x-announcement": null,
         "x-apigee-proxy": null,
         "x-business-critical": null,
-        "x-authentication-method": "oauth2,apikey",
+        "x-authentication-method": "apikey",
         "x-data-types": null,
         "x-gdpr": null,
         "x-touchpoints-types": null,

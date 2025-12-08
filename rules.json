@@ -96,13 +96,6 @@
                     "path_name": "required_path"
                 },
                 {
-                    "required_path": "info.x-announcement",
-                    "message": "Announcement field for the api not present",
-                    "checks": [],
-                    "path_value": "info.x-announcement",
-                    "path_name": "required_path"
-                },
-                {
                     "required_path": "info.x-alerting",
                     "message": "Alerting field for the api not present",
                     "checks": [],

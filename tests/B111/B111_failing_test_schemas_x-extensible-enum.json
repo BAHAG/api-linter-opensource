@@ -1,8 +1,8 @@
 {
-    "total": 24,
+    "total": 21,
     "example-errors": 0,
-    "warnings": 5,
-    "errors": 19,
+    "warnings": 3,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -120,38 +114,24 @@
         },
         {
             "id": "B111",
-            "num_line": 9,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ygtjngpnl.lzzifwwvu.xrrppuzpbfjtf.jwcqizsuovdsdsgnpnvuydestdysy.dinrzolfzkcybmqmjprp.lcfpjvpswyeoakdmwd.schemas.x-extensible-enum.[0]"
-        },
-        {
-            "id": "B111",
             "num_line": 10,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ygtjngpnl.lzzifwwvu.xrrppuzpbfjtf.jwcqizsuovdsdsgnpnvuydestdysy.dinrzolfzkcybmqmjprp.lcfpjvpswyeoakdmwd.schemas.x-extensible-enum.[1]"
+            "key": ".ajifuydwhdnjsa.hfsereryjbu.mzdxxbyuwvvmry.dwdxkya.dspryigszhnlxpvga.tgxjedq.ijhavuncqgqwgwc.schemas.x-extensible-enum.[0]"
         },
         {
             "id": "B111",
             "num_line": 11,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ygtjngpnl.lzzifwwvu.xrrppuzpbfjtf.jwcqizsuovdsdsgnpnvuydestdysy.dinrzolfzkcybmqmjprp.lcfpjvpswyeoakdmwd.schemas.x-extensible-enum.[2]"
+            "key": ".ajifuydwhdnjsa.hfsereryjbu.mzdxxbyuwvvmry.dwdxkya.dspryigszhnlxpvga.tgxjedq.ijhavuncqgqwgwc.schemas.x-extensible-enum.[1]"
         },
         {
             "id": "B111",
             "num_line": 12,
             "severity": "WARN",
             "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ygtjngpnl.lzzifwwvu.xrrppuzpbfjtf.jwcqizsuovdsdsgnpnvuydestdysy.dinrzolfzkcybmqmjprp.lcfpjvpswyeoakdmwd.schemas.x-extensible-enum.[3]"
-        },
-        {
-            "id": "B111",
-            "num_line": 13,
-            "severity": "WARN",
-            "message": "x-extensible-enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".ygtjngpnl.lzzifwwvu.xrrppuzpbfjtf.jwcqizsuovdsdsgnpnvuydestdysy.dinrzolfzkcybmqmjprp.lcfpjvpswyeoakdmwd.schemas.x-extensible-enum.[4]"
+            "key": ".ajifuydwhdnjsa.hfsereryjbu.mzdxxbyuwvvmry.dwdxkya.dspryigszhnlxpvga.tgxjedq.ijhavuncqgqwgwc.schemas.x-extensible-enum.[2]"
         }
     ],
     "metadata": {

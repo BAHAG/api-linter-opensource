@@ -1,8 +1,8 @@
 {
-    "total": 18,
+    "total": 17,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 18,
+    "errors": 17,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -127,7 +121,7 @@
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,
-        "x-touchpoints-types": "onlineshop, \t\n\u000b\n\u000b\t\f \f \u000b\u000b\r\r  \tconsumerapp, \f\r\r\f \t\n\r\r\f\t\r\f\f\n\f none, \r\t\f\n\f\tothers,\u000b\n\u000b\u000bonlineshop,\u000b\u000bnone,consumerapp,others,\n  \t\f \r  \f\tnone,\u000b\r\r\n\r \r\r\n\n\r\f\r\r\f\t onlineshop",
+        "x-touchpoints-types": "onlineshop",
         "x-restrictions": null,
         "supported-countries": [
             "all"

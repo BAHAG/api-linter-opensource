@@ -1,8 +1,8 @@
 {
-    "total": 24,
+    "total": 23,
     "example-errors": 0,
     "warnings": 5,
-    "errors": 19,
+    "errors": 18,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -120,38 +114,38 @@
         },
         {
             "id": "B111",
+            "num_line": 5,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".upbuejibfpsrwlphefmgnqalel.asswfkefedlrcwmsfvbkuioleqhv.schemas.enum.[0]"
+        },
+        {
+            "id": "B111",
+            "num_line": 6,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".upbuejibfpsrwlphefmgnqalel.asswfkefedlrcwmsfvbkuioleqhv.schemas.enum.[1]"
+        },
+        {
+            "id": "B111",
+            "num_line": 7,
+            "severity": "WARN",
+            "message": "enum property does not follow UPPER_SNAKE_CASE",
+            "key": ".upbuejibfpsrwlphefmgnqalel.asswfkefedlrcwmsfvbkuioleqhv.schemas.enum.[2]"
+        },
+        {
+            "id": "B111",
             "num_line": 8,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".pznjmrjmtlqkmuroyheva.syrbhcmyklmdkaouluxcekcbhbzbr.cssqxqljzarogmgzcajuytlbcbnhl.fnxuoufaaxxsymdnmlxrowai.iivqjztytvgu.schemas.enum.[0]"
+            "key": ".upbuejibfpsrwlphefmgnqalel.asswfkefedlrcwmsfvbkuioleqhv.schemas.enum.[3]"
         },
         {
             "id": "B111",
             "num_line": 9,
             "severity": "WARN",
             "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".pznjmrjmtlqkmuroyheva.syrbhcmyklmdkaouluxcekcbhbzbr.cssqxqljzarogmgzcajuytlbcbnhl.fnxuoufaaxxsymdnmlxrowai.iivqjztytvgu.schemas.enum.[1]"
-        },
-        {
-            "id": "B111",
-            "num_line": 10,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".pznjmrjmtlqkmuroyheva.syrbhcmyklmdkaouluxcekcbhbzbr.cssqxqljzarogmgzcajuytlbcbnhl.fnxuoufaaxxsymdnmlxrowai.iivqjztytvgu.schemas.enum.[2]"
-        },
-        {
-            "id": "B111",
-            "num_line": 11,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".pznjmrjmtlqkmuroyheva.syrbhcmyklmdkaouluxcekcbhbzbr.cssqxqljzarogmgzcajuytlbcbnhl.fnxuoufaaxxsymdnmlxrowai.iivqjztytvgu.schemas.enum.[3]"
-        },
-        {
-            "id": "B111",
-            "num_line": 12,
-            "severity": "WARN",
-            "message": "enum property does not follow UPPER_SNAKE_CASE",
-            "key": ".pznjmrjmtlqkmuroyheva.syrbhcmyklmdkaouluxcekcbhbzbr.cssqxqljzarogmgzcajuytlbcbnhl.fnxuoufaaxxsymdnmlxrowai.iivqjztytvgu.schemas.enum.[4]"
+            "key": ".upbuejibfpsrwlphefmgnqalel.asswfkefedlrcwmsfvbkuioleqhv.schemas.enum.[4]"
         }
     ],
     "metadata": {

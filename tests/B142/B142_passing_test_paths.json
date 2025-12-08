@@ -1,8 +1,8 @@
 {
-    "total": 22,
+    "total": 21,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 22,
+    "errors": 21,
     "logs": [
         {
             "id": "B101",
@@ -45,12 +45,6 @@
             "key": "info.x-channel",
             "severity": "ERROR",
             "message": "Teams channel for the api not present"
-        },
-        {
-            "id": "B105",
-            "key": "info.x-announcement",
-            "severity": "ERROR",
-            "message": "Announcement field for the api not present"
         },
         {
             "id": "B105",
@@ -120,24 +114,24 @@
         },
         {
             "id": "B142",
-            "num_line": 10,
+            "num_line": 6,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
+            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
         },
         {
             "id": "B143",
-            "num_line": 10,
+            "num_line": 6,
             "severity": "ERROR",
             "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
-            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
+            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
         },
         {
             "id": "B146",
-            "num_line": 10,
+            "num_line": 6,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".wcrkgstakjk.obktw.dmetngsepkjlvqrjvxmbxzynhyu.bbixwthlckuiklfjgc.dxoqxrbwhlfxxmolrtcxawa.jsaajuwzoyytwcg.xiohmemxywlkzwzscbg.ceaxpfygumisjjxhzavhfkpiezu.paths.//y/v/{csvfqwbot51}/{6ast2uy6ddi}/g/4"
+            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
         }
     ],
     "metadata": {

@@ -4,16 +4,25 @@ import re
 
 # check if the pattern matches the property value
 def pattern_matching(pattern, property_, line_number, severity, message, id, error_logger):
+    if property_ is None:
+        error_logger.log_with_line_number(line_number, severity, "The value is empty", id)
+        return
     if not re.match(pattern, property_):
         error_logger.log_with_line_number(line_number, severity, message, id)
 
 # check if the value in spec file is matches one of the predefined values
 def allowed_values(all_values, value, line_number, severity, message, id, error_logger):
+    if value is None:
+        error_logger.log_with_line_number(line_number, severity, "The value is empty", id)
+        return
     if not (value in all_values):
         error_logger.log_with_line_number(line_number, severity, message, id)
 
 # check if semantic versioning is >= version specified in the rules.json
 def gte(check, spec_value, line_number, severity, message, id, error_logger):
+    if not spec_value:
+        error_logger.log_with_line_number(line_number, severity, "The value is empty", id)
+        return
     check = int("".join(check.split(".")))
     try:
         spec_value = int("".join(spec_value.split(".")))
@@ -26,6 +35,9 @@ def gte(check, spec_value, line_number, severity, message, id, error_logger):
 
 # check if the value matches the predifined string
 def string_match(check, spec_value, line_number, severity, message, id, error_logger):
+    if not spec_value:
+        error_logger.log_with_line_number(line_number, severity, "The value is empty", id)
+        return
     if check != spec_value:
         error_logger.log_with_line_number(line_number, severity, message, id)
 """END"""

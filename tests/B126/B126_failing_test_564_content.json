@@ -1,8 +1,8 @@
 {
-    "total": 20,
+    "total": 22,
     "example-errors": 0,
     "warnings": 0,
-    "errors": 20,
+    "errors": 22,
     "logs": [
         {
             "id": "B101",
@@ -114,17 +114,31 @@
         },
         {
             "id": "B126",
-            "num_line": 12,
+            "num_line": 8,
             "severity": "ERROR",
             "message": "The content type does not match application/problem+json",
-            "key": ".hlidzekjaiodd.hxpcxnegi.obydcsyriamyjspmrirhoemoku.ginvvlerrinzvb.zxvqegsaiodijxodegekjw.yehzbgeputtilapxk.qjjhnoumcy.rlqkoayrxsndfnnmbjonph.iqhll.409.content.KSQtTBJkVZWgznxLkn"
+            "key": ".zgzpicitarvagbozcilu.dawkhmdbcldqltgkljmb.rkkubnitveuxmfvinumsshg.khuljrmdi.qwpgmhmjrfcdksbytqmjk.587.content.QioKmFbjtxKTmAo"
         },
         {
             "id": "B126",
-            "num_line": 13,
+            "num_line": 9,
             "severity": "ERROR",
             "message": "The content type does not match application/problem+json",
-            "key": ".hlidzekjaiodd.hxpcxnegi.obydcsyriamyjspmrirhoemoku.ginvvlerrinzvb.zxvqegsaiodijxodegekjw.yehzbgeputtilapxk.qjjhnoumcy.rlqkoayrxsndfnnmbjonph.iqhll.409.content.WYjFNn"
+            "key": ".zgzpicitarvagbozcilu.dawkhmdbcldqltgkljmb.rkkubnitveuxmfvinumsshg.khuljrmdi.qwpgmhmjrfcdksbytqmjk.587.content.TmvHZG"
+        },
+        {
+            "id": "B126",
+            "num_line": 10,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".zgzpicitarvagbozcilu.dawkhmdbcldqltgkljmb.rkkubnitveuxmfvinumsshg.khuljrmdi.qwpgmhmjrfcdksbytqmjk.587.content.UxabR"
+        },
+        {
+            "id": "B126",
+            "num_line": 11,
+            "severity": "ERROR",
+            "message": "The content type does not match application/problem+json",
+            "key": ".zgzpicitarvagbozcilu.dawkhmdbcldqltgkljmb.rkkubnitveuxmfvinumsshg.khuljrmdi.qwpgmhmjrfcdksbytqmjk.587.content.oTobqarg"
         }
     ],
     "metadata": {

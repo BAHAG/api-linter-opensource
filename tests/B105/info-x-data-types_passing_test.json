@@ -119,7 +119,7 @@
         "x-apigee-proxy": null,
         "x-business-critical": null,
         "x-authentication-method": null,
-        "x-data-types": "customer,article,customer,customer,price,employee,article,order,other,price,order,customer,invoice,employee,article,order",
+        "x-data-types": "other,employee,order,article",
         "x-gdpr": null,
         "x-touchpoints-types": null,
         "x-restrictions": null,

@@ -1,7 +1,7 @@
 {
-    "total": 22,
+    "total": 24,
     "example-errors": 0,
-    "warnings": 4,
+    "warnings": 6,
     "errors": 18,
     "logs": [
         {
@@ -114,31 +114,45 @@
         },
         {
             "id": "B153",
-            "num_line": 6,
+            "num_line": 10,
             "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".fgkuxospisszdedhjrrbeydgvjw.kpffqdapyxseimlrpdduofmckwz.dytlftngwolnc.244.content.BICDdo"
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.IRvOMygvz"
         },
         {
             "id": "B153",
-            "num_line": 7,
+            "num_line": 11,
             "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".fgkuxospisszdedhjrrbeydgvjw.kpffqdapyxseimlrpdduofmckwz.dytlftngwolnc.244.content.WlSGhJKzFqBrTcKoabblewNYQtt"
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.aJIiBJVEtyEfwIfWpHbxFZSNUaOgu"
         },
         {
             "id": "B153",
-            "num_line": 8,
+            "num_line": 12,
             "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".fgkuxospisszdedhjrrbeydgvjw.kpffqdapyxseimlrpdduofmckwz.dytlftngwolnc.244.content.XbNRDUeqFFxZwgs"
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.eTozrTascgr"
         },
         {
             "id": "B153",
-            "num_line": 9,
+            "num_line": 13,
             "severity": "WARN",
             "message": "The content type does not match application/problem+json",
-            "key": ".fgkuxospisszdedhjrrbeydgvjw.kpffqdapyxseimlrpdduofmckwz.dytlftngwolnc.244.content.jyUOJF"
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.gUhDfPMIqyppoiRsVHcqHiBk"
+        },
+        {
+            "id": "B153",
+            "num_line": 14,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.qTxjhBlzfiwApBbLkalUzC"
+        },
+        {
+            "id": "B153",
+            "num_line": 15,
+            "severity": "WARN",
+            "message": "The content type does not match application/problem+json",
+            "key": ".iairkdeepgbejyudgmwsatrem.jsayujfyjvc.rindfppwwdfvmjiupsibkkbzerwn.kjglhuq.genfr.wlydyulp.baykhybuuhehhinhirgirmaax.240.content.xNttAHCmrhcvOF"
         }
     ],
     "metadata": {

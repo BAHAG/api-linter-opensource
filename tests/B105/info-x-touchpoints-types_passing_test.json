@@ -121,7 +121,7 @@
         "x-authentication-method": null,
         "x-data-types": null,
         "x-gdpr": null,
-        "x-touchpoints-types": "onlineshop",
+        "x-touchpoints-types": "salesapp,\f\r \f\t \u000b\u000b  \r\nothers,\r\f \t\n\t\tconsumerapp,\t\n\n \n\t\f \t none,\u000b\nonlineshop,\u000b\u000bonlineshop,\r\u000b\f\f\r\n\tonlineshop,\n\rconsumerapp,\f\f\u000b\f\n\n\t\u000b\u000bnone,\t\t\r\t\u000b\t\n\n \n\t\rsalesapp",
         "x-restrictions": null,
         "supported-countries": [
             "all"

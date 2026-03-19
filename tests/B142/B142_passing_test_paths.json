@@ -114,24 +114,24 @@
         },
         {
             "id": "B142",
-            "num_line": 6,
+            "num_line": 9,
             "severity": "ERROR",
             "message": "Path values must use lowercase separate words with hyphens for path segments",
-            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
+            "key": ".ycmpdkgitycogdahnnsxsmt.onpwumibkj.rhmbpdyhrnhnglbtlbdwhb.pkchhp.bxnnlhsssuajmw.bznpj.cfuwomzvsnbh.paths.//{3tw9_e6vy7uz5dvhcr}/{r7rb6s0pubgoha_22}/zmvx1j3k4c691f8z/6/f/9/yq06cp61b1-d/n/4m3tqg1w-d-hteknmt8/{qg3yt5r_o1chjl}/{sd80_2pge}/nmhs4ol9f0yezvgkb/{b4-1kp7hu}/9"
         },
         {
             "id": "B143",
-            "num_line": 6,
+            "num_line": 9,
             "severity": "ERROR",
             "message": "Path segments must use lowercase with hyphens, path parameters in {} can use underscores and hyphens",
-            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
+            "key": ".ycmpdkgitycogdahnnsxsmt.onpwumibkj.rhmbpdyhrnhnglbtlbdwhb.pkchhp.bxnnlhsssuajmw.bznpj.cfuwomzvsnbh.paths.//{3tw9_e6vy7uz5dvhcr}/{r7rb6s0pubgoha_22}/zmvx1j3k4c691f8z/6/f/9/yq06cp61b1-d/n/4m3tqg1w-d-hteknmt8/{qg3yt5r_o1chjl}/{sd80_2pge}/nmhs4ol9f0yezvgkb/{b4-1kp7hu}/9"
         },
         {
             "id": "B146",
-            "num_line": 6,
+            "num_line": 9,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".bxtnensmutaraqaptiomsojl.ijotwpnlqyxnhtmigwozmcdy.eexrdnds.zigrdicmzlvlefbofhcwywoesprtx.paths.//mrvi/j/{hcjg6vax4j7jhncez}/mhgsm-0r6a2/{578vs9czcc20neajjg3l}/j2/ei5hosjlnk9dzmxerc0/t/t/o/{5gpi2g0w4tflz}/c/"
+            "key": ".ycmpdkgitycogdahnnsxsmt.onpwumibkj.rhmbpdyhrnhnglbtlbdwhb.pkchhp.bxnnlhsssuajmw.bznpj.cfuwomzvsnbh.paths.//{3tw9_e6vy7uz5dvhcr}/{r7rb6s0pubgoha_22}/zmvx1j3k4c691f8z/6/f/9/yq06cp61b1-d/n/4m3tqg1w-d-hteknmt8/{qg3yt5r_o1chjl}/{sd80_2pge}/nmhs4ol9f0yezvgkb/{b4-1kp7hu}/9"
         }
     ],
     "metadata": {

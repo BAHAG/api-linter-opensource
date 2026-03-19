@@ -114,10 +114,10 @@
         },
         {
             "id": "B121",
-            "num_line": 8,
+            "num_line": 5,
             "severity": "ERROR",
             "message": "Specification must define at least one success code",
-            "key": ".zyfhquvgqvdjb.bxfwuppotshcjqd.bxfobwhdh.jfsczpqupxvnd.eivkuarhyqzhamfpvmc.syovsvijisekbxcsyblcflltjnxk.path.responses"
+            "key": ".uurutbsnkviaijyuxvmslfoat.xficpqz.iqkvesrhkxrhcqafvikviqr.path.responses"
         }
     ],
     "metadata": {

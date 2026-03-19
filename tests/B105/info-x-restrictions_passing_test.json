@@ -122,7 +122,7 @@
         "x-data-types": null,
         "x-gdpr": null,
         "x-touchpoints-types": null,
-        "x-restrictions": true,
+        "x-restrictions": false,
         "supported-countries": [
             "all"
         ],

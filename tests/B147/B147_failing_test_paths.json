@@ -117,14 +117,14 @@
             "num_line": 6,
             "severity": "ERROR",
             "message": "Pluralize resource names",
-            "key": ".krpmbzlrozmtqbjfbiflrno.armifukwfazpjyemojopazarmn.sbuxfamayfhf.jliqjggckhwyzsznz.paths./api"
+            "key": ".jdadro.imwxjn.ubsgcdlrcxvmtopln.lxvabktxziueleqferqgtytd.paths./api"
         },
         {
             "id": "B147",
             "num_line": 6,
             "severity": "ERROR",
             "message": "/api used as the base path",
-            "key": ".krpmbzlrozmtqbjfbiflrno.armifukwfazpjyemojopazarmn.sbuxfamayfhf.jliqjggckhwyzsznz.paths./api"
+            "key": ".jdadro.imwxjn.ubsgcdlrcxvmtopln.lxvabktxziueleqferqgtytd.paths./api"
         }
     ],
     "metadata": {

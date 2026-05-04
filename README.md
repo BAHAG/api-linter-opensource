@@ -6,6 +6,32 @@
 
 A comprehensive quality assurance tool for OpenAPI specifications that ensures your APIs meet industry standards and organizational guidelines.
 
+## 📚 Table of Contents
+
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [📖 Usage](#-usage)
+- [⚙️ Configuration](#️-configuration)
+  - [Metadata Configuration](#-metadata-configuration)
+  - [Rules Configuration](#-rules-configuration)
+  - [Validation Checks](#-validation-checks)
+  - [Exception Handling](#️-exception-handling)
+- [📝 Output Examples](#-output-examples)
+- [🧩 VS Code Extension](#-vs-code-extension)
+  - [Prerequisites](#prerequisites)
+  - [Downloading the Extension](#downloading-the-vs-code-extension)
+  - [Installing the Extension](#installing-the-extension-in-vs-code)
+  - [Using the Extension](#using-the-extension)
+- [🏗️ Development](#️-development)
+  - [Local Development Setup](#local-development-setup)
+  - [Project Structure](#project-structure)
+  - [Adding New Rules](#adding-new-rules)
+- [🚀 Deployment & Versioning](#-deployment--versioning)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🆘 Support & Contact](#-support--contact)
+- [🔗 Related Tools](#-related-tools)
+
 ## ✨ Features
 
 - **🚀 Quality Assurance**: Automatically validates OpenAPI specifications against best practices
@@ -342,6 +368,92 @@ warnings:
     message: "Consider adding API description"
     path: "info.description"
 ```
+
+## 🧩 VS Code Extension
+
+The API Linter is available as a VS Code extension that provides real-time linting with squiggly underlines and hover diagnostics directly in your specification files.
+
+### Prerequisites
+
+The extension requires the `linting` CLI to be available on your `PATH`. Choose one of the following installation methods:
+
+#### Option 1: pip package (recommended for local development)
+
+```bash
+pip install --force-reinstall api-linter-101
+```
+
+> `--force-reinstall` ensures you always get the latest version, even if the same version number is already installed.
+
+After installing, also install **yq** — it is required by the linter for YAML processing:
+
+```bash
+# macOS
+brew install yq
+
+# Linux
+wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+chmod +x /usr/local/bin/yq
+```
+
+#### Option 2: Docker
+
+If you prefer to run the linter inside Docker, ensure the Docker daemon is running and the image is available:
+
+```bash
+docker pull ghcr.io/bahag/api-linter-opensource:latest
+```
+
+> Note: The VS Code extension currently invokes the `linting` binary directly, so the pip installation is recommended for extension use.
+
+---
+
+### Downloading the VS Code Extension
+
+The `.vsix` extension file is hosted in Google Cloud Storage in the `apitesting` project.
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/) and select the **apitesting** project.
+2. Navigate to **Cloud Storage → Buckets → `api-linter-opensource-vs-code-extension`**.
+3. Download the latest `.vsix` file from the bucket.
+
+Alternatively, use the `gcloud` CLI:
+
+```bash
+gcloud storage cp gs://api-linter-opensource-vs-code-extension/*.vsix .
+```
+
+---
+
+### Installing the Extension in VS Code
+
+1. Open VS Code.
+2. Open the Command Palette: `Cmd+Shift+P` (macOS) / `Ctrl+Shift+P` (Windows/Linux).
+3. Run **Extensions: Install from VSIX...**.
+4. Select the downloaded `.vsix` file.
+5. Reload VS Code when prompted.
+
+---
+
+### Using the Extension
+
+Open any `.yaml` OpenAPI specification file. The extension activates automatically on YAML files and re-lints on every save.
+
+#### Available Command Palette Commands
+
+| Command | Description |
+|---|---|
+| `Activate Linter` | Manually trigger linting on the currently open specification file |
+
+To run a command: open the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`) and type **Activate Linter**.
+
+#### Diagnostics
+
+- **Red squiggly lines** — `ERROR` severity issues
+- **Yellow squiggly lines** — `WARN` severity issues
+- **Hover** over any squiggle to see the rule ID and message (e.g. `[B111] enum property does not follow UPPER_SNAKE_CASE`)
+- All findings are also listed in the **Problems panel** (`View → Problems`) with the source `api-linter`
+
+---
 
 ## 🏗️ Development
 

@@ -32,3 +32,4 @@ test.py
 rules-transformed.json
 *.vsix
 __pycache__/
+node_modules/

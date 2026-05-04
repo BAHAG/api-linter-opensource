@@ -7,6 +7,10 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  GCP_DEPLOY_SA: ${{ secrets.GCP_DEPLOY_SA }}
+  BIGQUERY_API_SERVICE_ACCOUNT_JSON: ${{ secrets.BIGQUERY_API_SERVICE_ACCOUNT_JSON }}
+  BIGQUERY_API_PROJECT_ID: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
+  TF_VAR_project: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
 
 jobs:
   build-and-push-image:
@@ -14,19 +18,34 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Detect changed paths
+        id: changes
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            linter:
+              - 'local_dev/**'
+              - 'package/**'
+              - 'requirements.txt'
+              - 'tests/**'
+              - 'rules.json'
+              - 'Dockerfile'
+
       - name: Log in to the Container registry
+        if: steps.changes.outputs.linter == 'true'
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Enable the universe repository and yq repository
+      - name: Enable the universe repository
         run: |
             sudo add-apt-repository universe
 
@@ -36,6 +55,7 @@ jobs:
               sudo apt-get install -y build-essential python3-dev wget
 
       - name: Install yq
+        if: steps.changes.outputs.linter == 'true'
         run: |
           VERSION=v4.34.1
           BINARY=yq_linux_amd64
@@ -51,21 +71,65 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Test the linter with sample yaml files in the tests/ directory
+        if: steps.changes.outputs.linter == 'true'
         run: ./test_linter.sh
 
       - name: Extract metadata (tags, labels) for Docker
+        if: steps.changes.outputs.linter == 'true'
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
+        if: steps.changes.outputs.linter == 'true'
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Login to google cloud console
+        uses: 'google-github-actions/auth@v3'
+        with:
+          credentials_json: ${{ secrets.GCP_DEPLOY_SA }}
+
+      - name: Create binary for mac os
+        run: pyinstaller local_dev/linter.py
+      
+      - name: Compress dist folder
+        run: tar -czvf mac_dist.tar.gz dist rules.json
+
+      - name: Install required node modules and pack the vscode extension
+        run: |-
+          rm api-linter-extension/data/rules.json && cp rules.json api-linter-extension/data/rules.json
+          cd api-linter-extension
+          npm install
+          npm install -g @vscode/vsce
+          vsce pack --skip-license --out ../api_linter_extension.vsix
+          cd ..
+
+      - name: Create prod.conf
+        working-directory: terraform
+        run: |
+          echo "bucket = \"${{ secrets.BIGQUERY_API_PROJECT_ID }}-tfstate\"" > prod.conf
+          echo "prefix = \"linter-vs-code-extension-prod-state\"" >> prod.conf
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform init
+        run: terraform -chdir=terraform init --backend-config=prod.conf
+      
+      - name: Terraform fmt
+        run: terraform -chdir=terraform fmt -check
+      
+      - name: Terraform plan
+        run: terraform -chdir=terraform plan -var-file="prod.tfvars"
+      
+      - name: Terraform apply
+        run: terraform -chdir=terraform apply -var-file="prod.tfvars" --auto-approve
 
   kpi-deployment-count:
     needs: [build-and-push-image]

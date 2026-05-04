@@ -1,0 +1,51 @@
+{
+  "name": "api-linter",
+  "displayName": "api-linter",
+  "description": "Lint api specification files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "publisher": "BAHAG",
+  "repository": {},
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onInstall",
+    "onLanguage:yaml"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "statusBar": [
+      {
+        "id": "api-linter.button",
+        "text": "Activate Linter",
+        "command": "api-linter.helloWorld",
+        "alignment": "right",
+        "tooltip": "Click to activate Api Linter"
+      }
+    ],
+    "commands": [
+      {
+        "command": "api-linter.helloWorld",
+        "title": "Activate Linter"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.3",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.84.0",
+    "@vscode/test-electron": "^2.3.6",
+    "eslint": "^8.52.0",
+    "glob": "^10.3.10",
+    "mocha": "^11.7.5",
+    "typescript": "^5.2.2"
+  }
+}

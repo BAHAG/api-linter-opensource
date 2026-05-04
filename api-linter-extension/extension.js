@@ -119,19 +119,6 @@ const lintWithApiLinter = (diagnosticCollection, new_content="", editor=null) =>
 				diagnosticCollection.delete(documentUri);
 				diagnosticCollection.set(documentUri, diagnostics);
 
-				// Apply colored decorations: red for errors, orange for warnings
-				const activeEditor = vscode.window.activeTextEditor;
-				if (activeEditor && activeEditor.document.uri.toString() === documentUri.toString()) {
-					const errorRanges = diagnostics
-						.filter(d => d.severity === vscode.DiagnosticSeverity.Error)
-						.map(d => ({ range: d.range }));
-					const warningRanges = diagnostics
-						.filter(d => d.severity === vscode.DiagnosticSeverity.Warning)
-						.map(d => ({ range: d.range }));
-					activeEditor.setDecorations(errorDecorationType, errorRanges);
-					activeEditor.setDecorations(warningDecorationType, warningRanges);
-				}
-
 				if (!new_content){
 					fs.unlinkSync(filePath.replace(".yaml", "") + "-output.json")
 				}

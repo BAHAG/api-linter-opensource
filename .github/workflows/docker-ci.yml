@@ -10,6 +10,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
   BIGQUERY_API_SERVICE_ACCOUNT_JSON: ${{ secrets.BIGQUERY_API_SERVICE_ACCOUNT_JSON }}
   SWAGGERHUB_API_KEY: ${{ secrets.SWAGGER_HUB_KEY }}
+  TF_VAR_project: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
 
 jobs:
   local-dev-test-linter:
@@ -17,6 +18,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
@@ -51,3 +53,77 @@ jobs:
       - name: Test linter with real specification files to catch bugs
         if: ${{ success() }}
         run: python3 test-yaml-loading.py
+
+      - name: Create binary for mac os
+        run: pyinstaller local_dev/linter.py
+      
+      - name: Compress dist folder
+        run: tar -czvf mac_dist.tar.gz dist rules.json
+
+      - name: Install required node modules and pack the vscode extension
+        run: |-
+          cp --dereference rules.json api-linter-extension/data/rules.json
+          cd api-linter-extension
+          npm install
+          npm install -g @vscode/vsce
+          vsce pack --skip-license --out ../api_linter_extension.vsix
+          cd ..
+
+      - name: Create prod.conf
+        working-directory: terraform
+        run: |
+          echo "bucket = \"${{ secrets.BIGQUERY_API_PROJECT_ID }}-tfstate\"" > prod.conf
+          echo "prefix = \"linter-vs-code-extension-prod-state\"" >> prod.conf
+      
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform init
+        run: terraform -chdir=terraform init --backend-config=prod.conf
+      
+      - name: Terraform fmt
+        run: terraform -chdir=terraform fmt -check
+      
+      - name: Terraform plan
+        id: plan
+        run: terraform -chdir=terraform plan -var-file="prod.tfvars" -no-color 2>&1 | tee /tmp/tfplan.txt
+        continue-on-error: true
+
+      - name: Comment PR with Terraform plan
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const plan = fs.readFileSync('/tmp/tfplan.txt', 'utf8');
+            const maxLen = 65000;
+            const truncated = plan.length > maxLen
+              ? plan.slice(0, maxLen) + '\n\n... output truncated ...'
+              : plan;
+            const body = `## Terraform Plan\n\`\`\`terraform\n${truncated}\n\`\`\``;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.startsWith('## Terraform Plan'));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail if Terraform plan failed
+        if: steps.plan.outcome == 'failure'
+        run: exit 1

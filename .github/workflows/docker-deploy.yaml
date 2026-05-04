@@ -7,6 +7,9 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  BIGQUERY_API_SERVICE_ACCOUNT_JSON: ${{ secrets.BIGQUERY_API_SERVICE_ACCOUNT_JSON }}
+  BIGQUERY_API_PROJECT_ID: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
+  TF_VAR_project: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
 
 jobs:
   build-and-push-image:
@@ -14,6 +17,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -66,6 +70,47 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Login to google cloud console
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: ${{ secrets.BIGQUERY_API_SERVICE_ACCOUNT_JSON }}
+
+      - name: Create binary for mac os
+        run: pyinstaller local_dev/linter.py
+      
+      - name: Compress dist folder
+        run: tar -czvf mac_dist.tar.gz dist rules.json
+
+      - name: Install required node modules and pack the vscode extension
+        run: |-
+          cp --dereference rules.json api-linter-extension/data/rules.json
+          cd api-linter-extension
+          npm install
+          npm install -g @vscode/vsce
+          vsce pack --skip-license --out ../api_linter_extension.vsix
+          cd ..
+
+      - name: Create prod.conf
+        working-directory: terraform
+        run: |
+          echo "bucket = \"${{ secrets.BIGQUERY_API_PROJECT_ID }}-tfstate\"" > prod.conf
+          echo "prefix = \"linter-vs-code-extension-prod-state\"" >> prod.conf
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform init
+        run: terraform -chdir=terraform init --backend-config=prod.conf
+      
+      - name: Terraform fmt
+        run: terraform -chdir=terraform fmt -check
+      
+      - name: Terraform plan
+        run: terraform -chdir=terraform plan -var-file="prod.tfvars"
+      
+      - name: Terraform apply
+        run: terraform -chdir=terraform apply -var-file="prod.tfvars" --auto-approve%  
 
   kpi-deployment-count:
     needs: [build-and-push-image]

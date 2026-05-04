@@ -9,6 +9,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   BIGQUERY_API_SERVICE_ACCOUNT_JSON: ${{ secrets.BIGQUERY_API_SERVICE_ACCOUNT_JSON }}
+  GCP_DEPLOY_SA: ${{ secrets.GCP_DEPLOY_SA }}
   SWAGGERHUB_API_KEY: ${{ secrets.SWAGGER_HUB_KEY }}
   TF_VAR_project: ${{ secrets.BIGQUERY_API_PROJECT_ID }}
 
@@ -54,6 +55,11 @@ jobs:
         if: ${{ success() }}
         run: python3 test-yaml-loading.py
 
+      - name: Login to google cloud console
+        uses: 'google-github-actions/auth@v3'
+        with:
+          credentials_json: ${{ secrets.GCP_DEPLOY_SA }}
+
       - name: Create binary for mac os
         run: pyinstaller local_dev/linter.py
       
@@ -62,7 +68,7 @@ jobs:
 
       - name: Install required node modules and pack the vscode extension
         run: |-
-          cp --dereference rules.json api-linter-extension/data/rules.json
+          rm api-linter-extension/data/rules.json && cp rules.json api-linter-extension/data/rules.json
           cd api-linter-extension
           npm install
           npm install -g @vscode/vsce

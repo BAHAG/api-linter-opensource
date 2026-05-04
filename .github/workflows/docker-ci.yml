@@ -24,7 +24,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Enable the universe repository and yq repository
+
+      - name: Detect changed paths
+        id: changes
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            linter:
+              - 'local_dev/**'
+              - 'package/**'
+              - 'requirements.txt'
+              - 'tests/**'
+              - 'rules.json'
+              - 'Dockerfile'
+
+      - name: Enable the universe repository
         run: |
             sudo add-apt-repository universe
 
@@ -34,6 +48,7 @@ jobs:
               sudo apt-get install -y build-essential python3-dev wget
 
       - name: Install yq
+        if: steps.changes.outputs.linter == 'true'
         run: |
           VERSION=v4.34.1
           BINARY=yq_linux_amd64
@@ -49,10 +64,11 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Test the linter with sample yaml files in the tests/ directory
+        if: steps.changes.outputs.linter == 'true'
         run: ./test_linter.sh
 
       - name: Test linter with real specification files to catch bugs
-        if: ${{ success() }}
+        if: steps.changes.outputs.linter == 'true' && success()
         run: python3 test-yaml-loading.py
 
       - name: Login to google cloud console

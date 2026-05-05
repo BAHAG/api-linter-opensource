@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "api-linter-101"
-version = "1.2.0"
+version = "1.3.0"
 description = "Linter for Open API specification documents"
 readme = "README.md"
 authors = [
@@ -26,4 +26,4 @@ dependencies = [
 ]
 
 [project.scripts]
-linting = "linter.linter:main"
+linting = "linter.linter:cli"

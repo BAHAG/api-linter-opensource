@@ -17,15 +17,15 @@ jobs:
       with:
         fetch-depth: 0  # Fetch full history for git diff
 
-    - name: Check for changes in setup.py
+    - name: Check for changes in pyproject.toml
       id: check_changes
       run: |
-        if git diff --name-only HEAD~1 HEAD | grep -q "package/setup.py"; then
+        if git diff --name-only HEAD~1 HEAD | grep -q "package/pyproject.toml"; then
           echo "setup_changed=true" >> $GITHUB_OUTPUT
-          echo "Changes detected in package/setup.py"
+          echo "Changes detected in package/pyproject.toml"
         else
           echo "setup_changed=false" >> $GITHUB_OUTPUT
-          echo "No changes detected in package/setup.py"
+          echo "No changes detected in package/pyproject.toml"
         fi
 
     - name: Set up Python 3.11
@@ -40,10 +40,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Install dependencies
+    - name: Install build tools
       if: steps.check_changes.outputs.setup_changed == 'true'
       run: |
-        pip install setuptools wheel twine
+        pip install build twine
 
     - name: Build and publish
       if: steps.check_changes.outputs.setup_changed == 'true'
@@ -53,7 +53,7 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         TWINE_REPOSITORY_URL: https://upload.pypi.org/legacy/
       run: |
-        python setup.py sdist bdist_wheel
+        python -m build
         twine upload dist/*
         
     - name: Skip deployment

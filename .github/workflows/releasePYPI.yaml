@@ -2,9 +2,7 @@
 name: Release PYPI
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -58,7 +56,8 @@ jobs:
         
     - name: Skip deployment
       if: steps.check_changes.outputs.setup_changed == 'false'
-      run: echo "Skipping PYPI deployment - no changes in setup.py"
+      run: echo "Skipping PYPI deployment - no changes in pyproject.toml"
+
   kpi-deployment-count:
     needs: [build]
     runs-on: ubuntu-latest

@@ -44,9 +44,10 @@ resource "google_storage_bucket_iam_member" "all_teams_linter_vscode_extension" 
 }
 
 resource "google_storage_bucket_object" "vs_extension" {
-  name   = "vs_extension.vsix"
-  source = "../api_linter_extension.vsix"
-  bucket = google_storage_bucket.vs_extension_dir.name
+  name         = "vs_extension.vsix"
+  source       = "../api_linter_extension.vsix"
+  bucket       = google_storage_bucket.vs_extension_dir.name
+  content_type = "application/vsix"
 }
 
 # resource "google_storage_default_object_access_control" "vs_extension_all_access" {

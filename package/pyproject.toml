@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "api-linter-101"
 version = "1.2.0"
 description = "Linter for Open API specification documents"
-readme = {text = "A yaml linter for openapi documents.", content-type = "text/plain"}
+readme = "README.md"
 authors = [
     {name = "BAUHAUS", email = "shubhushan.kattel@bahag.com"}
 ]

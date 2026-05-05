@@ -41,7 +41,7 @@ jobs:
     - name: Install build tools
       if: steps.check_changes.outputs.setup_changed == 'true'
       run: |
-        pip install build twine
+        pip install --upgrade build twine
 
     - name: Build and publish
       if: steps.check_changes.outputs.setup_changed == 'true'

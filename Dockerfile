@@ -17,6 +17,7 @@ RUN wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}.
 
 COPY package/bin /app/bin
 COPY package/linter /app/linter
-COPY package/setup.py /app/setup.py
+COPY package/pyproject.toml /app/pyproject.toml
+COPY package/README.md /app/README.md
 
-RUN python3 setup.py install
+RUN pip3 install --upgrade build && python3 -m build && pip3 install dist/*.whl

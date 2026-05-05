@@ -125,3 +125,6 @@ def run_linter(spec_file, rule_file, output_fmt):
 
 if __name__ == "__main__":
     run_linter(args.spec, args.rule, args.output)
+
+def cli():
+    run_linter(args.spec, args.rule, args.output)

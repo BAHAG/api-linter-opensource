@@ -34,14 +34,34 @@ myStatusBarItem.tooltip = "Lint Api Spec"; // Tooltip text
 myStatusBarItem.command = "api-linter.helloWorld"; // Replace with the actual command to trigger your extension
 myStatusBarItem.show();
 
-const lintWithApiLinter = (diagnosticCollection, new_content="", editor=null) => {
-	if (!editor) editor = vscode.window.activeTextEditor;
-	if (editor) {
-		const document = editor.document;
-		if (!editor.document.fileName.endsWith(".yaml")){
+/** @param {string} fileName */
+const isYamlFile = (fileName) => fileName.endsWith('.yaml') || fileName.endsWith('.yml');
+/** @param {string} content */
+const isOpenApiDocument = (content) => /^\s*openapi\s*:/m.test(content);
+
+/**
+ * @param {vscode.DiagnosticCollection} diagnosticCollection
+ * @param {string} [new_content]
+ * @param {vscode.TextEditor | undefined} [editor]
+ * @param {vscode.TextDocument | undefined} [documentOverride]
+ */
+const lintWithApiLinter = (diagnosticCollection, new_content="", editor=undefined, documentOverride=undefined) => {
+	if (!editor && !documentOverride) editor = vscode.window.activeTextEditor;
+	const document = documentOverride || (editor ? editor.document : null);
+	if (document) {
+		if (!isYamlFile(document.fileName)){
+			diagnosticCollection.delete(document.uri);
 			console.log("This is not a yaml file")
 			return
 		}
+
+		const contentToCheck = new_content || document.getText();
+		if (!isOpenApiDocument(contentToCheck)) {
+			diagnosticCollection.delete(document.uri);
+			console.log("YAML file does not look like an OpenAPI document")
+			return
+		}
+
 		// get the path of the yaml file
 		let filePath = document.uri.fsPath;
 		const documentUri = document.uri;
@@ -149,11 +169,11 @@ function activate(context) {
 
 	// Event listener for document save
     context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(document => {
-		lintWithApiLinter(diagnosticCollection, "")
+		lintWithApiLinter(diagnosticCollection, "", undefined, document)
     }));
 
 	context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(document => {
-		lintWithApiLinter(diagnosticCollection, document.document.getText())
+		lintWithApiLinter(diagnosticCollection, document.document.getText(), undefined, document.document)
     }));
 
 	context.subscriptions.push(vscode.window.onDidChangeActiveTextEditor(editor => {
@@ -163,7 +183,11 @@ function activate(context) {
     }));
 
 	context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(document => {
-		lintWithApiLinter(diagnosticCollection, "")
+		lintWithApiLinter(diagnosticCollection, "", undefined, document)
+	}));
+
+	context.subscriptions.push(vscode.workspace.onDidCloseTextDocument(document => {
+		diagnosticCollection.delete(document.uri);
 	}));
 }
 

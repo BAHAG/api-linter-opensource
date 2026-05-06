@@ -119,7 +119,7 @@ def run_linter(spec_file, rule_file, output_fmt):
     with open(Path.home()/".env", "w") as ev:
         ev.write(f"SPEC_FILE={spec_file}")
     # strip .yaml from filename
-    output_file_name = spec_file.split(".")[0]
+    output_file_name = ".".join(spec_file.split(".")[:-1])
     error_logger.set_file_name_and_format(output_file_name, output_fmt)
     main(spec_file, rule_file, output_fmt)
 

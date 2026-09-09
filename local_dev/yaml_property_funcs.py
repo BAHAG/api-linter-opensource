@@ -29,7 +29,17 @@ def deep_is_date_time(spec, yq_path, message, severity, logger, id, lst, idx, lo
     for key, value in spec.items():
         tmp = f'."{key}"'
         if type(value) is dict:
-            if value.get("format") and value.get("format") == "date-time":
+            if value.get("schema") and type(value.get("schema")) is dict and value.get("schema").get("format") == "date-time" and value.get("name"):
+                # parameter object: validate the name field instead of the schema key
+                flag = False
+                for valid_name in lst:
+                    if re.match(valid_name, f'{value.get("name")}'):
+                        flag = True
+                if not flag:
+                    tmp = yq_path + tmp + ".name"
+                    line_num = get_line_number_key(tmp, logger)
+                    logger.log_with_line_number_key(line_num, severity, message, id, tmp)
+            elif value.get("format") and value.get("format") == "date-time":
                 flag = False
                 # check if it matches one of the items in the list
                 for valid_name in lst:

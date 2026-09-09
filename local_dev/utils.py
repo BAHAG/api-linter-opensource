@@ -150,7 +150,7 @@ def deep_find_enum(spec, logger, log_key):
                 logger.add_metadata(log_key+"-length", len(value))
                 return True
         if type(value) == dict:
-            enum_exists = deep_find_enum(value, logger, log_key)
+            enum_exists = deep_find_enum(value, logger, log_key) or enum_exists
     return enum_exists
 
 # extract enums for each path parameter
@@ -187,6 +187,8 @@ def extract_enum(spec, logger):
 
             tmp = spec
         
+        # keep the root document so nested refs can be resolved against it
+        root_doc = tmp
         # navigate to required model/schema
         for tmp_path in x:
             tmp = tmp.get(tmp_path)
@@ -202,6 +204,13 @@ def extract_enum(spec, logger):
         # tmp has the model/schema/parameter of the country-code or language-id
         enum_exists = deep_find_enum(tmp, logger, log_key)
         #print(enum_exists, log_key, tmp)
+        if not enum_exists:
+            # the parameter's schema may itself be a $ref, resolve one more level
+            nested_ref = extract_deep_find_ref(tmp)
+            if nested_ref and nested_ref.startswith("#"):
+                nested_schema = get_internal_ref(root_doc, nested_ref)
+                if nested_schema:
+                    enum_exists = deep_find_enum(nested_schema, logger, log_key)
         if not enum_exists:
             line_number = get_line_number_key("."+".".join(x), logger)
             logger.log_with_line_number(line_number, "WARN", f"{x[-1]} should have an enum field", None)

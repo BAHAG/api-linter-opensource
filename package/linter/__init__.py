@@ -1,3 +1,4 @@
+from linter.raw_text_funcs import *
 from linter.generic_funcs import *
 from linter.internal_ref_funcs import *
 from linter.logger import *

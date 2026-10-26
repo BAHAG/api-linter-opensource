@@ -1,0 +1,8 @@
+# docs: https://app.swaggerhub.com/apis/acme/domain/1.0.0
+components:
+  schemas:
+    Foo:
+      description: Formerly hosted at app.swaggerhub.com
+      $ref: '#/components/schemas/Bar'
+    Bar:
+      type: string

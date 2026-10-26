@@ -15,6 +15,7 @@ from key_value_funcs import *
 from key_name_funcs import *
 from generic_funcs import *
 from internal_ref_funcs import *
+from raw_text_funcs import *
 
 # remove resolver entries for On/Off/Yes/No
 for ch in "OoYyNn":
@@ -171,6 +172,7 @@ def extract_enum(spec, logger):
                 continue
             # download the yaml specification file from swagger hub, http://smth#/components/x/y
             url, x = lang_or_country.split("#")
+            url = url.replace("app.swaggerhub.com", "api.swaggerhub.com")
             # internal ref requires # as the first char
             x = parse_internal_refs("#"+x)
 
@@ -400,11 +402,16 @@ example_config = {
     "check_example": check_example
 }
 
+raw_text_config = {
+    "check_line_pattern": check_line_pattern
+}
+
 path_name_config = {
     "required_path": required_path_config,
     "properties": property_config,
     "key_name": key_name_config,
     "key_value": key_value_config,
     "array_name": array_name_config,
-    "example": example_config
+    "example": example_config,
+    "raw_text": raw_text_config
 }

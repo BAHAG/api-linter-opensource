@@ -47,6 +47,28 @@
             ]
         },
         {
+            "id": "B102",
+            "description": "Use api.swaggerhub.com for external references",
+            "severity": "ERROR",
+            "specification-type": "OPENAPI",
+            "specification-version": "ALL",
+            "paths": [
+                {
+                    "raw_text": "$ref",
+                    "checks": [
+                        {
+                            "check_line_pattern": "[\"']?\\$ref[\"']?\\s*:\\s*[\"']?(https?://)?app\\.swaggerhub\\.com",
+                            "message": "Reference uses app.swaggerhub.com, which cannot be resolved by tools. Use api.swaggerhub.com instead",
+                            "name": "check_line_pattern",
+                            "value": "[\"']?\\$ref[\"']?\\s*:\\s*[\"']?(https?://)?app\\.swaggerhub\\.com"
+                        }
+                    ],
+                    "path_value": "$ref",
+                    "path_name": "raw_text"
+                }
+            ]
+        },
+        {
             "id": "B105",
             "description": "Contain api meta information",
             "severity": "ERROR",

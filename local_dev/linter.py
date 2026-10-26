@@ -112,6 +112,10 @@ def main(spec_file="sample.yaml", rule_file="rules.json", output_fmt="json"):
                     # call func
                     func(yaml_spec, "", error_logger, yaml_spec)
 
+                elif path_name == "raw_text":
+                    # spec_file, message, severity, logger, id, pattern
+                    func(spec_file, check_obj.get("message"), severity, error_logger, id, value)
+
     error_logger.print_and_save_logs()
 
 def run_linter(spec_file, rule_file, output_fmt):

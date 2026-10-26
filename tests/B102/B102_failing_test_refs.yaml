@@ -1,0 +1,5 @@
+components:
+  schemas:
+    Foo:
+      $ref: 'http://app.swaggerhub.com/apis/acme/domain/1.0.0#/components/schemas/Foo'
+    Bar: { $ref: "http://app.swaggerhub.com/apis/acme/domain/1.0.0#/components/schemas/Bar" }

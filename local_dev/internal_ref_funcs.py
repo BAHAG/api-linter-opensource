@@ -93,6 +93,8 @@ def deep_check_refs(spec_iter_file, spec_file, yq_path, logger, message):
                     print("\tAPI Key for swaggerhub is not present. Skipping checks for external refs")
                     continue
                 url, path = value.split("#")
+                # app.swaggerhub.com serves HTML; B102 reports it, but resolve via the API host
+                url = url.replace("app.swaggerhub.com", "api.swaggerhub.com")
                 path = "#" + path
                 parsed_path = parse_internal_refs(path)
 

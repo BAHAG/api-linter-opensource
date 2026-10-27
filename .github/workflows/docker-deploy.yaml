@@ -24,21 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Detect changed paths
-        id: changes
-        uses: dorny/paths-filter@v3
-        with:
-          filters: |
-            linter:
-              - 'local_dev/**'
-              - 'package/**'
-              - 'requirements.txt'
-              - 'tests/**'
-              - 'rules.json'
-              - 'Dockerfile'
-
       - name: Log in to the Container registry
-        if: steps.changes.outputs.linter == 'true'
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
           registry: ${{ env.REGISTRY }}
@@ -55,7 +41,6 @@ jobs:
               sudo apt-get install -y build-essential python3-dev wget
 
       - name: Install yq
-        if: steps.changes.outputs.linter == 'true'
         run: |
           VERSION=v4.34.1
           BINARY=yq_linux_amd64
@@ -71,18 +56,15 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Test the linter with sample yaml files in the tests/ directory
-        if: steps.changes.outputs.linter == 'true'
         run: ./test_linter.sh
 
       - name: Extract metadata (tags, labels) for Docker
-        if: steps.changes.outputs.linter == 'true'
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
-        if: steps.changes.outputs.linter == 'true'
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:
           context: .

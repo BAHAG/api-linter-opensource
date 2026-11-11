@@ -23,7 +23,7 @@ macholib==1.16.2
 markdown-it-py==3.0.0
 mdurl==0.1.2
 more-itertools==9.1.0
-packaging==23.1
+packaging==24.0
 pkginfo==1.9.6
 proto-plus==1.22.3
 protobuf==4.25.8

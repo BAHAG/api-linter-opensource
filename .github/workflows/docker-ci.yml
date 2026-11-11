@@ -45,10 +45,6 @@ jobs:
               - 'rules.json'
               - 'Dockerfile'
 
-      - name: Enable the universe repository
-        run: |
-            sudo add-apt-repository universe
-
       - name: Install required dependencies
         run: | 
               sudo apt-get update -y

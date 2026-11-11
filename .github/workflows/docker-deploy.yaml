@@ -36,10 +36,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Enable the universe repository
-        run: |
-            sudo add-apt-repository universe
-
       - name: Install required dependencies
         run: | 
               sudo apt-get update -y

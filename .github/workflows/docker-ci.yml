@@ -25,12 +25,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+
       - name: Detect changed paths
         id: changes
         uses: dorny/paths-filter@v3
         with:
           filters: |
             linter:
+              - '.github/workflows/docker-ci.yml'
+              - '.github/workflows/docker-deploy.yaml'
               - 'local_dev/**'
               - 'package/**'
               - 'requirements.txt'
@@ -45,7 +52,7 @@ jobs:
       - name: Install required dependencies
         run: | 
               sudo apt-get update -y
-              sudo apt-get install -y build-essential python3-dev wget
+              sudo apt-get install -y build-essential wget
 
       - name: Install yq
         if: steps.changes.outputs.linter == 'true'
@@ -54,14 +61,17 @@ jobs:
           BINARY=yq_linux_amd64
           wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}.tar.gz -O - | tar xz && sudo mv ${BINARY} /usr/bin/yq
 
-      - name: Install pip3
-        run: sudo apt-get install python3-pip -y --fix-missing
-
       - name: install setuptools
-        run: pip3 install wheel setuptools cython
+        run: python3 -m pip install wheel setuptools cython
 
       - name: install packages
-        run: pip3 install -r requirements.txt
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Verify protobuf and BigQuery imports
+        run: |
+          python3 -VV
+          python3 -m pip check
+          python3 -c "import google._upb._message; from google.cloud import bigquery"
 
       - name: Test the linter with sample yaml files in the tests/ directory
         if: steps.changes.outputs.linter == 'true'
